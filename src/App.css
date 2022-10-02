@@ -1,10 +1,10 @@
 .laranja {
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: #ff9c00;
 }
 .cinza {
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: #dadada;
 }
@@ -14,9 +14,12 @@
   background-color: #000000;
 }
 .branco {
-  height:calc(100vmin - 300px);
+  height:calc(100vmin - 260px);
   width: 100%;
   background-color: #ebebeb;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
