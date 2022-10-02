@@ -7,8 +7,7 @@ function App() {
     <div className="laranja"></div>
       <div className="cinza"></div>
       <div className="branco">
-        <img src={logoGrande} alt=''></img>
-        Logo 
+        <img src={logoGrande} alt='Logotipo Daniel Rodrigues'></img>
       </div>
       <div className="preto"></div>
     </>
