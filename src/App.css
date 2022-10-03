@@ -1,26 +1,155 @@
+@font-face {
+  font-family: "Social Media Circled";
+  src: url("./fonts/Social-Media-Circled.woff") format("woff")
+  }
+  @font-face {
+    font-family: "Gill Sans";
+    src: url("./fonts/GillSans.woff") format("woff"),
+    url("./fonts/GillSans.otf") format("opentype"),
+    }
+  
+
 .laranja {
   height: 80px;
   width: 100%;
   background-color: #ff9c00;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#000000;
 }
 .cinza {
   height: 80px;
   width: 100%;
   background-color: #dadada;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000000;
 }
 .preto {
   height: 100px;
   width: 100%;
   background-color: #000000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #dadada;
 }
-.branco {
-  height:calc(100vmin - 260px);
-  width: 100%;
-  background-color: #ebebeb;
-  align-items: center;
-  justify-content: center;
+.preto_esq {
+  float:left;
+  width: 235px;
+  height: auto;
+  height: 100px;
+  padding-right: 15px;
+}
+.social_preto_separacao {
+  width:235px;
+  float:right;
+}
+.social_preto_rodape {
+  font-family: 'Social Media Circled';
+  font-size: 20px;
+  color: #ff9c00;
+  padding-top:20px;
+  padding-right: 5px;
+  float:right;
+}
+.whatsapp {
+  background-color: #282c34;
+  padding:3px 10px;
+  font-size: 14px;
+  color:#868686;
+  border-radius: 10px;
+  width: 130px;
+  float: right;
+  margin-top:10px;
+  margin-right: 5px;
   text-align: center;
 }
+.preto_centro {
+  background-color: #000000;
+  float:left;
+  width: 40vw;
+  min-width: 399px;
+  height: auto;
+  height: 100px;
+}
+.preto_dir {
+  background-color: #000000;
+  float:left;
+  width: 40vw;
+  min-width: 399px;
+  height: 100px;
+}
+.branco {
+  height:calc(100vh - 260px);
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logoHome {
+  max-width: 65vmax;
+  margin-top: 15vmin;
+}
+.menuHome {
+  width:250px;
+  border-right: 1px solid #ff9c00;
+  height: 350px;
+  position: absolute;
+  z-index: 499;
+  left: 0;
+  top: 0;
+}
+.menuHomeul {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  padding-right: 20px;
+  list-style: none;
+  text-align: right;
+}
+.menuHome li {
+  margin-top: -12px;
+}
+.menuHomeul li a {
+  background: linear-gradient(0deg, #ff9c00, #ff9c00) no-repeat right bottom / 0 var(--bg-h);
+	transition: background-size 350ms;
+	--bg-h: 100%;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  text-align: right;
+}
+.menuHomeul li a:where(:hover, :focus-visible) {
+	background-size: 100% var(--bg-h);
+	background-position-x: left;
+  }
+.menuPonto {
+  color: #ff9c00;
+  font-size: 30px;
+}
+
+
+/* COMEÇAM AQUI OS HACKS PRO MOBILE */
+
+div.menumobile
+{
+  display: none;
+}
+@media screen and (max-width: 699px)
+{
+  div.menumobile
+  {
+    display: block;
+  }
+  div.preto_esq { min-width: 384px;}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .App {
