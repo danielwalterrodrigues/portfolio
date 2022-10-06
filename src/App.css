@@ -36,6 +36,7 @@
   height: auto;
   height: 100px;
   padding-right: 15px;
+  background-color: black;
 }
 .social_preto_separacao {
   width:235px;
@@ -70,11 +71,11 @@
   height: 100px;
 }
 .preto_dir {
-  background-color: #000000;
   float:left;
-  width: 40vw;
-  min-width: 399px;
-  height: 100px;
+  width: calc(100vw - 250px);
+  min-width: 400px;
+  height: auto;
+  background-color: #000000;
 }
 .branco {
   height:calc(100vh - 260px);

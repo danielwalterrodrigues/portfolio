@@ -1,0 +1,116 @@
+
+.pretoanimado {
+    background-color: #000000;
+    
+}
+.bloco1 {
+    width: 70px;
+    float:left;
+    padding-top: 20px;
+    text-align: right;
+    color: #ff9c00;
+    background-color: black;
+    height:52px;
+    padding-left: 10px;
+}
+.titskills {
+    float: left;
+    width: 70%;
+    padding-top: 15px;
+    text-align: right;
+}
+.bloco2 {
+    width: calc(50% - 100px);
+    float:left;
+    padding-top: 15px;
+    background-color: black;
+    height:60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 300px;
+}
+.bloco3 {
+    width: calc(50% - 90px);
+    float:left;
+    padding-top: 15px;
+    background-color: black;
+    height:60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 300px;
+}
+.bloco4 {
+    width: 30px;
+    float:left;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: black;
+    height:52px;
+}
+.skillRow {
+    min-width:300px;
+    height: 14px;
+    background-color: #242424;
+    color: #ff9c00;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.skillCol {
+    height: 14px;
+}
+.skillColBarra {
+    height: 14px;
+}
+
+.barra1 {
+    animation-name: barra1;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    width: 90%;
+    height: 14px;
+    text-align: right;
+    line-height: 14px;
+    background-color: #3d424a;
+    position: inherit;
+    left:0px;
+  }
+  
+.barra2 {
+    animation-name: barra2;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    width: 78%;
+    height: 14px;
+    text-align: right;
+    line-height: 14px;
+    background-color: #3d424a;
+    position: inherit;
+    left:0px;
+  }
+  
+.barra3 {
+    animation-name: barra3;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    width: 83%;
+    height: 14px;
+    text-align: right;
+    line-height: 14px;
+    background-color: #3d424a;
+    position: inherit;
+    left:0px;
+  }
+  
+  @keyframes barra1 {
+    0%   {width: 0px; }
+    100% {width: 90%; }
+  }
+  @keyframes barra2 {
+    0%   {width: 0px; }
+    100% {width: 78%; }
+  }
+  @keyframes barra3 {
+    0%   {width: 0px; }
+    100% {width: 83%; }
+  }

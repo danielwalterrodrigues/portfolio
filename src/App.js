@@ -2,7 +2,6 @@ import './App.css';
 import logoGrande from './assets/logo_branco.png';
 import Skills from './components/skills.js';
 import RedesSociais from './components/redessociais.js';
-import Tags from './components/tags.js';
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
       </div>
       <div className="preto">
         <div className='preto_esq'><RedesSociais /></div>
-        <div className='preto_centro'><Tags /></div>
         <div className='preto_dir'><Skills /></div>
       </div>
     </>
