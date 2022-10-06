@@ -50,17 +50,25 @@
 .skillRow {
     min-width:300px;
     height: 14px;
-    background-color: #242424;
     color: #ff9c00;
     font-size: 12px;
     margin-top: 3px;
     margin-bottom: 3px;
+    background-color: #1d1d1d;
 }
 .skillCol {
     height: 14px;
+    font-size: 12px;
 }
 .skillColBarra {
     height: 14px;
+}
+.porcentagem {
+  color: #676565;
+  float: right;
+  width: 20px;
+  padding-right: 5px;
+  font-weight: bold;
 }
 
 .barra1 {

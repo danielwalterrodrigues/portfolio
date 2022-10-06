@@ -9,11 +9,11 @@ function Skills() {
 
     return (
         <motion.div className='pretoanimado'
-      initial={{ x: 1000, opacity: 0}}
-      animate={{ x: 0, opacity: 1}}
+      initial={{ y: 1000, opacity: 0}}
+      animate={{ y: 0, opacity: 1}}
       transition={{
-        duration: 2.8,
-        delay: 1.5,
+        duration: 0.8,
+        delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01]
       }}
     >
@@ -28,24 +28,27 @@ function Skills() {
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   HTML + CSS3
                 </div>
+                <div className='porcentagem'>90%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra1" data-width="90%">90%&nbsp;&nbsp;</div>
+                    <div class="barra1" data-width="100%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   Design / UX / UI
                 </div>
+                <div className='porcentagem'>90%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra2" data-width="90%">90%&nbsp;&nbsp;</div>
+                    <div class="barra2" data-width="90%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   JavaScript
                 </div>
+                <div className='porcentagem'>90%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra3" data-width="90%">90%&nbsp;&nbsp;</div>
+                    <div class="barra3" data-width="90%"></div>
                 </div>
             </div>
           </div>
@@ -57,24 +60,27 @@ function Skills() {
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   HTML + CSS3
                 </div>
+                <div className='porcentagem'>90%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra1" data-width="90%">90%&nbsp;&nbsp;</div>
+                    <div class="barra1" data-width="90%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   Design / UX / UI
                 </div>
+                <div className='porcentagem'>90%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra2" data-width="90%">90%&nbsp;&nbsp;</div>
+                    <div class="barra2" data-width="90%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   JavaScript
                 </div>
+                <div className='porcentagem'>90%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra3" data-width="90%">90%&nbsp;&nbsp;</div>
+                    <div class="barra3" data-width="90%"></div>
                 </div>
             </div>      
           </div>
