@@ -13,7 +13,9 @@ function Skills() {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01]
       }}
-    />
+    >
+      {"abriu o repo"}
+    </motion.div>
     
     )
 }
