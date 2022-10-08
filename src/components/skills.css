@@ -76,7 +76,7 @@
     animation-name: barra1;
     animation-iteration-count: 1;
     animation-duration: 7s;
-    width: calc(89% - 20px);
+    width: calc(89% - 10px);
     height: 14px;
     text-align: right;
     line-height: 14px;
@@ -89,7 +89,7 @@
     animation-name: barra2;
     animation-iteration-count: 1;
     animation-duration: 7s;
-    width: calc(93% - 20px);
+    width: calc(93% - 10px);
     height: 14px;
     text-align: right;
     line-height: 14px;
@@ -102,7 +102,7 @@
   animation-name: barra3;
   animation-iteration-count: 1;
   animation-duration: 7s;
-  width: calc(75% - 20px);
+  width: calc(75% - 10px);
   height: 14px;
   text-align: right;
   line-height: 14px;
@@ -115,7 +115,7 @@
   animation-name: barra4;
   animation-iteration-count: 1;
   animation-duration: 7s;
-  width: calc(95% - 30px);
+  width: calc(95% - 10px);
   height: 14px;
   text-align: right;
   line-height: 14px;
@@ -128,7 +128,7 @@
   animation-name: barra5;
   animation-iteration-count: 1;
   animation-duration: 7s;
-  width: calc(70% - 30px);
+  width: calc(70% - 10px);
   height: 14px;
   text-align: right;
   line-height: 14px;
@@ -141,7 +141,7 @@
   animation-name: barra6;
   animation-iteration-count: 1;
   animation-duration: 7s;
-  width: calc(80% - 30px);
+  width: calc(80% - 10px);
   height: 14px;
   text-align: right;
   line-height: 14px;
@@ -152,25 +152,25 @@
 
   @keyframes barra1 {
     0%   {width: 0px; }
-    100% {width: calc(89% - 15px); }
+    100% {width: calc(89% - 10px); }
   }
   @keyframes barra2 {
     0%   {width: 0px; }
-    100% {width: calc(93% - 20px); }
+    100% {width: calc(93% - 10px); }
   }
   @keyframes barra3 {
     0%   {width: 0px; }
-    100% {width: calc(75% - 15px); }
+    100% {width: calc(75% - 10px); }
   }
   @keyframes barra4 {
     0%   {width: 0px; }
-    100% {width: calc(95% - 30px); }
+    100% {width: calc(95% - 10px); }
   }
   @keyframes barra5 {
     0%   {width: 0px; }
-    100% {width: calc(70% - 30px); }
+    100% {width: calc(70% - 10px); }
   }
   @keyframes barra6 {
     0%   {width: 0px; }
-    100% {width: calc(80% - 30px); }
+    100% {width: calc(80% - 10px); }
   }
