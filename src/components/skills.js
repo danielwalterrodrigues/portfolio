@@ -26,29 +26,29 @@ function Skills() {
           <div className='bloco2'>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
-                  HTML + CSS3
-                </div>
-                <div className='porcentagem'>90%</div>
-                <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra1" data-width="100%"></div>
-                </div>
-            </div>
-            <div className='skillRow'>
-                <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
                   Design / UX / UI
                 </div>
-                <div className='porcentagem'>90%</div>
+                <div className='porcentagem'>89%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra2" data-width="90%"></div>
+                    <div class="barra1" data-width="89%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
-                  JavaScript
+                  HTML + CSS3
                 </div>
-                <div className='porcentagem'>90%</div>
+                <div className='porcentagem'>93%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra3" data-width="90%"></div>
+                    <div class="barra2" data-width="93%"></div>
+                </div>
+            </div>
+            <div className='skillRow'>
+                <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
+                  Gestão de Projetos
+                </div>
+                <div className='porcentagem'>75%</div>
+                <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
+                    <div class="barra3" data-width="75%"></div>
                 </div>
             </div>
           </div>
@@ -58,29 +58,29 @@ function Skills() {
               
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
-                  HTML + CSS3
+                  Front End Skills
                 </div>
-                <div className='porcentagem'>90%</div>
+                <div className='porcentagem'>95%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra1" data-width="90%"></div>
+                    <div class="barra4" data-width="95%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
-                  Design / UX / UI
+                  Idioma: Inglês
                 </div>
-                <div className='porcentagem'>90%</div>
+                <div className='porcentagem'>70%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra2" data-width="90%"></div>
+                    <div class="barra5" data-width="70%"></div>
                 </div>
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
-                  JavaScript
+                  React Native / JS
                 </div>
-                <div className='porcentagem'>90%</div>
+                <div className='porcentagem'>80%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
-                    <div class="barra3" data-width="90%"></div>
+                    <div class="barra6" data-width="80%"></div>
                 </div>
             </div>      
           </div>

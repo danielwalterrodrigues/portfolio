@@ -26,7 +26,6 @@
     background-color: black;
     height:60px;
     padding-left: 10px;
-    padding-right: 10px;
     min-width: 300px;
 }
 .bloco3 {
@@ -68,14 +67,16 @@
   float: right;
   width: 20px;
   padding-right: 5px;
+  padding-left: 5px;
   font-weight: bold;
+  background-color: #000000;
 }
 
 .barra1 {
     animation-name: barra1;
     animation-iteration-count: 1;
     animation-duration: 7s;
-    width: 90%;
+    width: calc(89% - 20px);
     height: 14px;
     text-align: right;
     line-height: 14px;
@@ -88,7 +89,7 @@
     animation-name: barra2;
     animation-iteration-count: 1;
     animation-duration: 7s;
-    width: 78%;
+    width: calc(93% - 20px);
     height: 14px;
     text-align: right;
     line-height: 14px;
@@ -98,27 +99,78 @@
   }
   
 .barra3 {
-    animation-name: barra3;
-    animation-iteration-count: 1;
-    animation-duration: 7s;
-    width: 83%;
-    height: 14px;
-    text-align: right;
-    line-height: 14px;
-    background-color: #3d424a;
-    position: inherit;
-    left:0px;
-  }
-  
+  animation-name: barra3;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(75% - 20px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+.barra4 {
+  animation-name: barra4;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(95% - 30px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+.barra5 {
+  animation-name: barra5;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(70% - 30px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+.barra6 {
+  animation-name: barra6;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(80% - 30px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
   @keyframes barra1 {
     0%   {width: 0px; }
-    100% {width: 90%; }
+    100% {width: calc(89% - 15px); }
   }
   @keyframes barra2 {
     0%   {width: 0px; }
-    100% {width: 78%; }
+    100% {width: calc(93% - 20px); }
   }
   @keyframes barra3 {
     0%   {width: 0px; }
-    100% {width: 83%; }
+    100% {width: calc(75% - 15px); }
+  }
+  @keyframes barra4 {
+    0%   {width: 0px; }
+    100% {width: calc(95% - 30px); }
+  }
+  @keyframes barra5 {
+    0%   {width: 0px; }
+    100% {width: calc(70% - 30px); }
+  }
+  @keyframes barra6 {
+    0%   {width: 0px; }
+    100% {width: calc(80% - 30px); }
   }
