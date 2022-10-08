@@ -44,7 +44,7 @@ function Skills() {
             </div>
             <div className='skillRow'>
                 <div className='skillCol' style={{width: "100px", backgroundColor: "#000000",  float:"left", textAlign: "right", paddingRight: "10px"}}>
-                  Gestão de Projetos
+                  Gestão Ágil
                 </div>
                 <div className='porcentagem'>75%</div>
                 <div className='skillCol' style={{width: "100%", fontSize: "10px", fontWeight: "bold"}}>
