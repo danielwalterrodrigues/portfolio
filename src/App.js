@@ -2,11 +2,12 @@ import './App.css';
 import logoGrande from './assets/logo_branco.png';
 import Skills from './components/skills.js';
 import RedesSociais from './components/redessociais.js';
+import Estrelas from './components/estrelas';
 
 function App() {
   return (
     <>
-    <div className="laranja"></div>
+    <div className="laranja"><Estrelas /></div>
       <div className="cinza">
         <div className='menumobile'>Menu Mobile</div>
         <div className='menuHome'>
