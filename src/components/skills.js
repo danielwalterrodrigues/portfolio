@@ -3,7 +3,7 @@ import './skills.css';
 import { motion } from "framer-motion";
 import ColcheteAbre from '../assets/colchete_abre.png';
 import ColcheteFecha from '../assets/colchete_fecha.png';
-import SkillBarra from '../assets/barra_skill.png';
+//import SkillBarra from '../assets/barra_skill.png';
 
 function Skills() {
 

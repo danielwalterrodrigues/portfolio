@@ -1,0 +1,104 @@
+[debug] [2022-10-24T01:45:24.293Z] ----------------------------------------------------------------------
+[debug] [2022-10-24T01:45:24.304Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2022-10-24T01:45:24.309Z] CLI Version:   11.15.0
+[debug] [2022-10-24T01:45:24.310Z] Platform:      darwin
+[debug] [2022-10-24T01:45:24.311Z] Node Version:  v16.15.1
+[debug] [2022-10-24T01:45:24.331Z] Time:          Sun Oct 23 2022 22:45:24 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-10-24T01:45:24.332Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-24T01:45:24.342Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as danielwalterrodrigues@gmail.com
+[debug] [2022-10-24T01:45:34.464Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-24T01:46:03.672Z] ----------------------------------------------------------------------
+[debug] [2022-10-24T01:46:03.676Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2022-10-24T01:46:03.676Z] CLI Version:   11.15.0
+[debug] [2022-10-24T01:46:03.677Z] Platform:      darwin
+[debug] [2022-10-24T01:46:03.677Z] Node Version:  v16.15.1
+[debug] [2022-10-24T01:46:03.680Z] Time:          Sun Oct 23 2022 22:46:03 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-10-24T01:46:03.681Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-24T01:46:03.686Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as danielwalterrodrigues@gmail.com
+[debug] [2022-10-24T01:46:13.772Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-24T01:46:34.733Z] ----------------------------------------------------------------------
+[debug] [2022-10-24T01:46:34.737Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-10-24T01:46:34.737Z] CLI Version:   11.15.0
+[debug] [2022-10-24T01:46:34.738Z] Platform:      darwin
+[debug] [2022-10-24T01:46:34.738Z] Node Version:  v16.15.1
+[debug] [2022-10-24T01:46:34.740Z] Time:          Sun Oct 23 2022 22:46:34 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-10-24T01:46:34.741Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-24T01:46:34.747Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-10-24T01:46:34.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-24T01:46:34.793Z] > authorizing via signed-in user (danielwalterrodrigues@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/dainelrodrigues/Apps/portfolio
+
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-24T01:47:50.017Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-24T01:49:07.082Z] > refreshing access token with scopes: []
+[debug] [2022-10-24T01:49:07.085Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-24T01:49:07.085Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-24T01:49:35.144Z] ----------------------------------------------------------------------
+[debug] [2022-10-24T01:49:35.148Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-10-24T01:49:35.149Z] CLI Version:   11.15.0
+[debug] [2022-10-24T01:49:35.149Z] Platform:      darwin
+[debug] [2022-10-24T01:49:35.149Z] Node Version:  v16.15.1
+[debug] [2022-10-24T01:49:35.151Z] Time:          Sun Oct 23 2022 22:49:35 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-10-24T01:49:35.151Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-24T01:49:35.157Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-10-24T01:49:35.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-24T01:49:35.203Z] > authorizing via signed-in user (danielwalterrodrigues@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/dainelrodrigues/Apps/portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-10-24T01:50:50.422Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-10-24T01:51:08.294Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.

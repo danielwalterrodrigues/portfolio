@@ -1,0 +1,21 @@
+.divprincipal {
+    margin-top: 13vmin;
+    float: left;
+    margin-left: 320px;
+}
+
+circle,
+rect,
+line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+.logoDlaranja {
+    width: 101;
+    height:101;
+}
+.laranjaZindex {
+    z-index: 999;
+    position: absolute;
+}

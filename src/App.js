@@ -1,31 +1,49 @@
 import './App.css';
-import logoGrande from './assets/logo_branco.png';
 import Skills from './components/skills.js';
 import RedesSociais from './components/redessociais.js';
-import Estrelas from './components/estrelas';
+import Logoabertura from './components/Logoabertura';
+import {motion} from 'framer-motion';
 
 function App() {
   return (
     <>
-    <div className="laranja"><Estrelas /></div>
-      <div className="cinza">
+    
+    <motion.div className="laranja"
+      animate={{width: '100%',}}
+      transition={{delay: 3, duration:1}}
+      initial={{width: 0,}}>
+        
+    </motion.div>
+      
+    <motion.div className="cinza"
+      animate={{width: "100vw", x: 0}}
+      transition={{delay: 3, duration:0.5, origin: 1}}
+      initial={{width: 0, width: "0vw", x: "100vw"}}>
         <div className='menumobile'>Menu Mobile</div>
-        <div className='menuHome'>
+        <motion.div className='menuHome'
+          animate={{y:'-80px', opacity:1}}
+          transition={{delay: 4, duration:0.5, origin: 1}}
+          initial={{y: '-300px',opacity:0}}
+          >
           <ul className="menuHomeul">
             <li><a href="#"><span class="menuPonto">. </span>BIO</a></li>
             <li><a href="#"><span class="menuPonto">. </span>DEV</a></li>
             <li><a href="#"><span class="menuPonto">. </span>TXT</a></li>
             <li><a href="#"><span class="menuPonto">. </span>SOCIAL</a></li>
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="branco">
-        <img src={logoGrande} alt='Logotipo Daniel Rodrigues' className="logoHome"></img>
+
+        <Logoabertura />
       </div>
-      <div className="preto">
-        <div className='preto_esq'><RedesSociais /></div>
-        <div className='preto_dir'><Skills /></div>
-      </div>
+      <motion.div className="preto"
+        animate={{opacity:1}}
+        transition={{delay: 4, duration:0.5, origin: 1}}
+        initial={{opacity:0}}>
+          <motion.div transition={{delay:7}} className='preto_esq'><RedesSociais /></motion.div>
+          <motion.div className='preto_dir' transition={{delay:7}}><Skills /></motion.div>
+      </motion.div>
     </>
   );
 }

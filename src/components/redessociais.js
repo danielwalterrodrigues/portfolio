@@ -1,7 +1,6 @@
 import '../App.css';
 import { motion } from "framer-motion";
 
-const telefone = "11536706";
 function redesSociais() {
 
     return (

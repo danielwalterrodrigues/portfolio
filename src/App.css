@@ -106,7 +106,8 @@
   text-align: right;
 }
 .menuHome li {
-  margin-top: -12px;
+
+  padding: 2px;
 }
 .menuHomeul li a {
   background: linear-gradient(0deg, #ff9c00, #ff9c00) no-repeat right bottom / 0 var(--bg-h);
@@ -124,6 +125,7 @@
 .menuPonto {
   color: #ff9c00;
   font-size: 30px;
+  line-height: 18px;
 }
 
 
