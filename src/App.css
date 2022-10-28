@@ -104,9 +104,6 @@
   list-style: none;
   text-align: right;
 }
-.menuHome li {
-
-}
 .menuHomeul li a {
   background: linear-gradient(0deg, #ff9c00, #ff9c00) no-repeat right bottom / 0 var(--bg-h);
 	transition: background-size 350ms;
