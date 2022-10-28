@@ -35,7 +35,6 @@
   width: 235px;
   height: auto;
   height: 100px;
-  padding-right: 15px;
   background-color: black;
 }
 .social_preto_separacao {
@@ -107,7 +106,6 @@
 }
 .menuHome li {
 
-  padding: 2px;
 }
 .menuHomeul li a {
   background: linear-gradient(0deg, #ff9c00, #ff9c00) no-repeat right bottom / 0 var(--bg-h);
@@ -135,6 +133,7 @@ div.menumobile
 {
   display: none;
 }
+div.logo_telapeq {display: none;}
 @media screen and (max-width: 699px)
 {
   div.menumobile
@@ -142,17 +141,10 @@ div.menumobile
     display: block;
   }
   div.preto_esq { min-width: 400px;}
+  div.logo_telagde {display: none;}
+  div.logo_telapeq {display: block;}
+  div.menuHome {display: none;}
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .App {

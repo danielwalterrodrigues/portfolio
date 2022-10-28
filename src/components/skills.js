@@ -8,12 +8,12 @@ import ColcheteFecha from '../assets/colchete_fecha.png';
 function Skills() {
 
     return (
-        <motion.div className='pretoanimado'
+    <motion.div className='pretoanimado'
       initial={{ y: 1000, opacity: 0}}
       animate={{ y: 0, opacity: 1}}
       transition={{
         duration: 0.8,
-        delay: 0.5,
+        delay: 3,
         ease: [0, 0.71, 0.2, 1.01]
       }}
     >

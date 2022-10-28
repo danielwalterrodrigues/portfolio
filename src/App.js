@@ -3,7 +3,7 @@ import Skills from './components/skills.js';
 import RedesSociais from './components/redessociais.js';
 import Logoabertura from './components/Logoabertura';
 import {motion} from 'framer-motion';
-
+import logopeq from './assets/logo_branco.png';
 function App() {
   return (
     <>
@@ -34,15 +34,19 @@ function App() {
         </motion.div>
       </motion.div>
       <div className="branco">
-
-        <Logoabertura />
+        <div className='logo_telagde'>
+          <Logoabertura />
+        </div>
+        <div className='logo_telapeq'>
+          <img src={logopeq} className="logoHome"></img>
+        </div>
       </div>
       <motion.div className="preto"
         animate={{opacity:1}}
-        transition={{delay: 4, duration:0.5, origin: 1}}
-        initial={{opacity:0}}>
-          <motion.div transition={{delay:7}} className='preto_esq'><RedesSociais /></motion.div>
-          <motion.div className='preto_dir' transition={{delay:7}}><Skills /></motion.div>
+          transition={{delay: 4, duration:0.5, origin: 1}}
+          initial={{opacity:0}}>
+        <div className='preto_esq'><RedesSociais /></div>
+        <div className='preto_dir'><Skills /></div>
       </motion.div>
     </>
   );
