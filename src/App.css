@@ -70,8 +70,9 @@
   height: 100px;
 }
 .preto_dir {
-  float:left;
-  width: calc(100vw - 250px);
+  float:right;
+  /* width: calc(100vw - 250px); */
+  width: auto;
   min-width: 400px;
   height: auto;
   background-color: #000000;

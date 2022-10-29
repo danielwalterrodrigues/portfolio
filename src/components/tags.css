@@ -1,0 +1,176 @@
+
+.pretoanimado {
+    background-color: #000000;
+    
+}
+.bloco1 {
+    width: 70px;
+    float:left;
+    padding-top: 20px;
+    text-align: right;
+    color: #ff9c00;
+    background-color: black;
+    height:52px;
+    padding-left: 10px;
+}
+.titskills {
+    float: left;
+    width: 70%;
+    padding-top: 15px;
+    text-align: right;
+}
+.bloco2 {
+    width: calc(50% - 100px);
+    float:left;
+    padding-top: 15px;
+    background-color: black;
+    height:60px;
+    padding-left: 10px;
+    min-width: 250px;
+}
+.bloco3 {
+    width: calc(50% - 90px);
+    float:left;
+    padding-top: 15px;
+    background-color: black;
+    height:60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 300px;
+}
+.bloco4 {
+    width: 30px;
+    float:left;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: black;
+    height:52px;
+}
+.skillRow {
+    min-width:300px;
+    height: 14px;
+    color: #ff9c00;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #1d1d1d;
+}
+.skillCol {
+    height: 14px;
+    font-size: 12px;
+}
+.skillColBarra {
+    height: 14px;
+}
+.porcentagem {
+  color: #676565;
+  float: right;
+  width: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+  background-color: #000000;
+}
+
+.barra1 {
+    animation-name: barra1;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    width: calc(89% - 10px);
+    height: 14px;
+    text-align: right;
+    line-height: 14px;
+    background-color: #3d424a;
+    position: inherit;
+    left:0px;
+  }
+  
+.barra2 {
+    animation-name: barra2;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    width: calc(93% - 10px);
+    height: 14px;
+    text-align: right;
+    line-height: 14px;
+    background-color: #3d424a;
+    position: inherit;
+    left:0px;
+  }
+  
+.barra3 {
+  animation-name: barra3;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(75% - 10px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+.barra4 {
+  animation-name: barra4;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(95% - 10px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+.barra5 {
+  animation-name: barra5;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(70% - 10px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+.barra6 {
+  animation-name: barra6;
+  animation-iteration-count: 1;
+  animation-duration: 7s;
+  width: calc(80% - 10px);
+  height: 14px;
+  text-align: right;
+  line-height: 14px;
+  background-color: #3d424a;
+  position: inherit;
+  left:0px;
+}
+
+  @keyframes barra1 {
+    0%   {width: 0px; }
+    100% {width: calc(89% - 10px); }
+  }
+  @keyframes barra2 {
+    0%   {width: 0px; }
+    100% {width: calc(93% - 10px); }
+  }
+  @keyframes barra3 {
+    0%   {width: 0px; }
+    100% {width: calc(75% - 10px); }
+  }
+  @keyframes barra4 {
+    0%   {width: 0px; }
+    100% {width: calc(95% - 10px); }
+  }
+  @keyframes barra5 {
+    0%   {width: 0px; }
+    100% {width: calc(70% - 10px); }
+  }
+  @keyframes barra6 {
+    0%   {width: 0px; }
+    100% {width: calc(80% - 10px); }
+  }

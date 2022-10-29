@@ -1,5 +1,5 @@
 import './App.css';
-import Skills from './components/skills.js';
+import Tags from './components/tags.js';
 import RedesSociais from './components/redessociais.js';
 import Logoabertura from './components/Logoabertura';
 import {motion} from 'framer-motion';
@@ -46,7 +46,7 @@ function App() {
           transition={{delay: 4, duration:0.5, origin: 1}}
           initial={{opacity:0}}>
         <div className='preto_esq'><RedesSociais /></div>
-        <div className='preto_dir'><Skills /></div>
+        <div className='preto_dir'><Tags /></div>
       </motion.div>
     </>
   );
