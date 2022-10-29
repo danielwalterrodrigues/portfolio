@@ -20,13 +20,13 @@
     text-align: right;
 }
 .bloco2 {
-    width: calc(50% - 100px);
+    width: 30%;
     float:left;
-    padding-top: 15px;
+    padding-top: 25px;
     background-color: black;
     height:60px;
     padding-left: 10px;
-    min-width: 250px;
+    min-width: 260px;
 }
 .bloco3 {
     width: calc(50% - 90px);

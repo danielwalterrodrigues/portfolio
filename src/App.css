@@ -29,6 +29,7 @@
   background-color: #000000;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #dadada;
+  float:left;
 }
 .preto_esq {
   float:left;
@@ -70,8 +71,7 @@
   height: 100px;
 }
 .preto_dir {
-  float:right;
-  /* width: calc(100vw - 250px); */
+  
   width: auto;
   min-width: 400px;
   height: auto;
@@ -142,6 +142,7 @@ div.logo_telapeq {display: none;}
   div.logo_telagde {display: none;}
   div.logo_telapeq {display: block;}
   div.menuHome {display: none;}
+  div.preto_centro {display: none;}
 }
 
 
@@ -182,4 +183,16 @@ div.logo_telapeq {display: none;}
   to {
     transform: rotate(360deg);
   }
+}
+
+.btnBackend {
+  font-size: 12px;
+  background-color: #cf7f00;
+  color: #e2b688;
+  float:right;
+  border:0px;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
 }

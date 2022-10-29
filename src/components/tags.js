@@ -3,6 +3,7 @@ import './tags.css';
 import { motion } from "framer-motion";
 import ColcheteAbre from '../assets/colchete_abre.png';
 import ColcheteFecha from '../assets/colchete_fecha.png';
+import TagsPreto from './tagsPreto';
 
 const Tags = () => {
 
@@ -25,10 +26,8 @@ return (
              <img src={ColcheteAbre} alt=" "></img>
             </div>
           <div className='bloco2'>
-            asdas
+            <TagsPreto />
           </div>
-
-          
           <div className='bloco4'><img src={ColcheteFecha} alt=" "></img></div>
         </>
       }

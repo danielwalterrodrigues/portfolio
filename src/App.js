@@ -4,7 +4,14 @@ import RedesSociais from './components/redessociais.js';
 import Logoabertura from './components/Logoabertura';
 import {motion} from 'framer-motion';
 import logopeq from './assets/logo_branco.png';
+import {useState} from 'react';
+import Logar from './components/backend/Login';
 function App() {
+  const [abreBackend, setAbreBackend] = useState(false);
+  const abrebackClick = event => {
+    setAbreBackend(true);
+  };
+
   return (
     <>
     
@@ -12,7 +19,8 @@ function App() {
       animate={{width: '100%',}}
       transition={{delay: 3, duration:1}}
       initial={{width: 0,}}>
-        
+      <button onClick={abrebackClick} className='btnBackend'>backend</button>
+      {abreBackend && <Logar />}
     </motion.div>
       
     <motion.div className="cinza"
@@ -46,6 +54,7 @@ function App() {
           transition={{delay: 4, duration:0.5, origin: 1}}
           initial={{opacity:0}}>
         <div className='preto_esq'><RedesSociais /></div>
+        <div className='preto_centro'></div>
         <div className='preto_dir'><Tags /></div>
       </motion.div>
     </>
