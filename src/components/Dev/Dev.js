@@ -1,7 +1,10 @@
 import './Dev.css';
+import '../internas.css';
+import { motion } from 'framer-motion';
 import {db} from '../../firebase';
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore"; 
+
 
 const Dev = () => {
 
@@ -24,6 +27,12 @@ const Dev = () => {
 },[]);
 
     return (
+        <motion.div className="brancoGeral"
+            animate={{ x:'0', opacity: 1}}
+            transition={{ type: 'spring', restSpeed: 1.5 }}
+            initial={{ x:'305px', opacity: 0}}>
+            Bio rolando
+        
         <div className='Bloco'>
             <p className='Titulo'>Buscando dados do Firestore</p>
                 {todosDocs.map((doc)=>{
@@ -37,6 +46,8 @@ const Dev = () => {
                 })
                 }
         </div>
+        </motion.div>
+
         
     )
 

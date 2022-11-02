@@ -1,10 +1,14 @@
-import React from 'react';
+import './backend.css';
 
 const Logar = () => {
 
     return (
-        <>Vais logar? Pois então que o logue logo</>
+
+        <>
+            foi logado
+        </>
     )
-} ;
+
+}
 
 export default Logar

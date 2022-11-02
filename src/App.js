@@ -5,13 +5,54 @@ import Logoabertura from './components/Logoabertura';
 import {motion} from 'framer-motion';
 import logopeq from './assets/logo_branco.png';
 import {useState} from 'react';
-import Logar from './components/backend/Login';
-function App() {
-  const [abreBackend, setAbreBackend] = useState(false);
-  const abrebackClick = event => {
-    setAbreBackend(true);
-  };
+import Bio from './components/Bio/Bio.js';
+import Dev from './components/Dev/Dev.js';
+import Txt from './components/Txt/Txt.js';
+import Social from './components/Social/Social.js';
+import LogoMenor from './components/logoMenor';
 
+function App() {
+  const [abreLogo, setAbreLogo] = useState(true);
+  const [abreLogoMenor, setAbreLogoMenor] = useState(false);
+
+  const [abreBio, setAbreBio] = useState(false);
+  const [abreDev, setAbreDev] = useState(false);
+  const [abreTxt, setAbreTxt] = useState(false);
+  const [abreSocial, setAbreSocial] = useState(false);
+  
+  const abreBioClick = event => {
+    setAbreLogo(false);
+    setAbreLogoMenor(true);
+    setAbreBio(true);
+    setAbreDev(false);
+    setAbreTxt(false);
+    setAbreSocial(false);
+  };
+  const abreDevClick = event => {
+    setAbreLogo(false);
+    setAbreLogoMenor(true);
+    setAbreBio(false);
+    setAbreDev(true);
+    setAbreTxt(false);
+    setAbreSocial(false);
+  };
+  const abreTxtClick = event => {
+    setAbreLogo(false);
+    setAbreLogoMenor(true);
+    setAbreBio(false);
+    setAbreDev(false);
+    setAbreTxt(true);
+    setAbreSocial(false);
+  };
+  const abreSocialClick = event => {
+    setAbreLogo(false);
+    setAbreLogoMenor(true);
+    setAbreBio(false);
+    setAbreDev(false);
+    setAbreTxt(false);
+    setAbreSocial(true);
+  };
+  
   return (
     <>
     
@@ -19,10 +60,9 @@ function App() {
       animate={{width: '100%',}}
       transition={{delay: 3, duration:1}}
       initial={{width: 0,}}>
-      <button onClick={abrebackClick} className='btnBackend'>backend</button>
-      {abreBackend && <Logar />}
+        {abreLogoMenor && <LogoMenor />}
     </motion.div>
-      
+    
     <motion.div className="cinza"
       animate={{width: "100vw", x: 0}}
       transition={{delay: 3, duration:0.5, origin: 1}}
@@ -34,16 +74,31 @@ function App() {
           initial={{y: '-300px',opacity:0}}
           >
           <ul className="menuHomeul">
-            <li><a href="#"><span class="menuPonto">. </span>BIO</a></li>
-            <li><a href="#"><span class="menuPonto">. </span>DEV</a></li>
-            <li><a href="#"><span class="menuPonto">. </span>TXT</a></li>
-            <li><a href="#"><span class="menuPonto">. </span>SOCIAL</a></li>
+            <li><a href="#" onClick={abreBioClick}>
+              <span className="menuPonto">. </span>BIO</a>
+            </li>
+            <li><a href="#" onClick={abreDevClick}>
+              <span className="menuPonto">. </span>DEV</a>
+            </li>
+            <li><a href="#" onClick={abreTxtClick}>
+              <span className="menuPonto">. </span>TXT</a>
+            </li>
+            <li><a href="#" onClick={abreSocialClick}>
+              <span className="menuPonto">. </span>SOCIAL</a>
+            </li>
           </ul>
         </motion.div>
+
+{abreBio && <Bio />}
+{abreDev && <Dev />}
+{abreTxt && <Txt />}
+{abreSocial && <Social />}
+
+
       </motion.div>
       <div className="branco">
         <div className='logo_telagde'>
-          <Logoabertura />
+        {abreLogo && <Logoabertura />}
         </div>
         <div className='logo_telapeq'>
           <img src={logopeq} className="logoHome"></img>
