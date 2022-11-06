@@ -81,10 +81,10 @@ function App() {
               <span className="menuPonto">. </span>DEV</a>
             </li>
             <li><a href="#" onClick={abreTxtClick}>
-              <span className="menuPonto">. </span>TXT</a>
+              <span className="menuPonto">. </span>WRITE</a>
             </li>
             <li><a href="#" onClick={abreSocialClick}>
-              <span className="menuPonto">. </span>SOCIAL</a>
+              <span className="menuPonto">. </span>TX</a>
             </li>
           </ul>
         </motion.div>

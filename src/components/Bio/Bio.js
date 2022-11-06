@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import {useEffect, useState} from 'react';
 import api from './Api';
 import Texto from './texto.js';
+import Mais from './Mais';
 
 
 const Bio = () => {
@@ -23,6 +24,8 @@ const Bio = () => {
       }, []);
       var textobio = Texto;
       return (
+        <>
+        <Mais />
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
@@ -47,6 +50,7 @@ const Bio = () => {
             />
           </div>
         </motion.div>
+        </>
 
       );
 }
