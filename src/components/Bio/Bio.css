@@ -55,7 +55,7 @@
 .chaveZero {
     color: #ff9c00;
     font-size: 160px;
-    top:83px;
+    top:135px;
     left: 270px;
     position:absolute;
     z-index: 981;
@@ -71,7 +71,7 @@
 .chave2 {
     color: #ff9c00;
     font-size: 180px;
-    top:76px;
+    top:59px;
     left: 780px;
     position:absolute;
     z-index: 981;
@@ -95,6 +95,9 @@
 }
 .chave4 a {
     color: #3b3b3b;
+}
+.chave4 a:hover {
+    color: #ff9c00;
 }
 .expdefcolor {
     color: #ff9c00;
