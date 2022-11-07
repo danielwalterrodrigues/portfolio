@@ -29,12 +29,12 @@
 }
 .submenuMais {
     position: absolute;
-    top: 178px;
+    top: 174px;
     left: 237px;
     z-index: 999;
 }
 .Mais {
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
     border: 4px solid #ffffff;
     border-radius: 20px;
@@ -55,7 +55,7 @@
 .chaveZero {
     color: #ff9c00;
     font-size: 160px;
-    top:87px;
+    top:83px;
     left: 270px;
     position:absolute;
     z-index: 981;
@@ -63,7 +63,7 @@
 .chave1 {
     color: #3b3b3b;
     font-size: 15px;
-    top:150px;
+    top:146px;
     left: 360px;
     position:absolute;
     z-index: 982;
@@ -71,7 +71,7 @@
 .chave2 {
     color: #ff9c00;
     font-size: 180px;
-    top:80px;
+    top:76px;
     left: 780px;
     position:absolute;
     z-index: 981;
@@ -79,7 +79,7 @@
 .chave3 {
     color: #ff9c00;
     font-size: 70px;
-    top:220px;
+    top:216px;
     left: 830px;
     position:absolute;
     z-index: 981;
@@ -92,6 +92,9 @@
     position:absolute;
     z-index: 981;
     cursor: pointer;
+}
+.chave4 a {
+    color: #3b3b3b;
 }
 .expdefcolor {
     color: #ff9c00;

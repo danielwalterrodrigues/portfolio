@@ -78,7 +78,7 @@ const Mais = () => {
                    )
                 })}
                 <br /><br />
-                <a onClick={abreImprime}>export</a>
+                
                      {linha2.split("").map((char, index) => {
                         return(
                             <motion.span key={char + "-" + index} variants={letra}>
