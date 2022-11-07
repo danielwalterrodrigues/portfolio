@@ -91,6 +91,7 @@
     left: 860px;
     position:absolute;
     z-index: 981;
+    cursor: pointer;
 }
 .expdefcolor {
     color: #ff9c00;

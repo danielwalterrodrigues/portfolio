@@ -1,8 +1,7 @@
 import './Bio.css';
 import '../internas.css';
 import { motion } from 'framer-motion';
-import {useEffect, useState} from 'react';
-import api from './Api';
+import {useEffect} from 'react';
 import Texto from './texto.js';
 import Mais from './Mais';
 
@@ -55,33 +54,3 @@ const Bio = () => {
       );
 }
 export default Bio
-
-
-const BioX = () => {
-    const [user, setUser] = useState();
-
-  useEffect(() => {
-    api
-      .get("/users/danielwalterrodrigues")
-      .then((response) => setUser(response.data))
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
-  }, []);
-
-
-    return (
-        <>
-        <motion.div className="brancoGeral"
-            animate={{ x:'0', opacity: 1}}
-            transition={{ type: 'spring', restSpeed: 1.5 }}
-            initial={{ x:'305px', opacity: 0}}>
-            <p>GitHub</p>
-            <p>Nome: {user?.name} ({user?.login})</p>
-            <p>Email: {user?.email}</p>
-            <p>Resumo: {user?.bio}</p>
-            <p>Hireable: {user?.repository}</p>
-        </motion.div>
-        </>
-    )
-}

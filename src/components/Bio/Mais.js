@@ -1,9 +1,14 @@
 import './Bio.css';
 import { motion } from 'framer-motion';
-import {useState} from 'react';
+import {useState, useRef, Button} from 'react';
 import Setabaixo from '../../assets/seta_baixo.png';
+import Imprimir from './Imprimir';
+import ReactToPrint from "react-to-print";
 
 const Mais = () => {
+    let componentRef = useRef();
+
+    const [imprime, setImprime] = useState(false);
     const [mais, setMais] = useState(false);
     const linha1 = "cv.Dadospessoais(), cv.Objetivo(), cv.Formacao(), cv.Experienced:-),";
     const linha2 = "cv.ProgrammingSkills(), cv.Idiomas(), cv.Cursos(), cv.Premios(), ";
@@ -25,11 +30,15 @@ const Mais = () => {
         visible: {opacity: 1, y: 0},
         }
 
-    const abreMais = event => {
-        setMais(true);
-    };
+        const abreMais = event => {
+            setMais(true);
+        };
+        const abreImprime = event => {
+            setImprime(true);
+        };
     return (
         <>
+        
         <div className="submenuMais">
           <button className="Mais" onClick={abreMais}>+</button>
           <motion.div
@@ -41,6 +50,7 @@ const Mais = () => {
         </div>
         {mais && 
             <>
+                
                 <motion.div className='branco_fundo'
                     animate={{width: '100%'}}
                     transition={{duration:1}}
@@ -68,6 +78,7 @@ const Mais = () => {
                    )
                 })}
                 <br /><br />
+                <a onClick={abreImprime}>export</a>
                      {linha2.split("").map((char, index) => {
                         return(
                             <motion.span key={char + "-" + index} variants={letra}>
@@ -100,13 +111,15 @@ const Mais = () => {
                 >
                     &#44;
                 </motion.div>
+            
                 <motion.div className='chave4'
                     animate={{opacity: 1}}
                     transition={{delay:8, duration: 3}}
                     initial={{opacity: 0}}
                 > 
-                  export default <span className='expdefcolor'>Bio&#40;&nbsp;.pdf <img src={Setabaixo} className="seta" alt="seta para clicar e selecionar o tipo de documento"></img>&#41;</span>
+                  <a onClick={abreImprime}>export default <span className='expdefcolor'>Bio&#40;&nbsp;this.view <img src={Setabaixo} className="seta" alt="seta para clicar e selecionar o tipo de documento"></img>&#41;</span></a>
                 </motion.div>
+                {imprime && <Imprimir />}
             </>
         }
         </>

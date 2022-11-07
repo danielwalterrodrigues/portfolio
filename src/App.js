@@ -55,7 +55,6 @@ function App() {
   
   return (
     <>
-    
     <motion.div className="laranja"
       animate={{width: '100%',}}
       transition={{delay: 3, duration:1}}
@@ -74,16 +73,16 @@ function App() {
           initial={{y: '-300px',opacity:0}}
           >
           <ul className="menuHomeul">
-            <li><a href="#" onClick={abreBioClick}>
+            <li><a onClick={abreBioClick}>
               <span className="menuPonto">. </span>BIO</a>
             </li>
-            <li><a href="#" onClick={abreDevClick}>
+            <li><a onClick={abreDevClick}>
               <span className="menuPonto">. </span>DEV</a>
             </li>
-            <li><a href="#" onClick={abreTxtClick}>
+            <li><a onClick={abreTxtClick}>
               <span className="menuPonto">. </span>WRITE</a>
             </li>
-            <li><a href="#" onClick={abreSocialClick}>
+            <li><a onClick={abreSocialClick}>
               <span className="menuPonto">. </span>TX</a>
             </li>
           </ul>

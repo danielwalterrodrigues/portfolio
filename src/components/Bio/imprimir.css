@@ -1,0 +1,80 @@
+.curriculumVitae {
+
+    position: absolute;
+    z-index: 9999;
+    left:0px;
+    top:0px;
+    padding:20px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    width:100%;
+    height: 100vw;
+}
+.Header {
+    width: calc(100vw - 40px);
+    height:120px;
+    border-bottom: 3px solid #ebebeb;
+}
+.HeaderEsq {
+    float: left;
+    width: 85%;
+}
+.HeaderDir {
+    float:right;
+    width:15%;
+    text-align: right;
+}
+.Corpo {
+    display:block;
+    color: #747474;
+}
+.impressora {
+    width:35px;
+    height: auto;
+    cursor: pointer;
+}
+.sessao {
+    width: calc(100vw - 40px);
+    color: #747474;
+    display: block;
+    overflow:auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+.Corpo h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+.sessao h2, h3 {
+    font-weight: lighter;
+}
+.sessaoInt {
+    width:50%;
+    float:left;
+}
+.sessaoPeqEsq {
+    width:15%;
+    float:left;
+    height: 50px;
+}
+.sessaoPeqDir {
+    width:85%;
+    float:left;
+    height: 50px;
+}
+.textoLaranja {
+    color: #ff9c00;
+    background-color: #ffffff;
+}
+.barraFundo {
+    background-color: #ebebeb;
+    width:300px;
+    height:10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.barraFrente {
+    background-color: #747474;
+    height: 10px;
+    width:10px;
+}

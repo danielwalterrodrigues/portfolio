@@ -113,6 +113,7 @@
   color: #000000;
   font-size: 16px;
   text-align: right;
+  cursor: pointer;
 }
 .menuHomeul li a:where(:hover, :focus-visible) {
 	background-size: 100% var(--bg-h);

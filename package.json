@@ -14,10 +14,12 @@
     "intersection-observer": "^0.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.8",
     "react-scroll-text": "^1.0.1",
     "react-scroll-view": "^0.6.0",
+    "react-to-print": "^2.14.8",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
