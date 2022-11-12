@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 import {useState, useRef, Button} from 'react';
 import Setabaixo from '../../assets/seta_baixo.png';
 import Imprimir from './Imprimir';
-import ReactToPrint from "react-to-print";
+import virgula from '../../assets/virgula.png';
+
 
 const Mais = () => {
     let componentRef = useRef();
 
     const [imprime, setImprime] = useState(false);
-    const [mais, setMais] = useState(false);
+    
     const linha1 = "cv.Dadospessoais(), cv.Objetivo(), cv.Formacao(), cv.Experienced:-),";
     const linha2 = "cv.ProgrammingSkills(), cv.Idiomas(), cv.Cursos(), cv.Premios(), ";
     const linha3 = "cv.Qualildades(), cv.Trabalhovoluntario();";
@@ -20,7 +21,7 @@ const Mais = () => {
             opacity: 1, 
             transition: {
                 delay: 2.5,
-                staggerChildren: 0.04,
+                staggerChildren: 0.02,
             },
         },
     }
@@ -30,37 +31,18 @@ const Mais = () => {
         visible: {opacity: 1, y: 0},
         }
 
-        const abreMais = event => {
-            setMais(true);
-        };
         const abreImprime = event => {
             setImprime(true);
         };
+        
     return (
         <>
-        
+{imprime && <Imprimir />}        
         <div className="submenuMais">
-          <button className="Mais" onClick={abreMais}>+</button>
-          <motion.div
-                initial={{ opacity: 0 }}
-                transition={{duration:4}}
-                animate={{ opacity:1 }}
-            >
-            </motion.div>
-        </div>
-        {mais && 
-            <>
-                
-                <motion.div className='branco_fundo'
-                    animate={{width: '100%'}}
-                    transition={{duration:1}}
-                    initial={{width: 0}}
-                >
-                    
-                </motion.div>
+         
                 <motion.div className='chaveZero'
                     animate={{opacity: 1}}
-                    transition={{delay:0, duration: 0.1}}
+                    transition={{delay:0, duration: 0.6}}
                     initial={{opacity: 0}}
                 >
                      &#123;
@@ -77,7 +59,7 @@ const Mais = () => {
                        </motion.span>
                    )
                 })}
-                <br /><br />
+                <br />
                 
                      {linha2.split("").map((char, index) => {
                         return(
@@ -86,7 +68,7 @@ const Mais = () => {
                             </motion.span>
                         )
                      })}
-                     <br /><br />
+                     <br />
                      {linha3.split("").map((char, index) => {
                         return(
                             <motion.span key={char + "-" + index} variants={letra}>
@@ -98,7 +80,7 @@ const Mais = () => {
 
                 <motion.div className='chave2'
                     animate={{opacity: 1}}
-                    transition={{delay:7.3, duration: 0.1}}
+                    transition={{delay:4.3, duration: 1}}
                     initial={{opacity: 0}}
                 >
                      &#125;
@@ -106,22 +88,21 @@ const Mais = () => {
 
                 <motion.div className='chave3'
                     animate={{opacity: 1}}
-                    transition={{delay:7.7, duration: 0.1}}
+                    transition={{delay:4.7, duration: 0.1}}
                     initial={{opacity: 0}}
                 >
-                    &#44;
+                    <img src={virgula}></img>
                 </motion.div>
             
                 <motion.div className='chave4'
                     animate={{opacity: 1}}
-                    transition={{delay:8, duration: 3}}
+                    transition={{delay:5, duration: 3}}
                     initial={{opacity: 0}}
                 > 
-                  <a onClick={abreImprime}>export default <span className='expdefcolor'>Bio&#40;&nbsp;this.view <img src={Setabaixo} className="seta" alt="seta para clicar e selecionar o tipo de documento"></img>&#41;</span></a>
+                  <a onClick={abreImprime}>export default <span className='expdefcolor'>Curriculum&#40;&nbsp;view&nbsp;&#41;</span></a>
                 </motion.div>
-                {imprime && <Imprimir />}
-            </>
-        }
+            </div>
+        
         </>
     )
 };

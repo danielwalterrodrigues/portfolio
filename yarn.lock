@@ -8270,6 +8270,22 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-new-window@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/react-new-window/-/react-new-window-0.2.2.tgz#aa851ecd1c7b6a74f677cc706facb4c9705e2a15"
+  integrity sha512-B21UfF7EYRHEQz51WzwZqFqB3QQVVyJGQtrlmujKCnWcu+X9yo4UKtTSCDPCo7JbCgRaKAISU0QMcAwKFSgifw==
+  dependencies:
+    prop-types "^15.7.2"
+
+react-popout@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-popout/-/react-popout-3.0.2.tgz#a3150557e32c511243a8762c69870a2675228658"
+  integrity sha512-EEFpEIS8bFySvkrwcFH/U9GPc0u4Wl3TXjt+2CpB4rcauruve2v6fVW5sphrJ0CTRpmi/ezBUTmQxNSSuzb1BQ==
+  dependencies:
+    prop-types "^15.8.1"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"

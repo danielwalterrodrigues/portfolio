@@ -3,10 +3,22 @@ import LogoMenor1 from '../assets/logo_interna1.png';
 import LogoMenor2 from '../assets/logo_interna2.png';
 import LogoMenor3 from '../assets/logo_interna3.png';
 import { motion } from 'framer-motion';
+import Voltar from '../assets/voltar.png';
 
 const LogoMenor = () => {
+
+    const refreshPage = ()=>{
+        window.location.reload();  }
+    
     return(
         <>
+        <motion.button onClick={refreshPage} className="refresh"
+        
+        animate={{ x:'0', opacity: 1}}
+        transition={{ type: 'spring', restSpeed: 0.5 }}
+        initial={{ x:'105px', opacity: 0}}>
+            <img src={Voltar}></img>    
+        </motion.button>
         <div>
             <motion.div className='logoMenor1'
             animate={{ x:'0', opacity: 1}}

@@ -10,6 +10,7 @@ import Dev from './components/Dev/Dev.js';
 import Txt from './components/Txt/Txt.js';
 import Social from './components/Social/Social.js';
 import LogoMenor from './components/logoMenor';
+import Mais from './components/Bio/Mais';
 
 function App() {
   const [abreLogo, setAbreLogo] = useState(true);
@@ -52,9 +53,10 @@ function App() {
     setAbreTxt(false);
     setAbreSocial(true);
   };
-  
   return (
     <>
+
+    <Mais />
     <motion.div className="laranja"
       animate={{width: '100%',}}
       transition={{delay: 3, duration:1}}
@@ -96,9 +98,11 @@ function App() {
 
       </motion.div>
       <div className="branco">
+      
         <div className='logo_telagde'>
         {abreLogo && <Logoabertura />}
         </div>
+        
         <div className='logo_telapeq'>
           <img src={logopeq} className="logoHome"></img>
         </div>
@@ -109,7 +113,7 @@ function App() {
           initial={{opacity:0}}>
         <div className='preto_esq'><RedesSociais /></div>
         <div className='preto_centro'></div>
-        <div className='preto_dir'><Tags /></div>
+        <div className='preto_dir'></div>
       </motion.div>
     </>
   );

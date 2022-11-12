@@ -18,3 +18,12 @@
     color: #ffffff;
     font-size: 35px;
 }
+.refresh {
+    position: absolute;
+    top:20px;
+    left:20px;
+    z-index: 99999;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

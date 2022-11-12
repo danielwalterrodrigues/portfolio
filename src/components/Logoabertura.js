@@ -13,6 +13,7 @@ const Logoabertura = () => {
 
     return (
         <>
+        
         <div className='divprincipal'>
             <motion.div className='laranjaZindex'
                 animate={{opacity: 1, rotate: 1440}}

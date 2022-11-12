@@ -1,10 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import './imprimir.css';
 import logoCurriculum from '../../assets/logo_curriculum.png';
+import xlaranja from '../../assets/xlaranja.png';
 import printIcon from '../../assets/print-icon.svg';
+import { motion } from 'framer-motion';
+import Voltar from '../../assets/voltar2.png';
+
   
 const Imprimir = () => {
-
+    const [janela, abreJanela] = useState(true);
     const Print = () =>{
         let printContents = document.getElementById('imprimediv').innerHTML;
         let originalContents = document.body.innerHTML;
@@ -13,16 +18,32 @@ const Imprimir = () => {
        document.body.innerHTML = originalContents; 
       }
 
+    const refreshPage = ()=>{
+       window.location.reload();  
+        //abreJanela(false);
+    }
+    
     return(
-        <>
         
-        <div id="imprimediv" className='curriculumVitae'>
+        <>
+        <motion.button onClick={refreshPage} className="naoimpprimirvolta"
+            animate={{ x:'0', opacity: 1}}
+            transition={{ type: 'spring', restSpeed: 0.5 }}
+            initial={{ x:'105px', opacity: 0}}>
+                <img src={Voltar}></img>    
+            </motion.button>
+        <div className="Utils">
+            <a onClick={Print} className='naoimprimir'><img src={printIcon} className='impressora'></img></a>
+        </div>
+        <motion.div id="imprimediv" className='curriculumVitae' 
+                    animate={{opacity: 1}}
+                    transition={{delay:0, duration: 1.5}}
+                    initial={{opacity: 0}}>
             <div className='Header'>
                 <div className='HeaderEsq'>
                     <img src={logoCurriculum} alt="logo do curriculum"></img>
                 </div>
                 <div className='HeaderDir'>
-                    <a onClick={Print}><img src={printIcon} className='impressora'></img></a>
                 </div>
             </div>
             <div className='Corpo'>
@@ -107,37 +128,37 @@ const Imprimir = () => {
                     <div className='sessaoInt'>
                         Design UX/UI<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '90%', }}></div>
+                            <div style={{height: 10,width: '90%', float: 'left', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                         React Native / JS<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                         Magento<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '100%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '100%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                         PHP 7<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                     </div>
                     <div className='sessaoInt'>
                         HTML5<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                         Gestão Ágil<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                         CSS3<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '70%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '70%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                         Idioma Inglês<br />
                         <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}></div>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
                         </div>
                     </div>
                 </div>
@@ -186,9 +207,10 @@ const Imprimir = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
                 
         </>
+        
     )
 };
   

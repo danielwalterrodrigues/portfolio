@@ -29,8 +29,8 @@
 }
 .submenuMais {
     position: absolute;
-    top: 174px;
-    left: 237px;
+    top: 500px;
+    left:315px;
     z-index: 999;
 }
 .Mais {
@@ -54,44 +54,43 @@
 }
 .chaveZero {
     color: #ff9c00;
-    font-size: 160px;
-    top:57px;
-    left: 270px;
-    position:absolute;
-    z-index: 981;
+    font-size: 80px;
 }
 .chave1 {
-    color: #3b3b3b;
+    color: #626262;
     font-size: 15px;
-    top:146px;
-    left: 360px;
+    left: 40px;
+    top:25px;
     position:absolute;
     z-index: 982;
+    width: 600px;
+    line-height: 20px;
 }
 .chave2 {
     color: #ff9c00;
-    font-size: 180px;
-    top:59px;
-    left: 780px;
+    font-size: 130px;
+    left: 550px;
+    top:-44px;
     position:absolute;
     z-index: 981;
 }
 .chave3 {
     color: #ff9c00;
     font-size: 70px;
-    top:216px;
-    left: 830px;
+    left: 594px;
+    top:25px;
     position:absolute;
     z-index: 981;
 }
 .chave4 {
     color: #3b3b3b;
-    font-size: 30px;
-    top:270px;
-    left: 860px;
+    font-size: 25px;
     position:absolute;
     z-index: 981;
     cursor: pointer;
+    left:620px;
+    top:30px;
+    width:400px;
 }
 .chave4 a {
     color: #3b3b3b;
