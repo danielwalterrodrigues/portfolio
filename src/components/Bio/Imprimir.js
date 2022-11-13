@@ -3,7 +3,8 @@ import { useState } from 'react';
 import './imprimir.css';
 import logoCurriculum from '../../assets/logo_curriculum.png';
 import xlaranja from '../../assets/xlaranja.png';
-import printIcon from '../../assets/print-icon.svg';
+import printIcon from '../../assets/ico_printer.png';
+import editorIcon from '../../assets/ico_editor.png';
 import { motion } from 'framer-motion';
 import Voltar from '../../assets/voltar2.png';
 
@@ -33,6 +34,7 @@ const Imprimir = () => {
                 <img src={Voltar}></img>    
             </motion.button>
         <div className="Utils">
+            <a onClick={Print} className='naoeditar'><img src={editorIcon} className='impressora'></img></a>
             <a onClick={Print} className='naoimprimir'><img src={printIcon} className='impressora'></img></a>
         </div>
         <motion.div id="imprimediv" className='curriculumVitae' 

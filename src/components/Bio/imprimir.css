@@ -32,7 +32,7 @@
     color: #747474;
 }
 .impressora {
-    width:35px;
+    width:32px;
     height: auto;
     cursor: pointer;
 }
@@ -90,8 +90,14 @@
 .naoimprimir {
     position: absolute;
     z-index: 999999999;
-    right: 10px;
-    top:20px;
+    right: 20px;
+    top:5px;
+}
+.naoeditar {
+    position: absolute;
+    z-index: 999999999;
+    right: 65px;
+    top:5px;
 }
 .naoimpprimirvolta {
 
@@ -106,15 +112,12 @@
 .Utils {
     position:fixed;
     z-index: 9999999;
-    height: 150px;
-    width: 65px;
+    height: 45px;
+    width: 120px;
     background:#fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    right:0px;
-    top:60px;
-    border-bottom: 2px solid #ff9c00;
-    border-left: 1px solid #ff9c00;
-    border-top: 1px solid #ff9c00;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    right:60px;
+    top:0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
