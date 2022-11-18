@@ -4,8 +4,11 @@ import { motion } from 'framer-motion';
 import {db} from '../../firebase';
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore"; 
-import { getStorage, ref, listAll } from "firebase/storage";
 import virgula from '../../assets/virgula.png';
+import setaesq from '../../assets/seta_esq.png';
+import setadir from '../../assets/seta_dir.png';
+import './carrossel.css';
+import { Carousel } from 'react-responsive-carousel';
 
 
 const Dev = () => {
@@ -27,16 +30,20 @@ const Dev = () => {
          })
 
 },[]);
-const link = '../../assets/';
+
     return (
+<>
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
-            initial={{ x:'305px', opacity: 0}}>
+            initial={{ x:'305px', opacity: 0}} style={{width:'100%', display:'block',}}>
+        
+<Carousel>
         {todosDocs.map((doc)=>{
             return(
-                <div  key={Math.random()}>    
-                    <div className='BlocoBco'>
+        
+                <div key={Math.random()}>   
+                    <div className='BlocoBco d-block'>
                         <div className='BlocoBco1'>
                             <div className='BlocoTit'><span className='BlocoTitTipo'>{doc.Tipo},</span> {doc.Nome}</div>
                             <div className='BlocoTitTxt'>{doc.Descricao}</div>
@@ -60,14 +67,15 @@ const link = '../../assets/';
                     <div className='BlocoBcoDir'>
                         <img src={doc.Logo} className='devLogo'></img><br />
                         <a href={doc.Link} target='_blank'><img src={doc.LinkImagem} className='devLink'></img></a>
-                        
                     </div>
-                </div>
+                </div>     
             )}
         )}
-        
+    </Carousel>    
         </motion.div>
-
+        
+    </>
+                            
         
     )
 
