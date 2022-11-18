@@ -27,6 +27,7 @@ const Dev = () => {
          })
 
 },[]);
+const link = '../../assets/';
     return (
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
@@ -57,7 +58,9 @@ const Dev = () => {
                         </div>
                     </div>
                     <div className='BlocoBcoDir'>
-                        <img src={doc.Logo} className='devLogo'></img>
+                        <img src={doc.Logo} className='devLogo'></img><br />
+                        <a href={doc.Link} target='_blank'><img src={doc.LinkImagem} className='devLink'></img></a>
+                        
                     </div>
                 </div>
             )}

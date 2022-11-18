@@ -61,6 +61,9 @@
   .devLogo {
     margin:80px 0 0 30px;
   }
+  .devLink {
+    margin:3px 0 0 10px;
+  }
   .tags {
     min-width: 380px;
     float: inherit;
