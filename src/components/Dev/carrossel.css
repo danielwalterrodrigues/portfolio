@@ -51,7 +51,7 @@
   .carousel {
     position: relative;
     width: 100%; }
-    .carousel * { }
+    
     .carousel img {
       display: inline-block;
       pointer-events: none; }
@@ -100,8 +100,7 @@
         border: 3px solid #333; }
       .carousel .thumb img {
         vertical-align: top; }
-    .carousel.carousel-slider {
-       }
+    
       .carousel.carousel-slider .control-arrow {
         top: 0;
         color: #fff;
@@ -153,7 +152,7 @@
     .carousel .slide {
       min-width: calc(100% + 40px);
     }
-      .carousel .slide img {}
+     
       .carousel .slide iframe {
         display: inline-block;
         width: calc(100% - 80px);
