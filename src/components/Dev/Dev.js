@@ -19,7 +19,7 @@ const Dev = () => {
     
     useEffect(() => {
 
-        //setTodosDocs([]); // zerei o array
+        setTodosDocs([]); // zerei o array
         getDocs(collection(db, "projetos")).then((querysnapshot) => { // colecao projetos tá aqui e o then é um snapshot
             querysnapshot.docs.forEach((doc) => { // meti um foreach pra ler tudo
                 const data = doc.data(); // joguei tudo nesse doc.data

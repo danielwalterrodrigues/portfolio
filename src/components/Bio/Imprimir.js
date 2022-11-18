@@ -57,14 +57,16 @@ const Imprimir = () => {
                         Brasileiro<br />
                         Casado<br />
                         Travessa Dom João VI, 5 - Vila Império - São Paulo SP<br />
-                        <span className='textoLaranja'>linkedin.com/in/danielrodrigues</span>
+                        <span className='textoLaranja'>linkedin.com/in/danielrodrigues</span><br />
+                        <span className='textoLaranja'>github.com/danielwalterrodrigues</span>
                     </div>
                     <div className='sessaoInt'>
                         11 95367 0683<br />
                         06/05/1977<br />
                         218.290.308-92<br />
                         04406-210<br />
-                        <span className='textoLaranja'>danielwalterrodrigues@gmail.com</span>
+                        <span className='textoLaranja'>danielwalterrodrigues@gmail.com</span><br />
+                        <span className='textoLaranja'>play.google.com/store/apps/details?id=com.apptarotmagia.app</span>
                     </div>
                 </div>
                 <div class='sessao'>

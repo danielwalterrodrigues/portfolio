@@ -185,13 +185,12 @@
       position: absolute;
       bottom: 0;
       margin: 10px 0;
-      padding: 0;
-      text-align: center;
+      padding: 10px 0 0 60px;
       width: 100%;
       z-index: 1; }
       @media (min-width: 960px) {
         .carousel .control-dots {
-          bottom: 0; } }
+          bottom: -30px; } }
       .carousel .control-dots .dot {
         -webkit-transition: opacity 0.25s ease-in;
         -moz-transition: opacity 0.25s ease-in;
@@ -199,12 +198,11 @@
         -o-transition: opacity 0.25s ease-in;
         transition: opacity 0.25s ease-in;
         opacity: 0.3;
-        filter: alpha(opacity=30);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-        background: #fff;
+        filter: alpha(opacity=90);
+        background-color:#ff9c00;
         border-radius: 50%;
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         cursor: pointer;
         display: inline-block;
         margin: 0 8px; }
