@@ -3,6 +3,7 @@ import '../internas.css';
 import { motion } from 'framer-motion';
 import {useEffect} from 'react';
 import Texto from './texto.js';
+import github from '../../assets/github.png';
 
 
 const Bio = () => {
@@ -33,19 +34,24 @@ const Bio = () => {
                 
             </textarea>
            </div>
-          <div
-            class="linkedin badge-base LI-profile-badge"
-            data-locale="en_US"
-            data-size="medium"
-            data-theme="light"
-            data-type="VERTICAL"
-            data-vanity="danielrodrigues"
-            data-version="v1"
-          >
-            <a
-              class="badge-base__link LI-simple-link"
-              href="https://au.linkedin.com/in/danielrodrigues?trk=profile-badge"
-            />
+          <div className='direita'>
+            <div
+              class="linkedin badge-base LI-profile-badge"
+              data-locale="en_US"
+              data-size="medium"
+              data-theme="light"
+              data-type="VERTICAL"
+              data-vanity="danielrodrigues"
+              data-version="v1"
+            >
+              <a
+                class="badge-base__link LI-simple-link"
+                href="https://au.linkedin.com/in/danielrodrigues?trk=profile-badge"
+              />
+            </div>
+            <div className='linkedin github'>
+                <a href="https://github.com/danielwalterrodrigues" target='_blank'><img src={github}></img></a>
+            </div>       
           </div>
         </motion.div>
         </>

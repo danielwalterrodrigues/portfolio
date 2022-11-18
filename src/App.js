@@ -15,6 +15,7 @@ import Mais from './components/Bio/Mais';
 function App() {
   const [abreLogo, setAbreLogo] = useState(true);
   const [abreLogoMenor, setAbreLogoMenor] = useState(false);
+  const [titulo, setTitulo] = useState('');
 
   const [abreBio, setAbreBio] = useState(false);
   const [abreDev, setAbreDev] = useState(false);
@@ -28,6 +29,7 @@ function App() {
     setAbreDev(false);
     setAbreTxt(false);
     setAbreSocial(false);
+    setTitulo('BIO');
   };
   const abreDevClick = event => {
     setAbreLogo(false);
@@ -36,6 +38,7 @@ function App() {
     setAbreDev(true);
     setAbreTxt(false);
     setAbreSocial(false);
+    setTitulo('DEV');
   };
   const abreTxtClick = event => {
     setAbreLogo(false);
@@ -44,6 +47,7 @@ function App() {
     setAbreDev(false);
     setAbreTxt(true);
     setAbreSocial(false);
+    setTitulo('WRITE');
   };
   const abreSocialClick = event => {
     setAbreLogo(false);
@@ -52,6 +56,7 @@ function App() {
     setAbreDev(false);
     setAbreTxt(false);
     setAbreSocial(true);
+    setTitulo('TX');
   };
   return (
     <>
@@ -61,7 +66,7 @@ function App() {
       animate={{width: '100%',}}
       transition={{delay: 3, duration:1}}
       initial={{width: 0,}}>
-        {abreLogoMenor && <LogoMenor />}
+        {abreLogoMenor && <LogoMenor titulo={titulo} />}
     </motion.div>
     
     <motion.div className="cinza"

@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import {db} from '../../firebase';
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore"; 
+import { getStorage, ref, listAll } from "firebase/storage";
+import virgula from '../../assets/virgula.png';
 
 
 const Dev = () => {
@@ -14,7 +16,7 @@ const Dev = () => {
     
     useEffect(() => {
 
-        setTodosDocs([]); // zerei o array
+        //setTodosDocs([]); // zerei o array
         getDocs(collection(db, "projetos")).then((querysnapshot) => { // colecao projetos tá aqui e o then é um snapshot
             querysnapshot.docs.forEach((doc) => { // meti um foreach pra ler tudo
                 const data = doc.data(); // joguei tudo nesse doc.data
@@ -25,27 +27,42 @@ const Dev = () => {
          })
 
 },[]);
-
     return (
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
             initial={{ x:'305px', opacity: 0}}>
-            Bio rolando
-        
-        <div className='Bloco'>
-            <p className='Titulo'>Buscando dados do Firestore</p>
-                {todosDocs.map((doc)=>{
-                    return(
-                        <div key={Math.random()}>
-                            {doc.Tipo}, {doc.Nome} - {doc.Icones} - {doc.Tags}<br />
-                            {doc.Descricao}
+        {todosDocs.map((doc)=>{
+            return(
+                <div  key={Math.random()}>    
+                    <div className='BlocoBco'>
+                        <div className='BlocoBco1'>
+                            <div className='BlocoTit'><span className='BlocoTitTipo'>{doc.Tipo},</span> {doc.Nome}</div>
+                            <div className='BlocoTitTxt'>{doc.Descricao}</div>
                         </div>
-                        
-                    )
-                })
-                }
-        </div>
+                        <div className='BlocoBco2'>
+                            {doc.Imagens.map((imagens)=>{
+                            return(
+                                <img key={Math.random()} src={imagens} className='devImagem'></img>
+                            )})}
+                            <div className='tags'>
+                                <img src={virgula} style={{float:'left', marginRight: 5}}></img>
+                                {doc.Tags.map((tag) => {
+                                    return(
+                                        <div className='tag'>{tag}</div>
+                                    )
+                                })}
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div className='BlocoBcoDir'>
+                        <img src={doc.Logo} className='devLogo'></img>
+                    </div>
+                </div>
+            )}
+        )}
+        
         </motion.div>
 
         

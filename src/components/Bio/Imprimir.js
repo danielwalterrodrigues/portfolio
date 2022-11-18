@@ -5,12 +5,13 @@ import logoCurriculum from '../../assets/logo_curriculum.png';
 import xlaranja from '../../assets/xlaranja.png';
 import printIcon from '../../assets/ico_printer.png';
 import editorIcon from '../../assets/ico_editor.png';
+import fecharIcon from '../../assets/ico_fechar.png';
 import { motion } from 'framer-motion';
 import Voltar from '../../assets/voltar2.png';
 
   
 const Imprimir = () => {
-    const [janela, abreJanela] = useState(true);
+    const [printJanela, abrePrintJanela] = useState(true);
     const Print = () =>{
         let printContents = document.getElementById('imprimediv').innerHTML;
         let originalContents = document.body.innerHTML;
@@ -20,23 +21,22 @@ const Imprimir = () => {
       }
 
     const refreshPage = ()=>{
-       window.location.reload();  
-        //abreJanela(false);
+        abrePrintJanela(false);
     }
     
     return(
         
         <>
-        <motion.button onClick={refreshPage} className="naoimpprimirvolta"
-            animate={{ x:'0', opacity: 1}}
-            transition={{ type: 'spring', restSpeed: 0.5 }}
-            initial={{ x:'105px', opacity: 0}}>
-                <img src={Voltar}></img>    
-            </motion.button>
+        {printJanela && (
+            <>
         <div className="Utils">
             <a onClick={Print} className='naoeditar'><img src={editorIcon} className='impressora'></img></a>
             <a onClick={Print} className='naoimprimir'><img src={printIcon} className='impressora'></img></a>
+            <button onClick={refreshPage} className="naoimpprimirvolta">
+                <img src={fecharIcon}></img>    
+            </button>
         </div>
+        
         <motion.div id="imprimediv" className='curriculumVitae' 
                     animate={{opacity: 1}}
                     transition={{delay:0, duration: 1.5}}
@@ -210,7 +210,7 @@ const Imprimir = () => {
                 </div>
             </div>
         </motion.div>
-                
+       </> ) }      
         </>
         
     )

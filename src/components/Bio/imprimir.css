@@ -90,21 +90,21 @@
 .naoimprimir {
     position: absolute;
     z-index: 999999999;
-    right: 20px;
-    top:5px;
+    right: 70px;
+    top:8px;
 }
 .naoeditar {
     position: absolute;
     z-index: 999999999;
-    right: 65px;
-    top:5px;
+    right: 120px;
+    top:8px;
 }
 .naoimpprimirvolta {
 
     position: absolute;
     z-index: 999999999;
-    left: 35px;
-    top:120px;
+    right: 15px;
+    top:8px;
     border: none;
     background: none;
     cursor: pointer;
@@ -112,8 +112,8 @@
 .Utils {
     position:fixed;
     z-index: 9999999;
-    height: 45px;
-    width: 120px;
+    height: 50px;
+    width: 175px;
     background:#fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     right:60px;

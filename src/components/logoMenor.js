@@ -5,7 +5,7 @@ import LogoMenor3 from '../assets/logo_interna3.png';
 import { motion } from 'framer-motion';
 import Voltar from '../assets/voltar.png';
 
-const LogoMenor = () => {
+const LogoMenor = (props) => {
 
     const refreshPage = ()=>{
         window.location.reload();  }
@@ -43,7 +43,7 @@ const LogoMenor = () => {
             animate={{ y:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 0.5 }}
             initial={{ y:'105px', opacity: 0}}>
-            <span className='ponto'>.</span>BIO
+            <span className='ponto'>.</span>{props.titulo}
         </motion.div>
         </>
     )
