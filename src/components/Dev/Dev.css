@@ -1,6 +1,4 @@
-.brancoGeral {
-  padding: 0px 20px 20px 235px !important;
-}
+
 .Bloco {
     margin: 10px;
     padding:0px 10px 10px 10px ;
@@ -99,4 +97,8 @@
   .carousel-control-prev {
     background:url('../../assets/seta_esq.png') no-repeat !important;
     
+  }
+  .imgLinks {
+    width:150px;
+    height:auto;
   }

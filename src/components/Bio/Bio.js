@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import {useEffect} from 'react';
 import Texto from './texto.js';
 import github from '../../assets/github.png';
+import linkedin from '../../assets/linkedin.png';
+import googleplay from '../../assets/googleplay.png';
 
 
 const Bio = () => {
@@ -35,22 +37,14 @@ const Bio = () => {
             </textarea>
            </div>
           <div className='direita'>
-            <div
-              class="linkedin badge-base LI-profile-badge"
-              data-locale="en_US"
-              data-size="medium"
-              data-theme="light"
-              data-type="VERTICAL"
-              data-vanity="danielrodrigues"
-              data-version="v1"
-            >
-              <a
-                class="badge-base__link LI-simple-link"
-                href="https://au.linkedin.com/in/danielrodrigues?trk=profile-badge"
-              />
-            </div>
             <div className='linkedin github'>
-                <a href="https://github.com/danielwalterrodrigues" target='_blank'><img src={github}></img></a>
+                <a href="https://linkedin.com/in/danielrodrigues" target='_blank'><img src={linkedin} className='imgLinks'></img></a>
+            </div>      
+            <div className='linkedin github'>
+                <a href="https://github.com/danielwalterrodrigues" target='_blank'><img src={github} className='imgLinks'></img></a>
+            </div>      
+            <div className='linkedin github'>
+                <a href="https://play.google.com/store/apps/developer?id=Daniel+Walter+Rodrigues" target='_blank'><img src={googleplay} className='imgLinks'></img></a>
             </div>       
           </div>
         </motion.div>

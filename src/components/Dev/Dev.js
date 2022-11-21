@@ -14,14 +14,16 @@ import { Carousel } from 'react-responsive-carousel';
 const Dev = () => {
 
     // esses states que vão receber os resultados do fecth
+    
     const [todosDocs, setTodosDocs] = useState([]); // usa-se o [] pra array
     //const [umdoc, setUmdoc] = useState({}); // usae {} pq é um objeto
     
     useEffect(() => {
 
-        setTodosDocs([]); // zerei o array
         getDocs(collection(db, "projetos")).then((querysnapshot) => { // colecao projetos tá aqui e o then é um snapshot
+            setTodosDocs([]); // zerei o array
             querysnapshot.docs.forEach((doc) => { // meti um foreach pra ler tudo
+                
                 const data = doc.data(); // joguei tudo nesse doc.data
                 setTodosDocs((prev) => {
                     return [...prev, data]; 
@@ -66,7 +68,7 @@ const Dev = () => {
                     </div>
                     <div className='BlocoBcoDir'>
                         <img src={doc.Logo} className='devLogo'></img><br />
-                        <a href={doc.Link} target='_blank'><img src={doc.LinkImagem} className='devLink'></img></a>
+                        <a href={doc.Link}  className='devLink' target='_blank' rel="noreferrer"><img src={doc.LinkImagem} style={{display:'inherit !important',}} /></a>
                     </div>
                 </div>     
             )}

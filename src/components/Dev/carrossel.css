@@ -52,9 +52,6 @@
     position: relative;
     width: 100%; }
     
-    .carousel img {
-      display: inline-block;
-      pointer-events: none; }
     .carousel .carousel {
       position: relative; }
     .carousel .control-arrow {
@@ -111,7 +108,7 @@
         .carousel.carousel-slider .control-arrow:hover {
           background: rgba(0, 0, 0, 0.2); }
     .carousel .slider-wrapper {
-      margin: auto;
+      margin: -20px 0px 0px -40px;
       width: 100%;
       -webkit-transition: height 0.15s ease-in;
       -moz-transition: height 0.15s ease-in;
