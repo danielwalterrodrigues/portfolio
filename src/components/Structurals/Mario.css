@@ -1,0 +1,11 @@
+.life {
+    position:absolute;
+    margin-left: 3px;
+    margin-top: -84px;
+    z-index: -1;
+}.tijolo {
+    position:absolute;
+    margin-left: 290px;
+    margin-top: 88px;
+    z-index: -2;
+}

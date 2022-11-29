@@ -1,7 +1,6 @@
 import './Txt.css';
 import '../internas.css';
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 
 const Txt = () => {
 

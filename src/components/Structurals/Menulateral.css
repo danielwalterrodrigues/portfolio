@@ -1,0 +1,31 @@
+
+  @font-face {
+    font-family: "Gill Sans";
+    src: url("../../fonts/GillSans.woff") format("woff"),
+    url("../../fonts/GillSans.otf") format("opentype"),
+    }
+
+.Barra {
+    width: 68px;
+    height: 621px;
+    background-color:#ffffff;
+    
+    justify-content: center;
+    float: left;
+    border-right: 1px solid #f5f5f5;
+}
+.sombra {
+    opacity: 0.32;
+}
+.headerBarra {
+    width:auto;
+    background-color:#ececec;
+    padding: 16px 10px 10px 14px;
+    margin-bottom: 20px;
+}
+.separador {
+    width:auto;
+    margin:23px 13px;
+    background-color:#d5d5d5;
+    height: 2px;
+}

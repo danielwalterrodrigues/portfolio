@@ -8,205 +8,27 @@
     url("./fonts/GillSans.otf") format("opentype"),
     }
   
-
-.laranja {
-  height: 80px;
-  width: 100%;
-  background-color: #ff9c00;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:#000000;
-}
-.cinza {
-  height: 80px;
-  width: 100%;
-  background-color: #dadada;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #000000;
-}
-.preto {
-  height: 100px;
-  width: 100%;
-  background-color: #000000;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #dadada;
-  float:left;
-}
-.preto_esq {
-  float:left;
-  width: 235px;
-  height: auto;
-  height: 100px;
-  background-color: black;
-}
-.social_preto_separacao {
-  width:235px;
-  float:right;
-}
-.social_preto_rodape {
-  font-family: 'Social Media Circled';
-  font-size: 20px;
-  color: #ff9c00;
-  padding-top:20px;
-  padding-right: 5px;
-  float:right;
-}
-.whatsapp {
-  background-color: #282c34;
-  padding:3px 10px;
-  font-size: 14px;
-  color:#868686;
-  border-radius: 10px;
-  width: 130px;
-  float: right;
-  margin-top:10px;
-  margin-right: 5px;
-  text-align: center;
-}
-.preto_centro {
-  background-color: #000000;
-  float:left;
-  width: 40vw;
-  min-width: 399px;
-  height: auto;
-  height: 100px;
-}
-.preto_dir {
-  
-  width: auto;
-  min-width: 400px;
-  height: auto;
-  background-color: #000000;
-}
-.branco {
-  height:calc(100vh - 260px);
-  width: 100%;
-  background-color: #ffffff;
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.logoHome {
-  max-width: 65vmax;
-  margin-top: 15vmin;
-}
-.menuHome {
-  width:250px;
-  border-right: 1px solid #ff9c00;
-  height: 350px;
-  position: absolute;
-  z-index: 499;
-  left: 0;
-  top: 0;
-}
-.menuHomeul {
-  position: absolute;
-  right: 0;
-  bottom: -15px;
-  padding-right: 20px;
-  list-style: none;
-  text-align: right;
-}
-.menuHomeul li a {
-  background: linear-gradient(0deg, #ff9c00, #ff9c00) no-repeat right bottom / 0 var(--bg-h);
-	transition: background-size 350ms;
-	--bg-h: 100%;
-  text-decoration: none;
-  color: #000000;
-  font-size: 16px;
-  text-align: right;
-  cursor: pointer;
-}
-.menuHomeul li a:where(:hover, :focus-visible) {
-	background-size: 100% var(--bg-h);
-	background-position-x: left;
-  }
-.menuPonto {
-  color: #ff9c00;
-  font-size: 30px;
-  line-height: 18px;
-}
-.menuButton {
-  border: none;
-  background-color: #ffffff;
-  font-size: 15px;
-  cursor: pointer;
-}
-.teste {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: aqua;
-  padding: 100px;
-}
-
-/* COMEÇAM AQUI OS HACKS PRO MOBILE */
-
-div.menumobile
-{
-  display: none;
-}
-div.logo_telapeq {display: none;}
-@media screen and (max-width: 699px)
-{
-  div.menumobile
-  {
-    display: block;
-  }
-  div.preto_esq { min-width: 400px;}
-  div.logo_telagde {display: none;}
-  div.logo_telapeq {display: block;}
-  div.menuHome {display: none;}
-  div.preto_centro {display: none;}
-}
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.btnBackend {
-  font-size: 12px;
-  background-color: #cf7f00;
-  color: #e2b688;
-  float:right;
-  border:0px;
-  border-radius: 10px;
-  padding: 0 20px;
-  margin: 10px 10px 0 0;
-  cursor: pointer;
-}
+    .flex-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 100vw;
+    }
+    .esquerda {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 102px;
+      justify-content: left;
+      height: 100vh;
+    }
+    .centro {
+      flex-grow: 2;
+      flex-basis: 100%;
+    }
+    .direita {
+      flex-grow: 1;
+      flex-basis: 220px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
