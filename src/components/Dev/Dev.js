@@ -9,6 +9,7 @@ import setaesq from '../../assets/seta_esq.png';
 import setadir from '../../assets/seta_dir.png';
 import './carrossel.css';
 import { Carousel } from 'react-responsive-carousel';
+import Titulo from '../Structurals/Titulo';
 
 
 const Dev = () => {
@@ -35,6 +36,7 @@ const Dev = () => {
 
     return (
 <>
+        <Titulo corcomplementar="#440062" Nome="DESENVOLVEDOR"/>
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}

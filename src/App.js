@@ -1,103 +1,166 @@
+import React from 'react';
+import './Mobile.css';
 import './App.css';
 import Logoabertura from './components/Logoabertura';
-import {motion} from 'framer-motion';
 import {useState} from 'react';
-import Bio from './components/Bio/Bio.js';
-import Dev from './components/Dev/Dev.js';
-import Txt from './components/Txt/Txt.js';
-import Social from './components/Social/Social.js';
-import Menulateral from './components/Structurals/Menulateral';
+import './components/Structurals/Menulateral.css';
+import './components/Structurals/Menuitem.css';
+import curvaevirgula from './assets/curvaevirgula.png';
+import sombra from './assets/sombra_menu.png';
+import Mario from './components/Structurals/Mario';
+import Bio from './components/Bio/Bio';
+import Dev from './components/Dev/Dev';
+import Txt from './components/Txt/Txt';
+import Tx from './components/Social/Social';
+import LogoMenor from './components/logoMenor';
 
 function App() {
-  const [abreLogo, setAbreLogo] = useState(true);
-  const [abreLogoMenor, setAbreLogoMenor] = useState(false);
-  const [titulo, setTitulo] = useState('');
 
-  const [abreBio, setAbreBio] = useState(false);
-  const [abreDev, setAbreDev] = useState(false);
-  const [abreTxt, setAbreTxt] = useState(false);
-  const [abreSocial, setAbreSocial] = useState(false);
-  
-  const abreBioClick = event => {
+  const [abreLogo, setAbreLogo] = useState(true);
+  const [logoMenor, setLogoMenor] = useState(false);
+  const [hoverTx, setHoverTx] = useState(false);
+  const [hoverBio, setHoverBio] = useState(false);
+  const [hoverDev, setHoverDev] = useState(false);
+  const [hoverTxt, setHoverTxt] = useState(false);
+  const [bio, setBio] = useState(false);
+  const [dev, setDev] = useState(false);
+  const [txt, setTxt] = useState(false);
+  const [tx, setTx] = useState(false);
+
+  const MoverBio = event => {
+    setHoverBio(true)
+  }
+  const MoutBio = event => {
+    setHoverBio(false)
+  }
+  const OcliBio = event => {
     setAbreLogo(false);
-    setAbreLogoMenor(true);
-    setAbreBio(true);
-    setAbreDev(false);
-    setAbreTxt(false);
-    setAbreSocial(false);
-    setTitulo('BIO');
-  };
-  const abreDevClick = event => {
+    setLogoMenor(true);
+    setBio(true);
+    setDev(false);
+    setTxt(false);
+    setTx(false);
+  }
+
+
+  const MoverDev = event => {
+    setHoverDev(true)
+  }
+  const MoutDev = event => {
+    setHoverDev(false)
+  }
+  const OcliDev = event => {
     setAbreLogo(false);
-    setAbreLogoMenor(true);
-    setAbreBio(false);
-    setAbreDev(true);
-    setAbreTxt(false);
-    setAbreSocial(false);
-    setTitulo('DEV');
-  };
-  const abreTxtClick = event => {
+    setLogoMenor(true);
+    setBio(false);
+    setDev(true);
+    setTxt(false);
+    setTx(false);
+  }
+
+
+  const MoverTxt = event => {
+    setHoverTxt(true)
+  }
+  const MoutTxt = event => {
+    setHoverTxt(false)
+  }
+  const OcliTxt = event => {
     setAbreLogo(false);
-    setAbreLogoMenor(true);
-    setAbreBio(false);
-    setAbreDev(false);
-    setAbreTxt(true);
-    setAbreSocial(false);
-    setTitulo('WRITE');
-  };
-  const abreSocialClick = event => {
+    setLogoMenor(true);
+    setBio(false);
+    setDev(false);
+    setTxt(true);
+    setTx(false);
+  }
+
+
+  const MoverTx = event => {
+    setHoverTx(true)
+  }
+  const MoutTx = event => {
+    setHoverTx(false)
+  }
+  const OcliTx = event => {
     setAbreLogo(false);
-    setAbreLogoMenor(true);
-    setAbreBio(false);
-    setAbreDev(false);
-    setAbreTxt(false);
-    setAbreSocial(true);
-    setTitulo('TX');
-  };
+    setLogoMenor(true);
+    setBio(false);
+    setDev(false);
+    setTxt(false);
+    setTx(true);
+  }
 
   return (
     <>
       <div className='flex-container'>
         <div className='esquerda'>
-          <Menulateral />
+            <div className='Barra'>
+                <div className='headerBarra'>
+                    <img src={curvaevirgula}></img>
+                </div>
+                <div>
+                    <button className='botao hover-2' onMouseOver={MoverBio} onMouseOut={MoutBio} style={{backgroundColor:'#ff8a00'}} onClick={OcliBio}>
+                    .Bio
+                  </button>
+                </div>
+                    {hoverBio && 
+                        <>
+                          <div className='legenda' style={{backgroundColor: '#ff6c00'}}>BIOGRAFIA</div>
+                          <div id="triangulo-para-esquerda" style={{borderRightColor: '#ff6c00'}}></div>
+                        </>
+                        
+                    }   
+                <div>
+                    <button className='botao hover-2' onMouseOver={MoverDev} onMouseOut={MoutDev} style={{backgroundColor:'#9e00e0'}} onClick={OcliDev}>
+                    .Dev
+                  </button>
+                </div>
+                  {hoverDev && 
+                      <>
+                        <div className='legenda' style={{backgroundColor: '#440062'}}>DESENVOLVIMENTO</div>
+                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#440062'}}></div>
+                      </>
+                  }   
+                <div>
+                    <button className='botao hover-2' onMouseOver={MoverTxt} onMouseOut={MoutTxt} style={{backgroundColor:'#84c900'}} onClick={OcliTxt}>
+                    .Txt
+                  </button>
+                </div>
+                  {hoverTxt && 
+                      <>
+                        <div className='legenda' style={{backgroundColor: '#6aa100'}}>Textos, crônicas e contos</div>
+                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#6aa100'}}></div>
+                      </>
+                  }   
+                <div className='separador'></div>
+                <div>
+                    <button className='botao hover-2' onMouseOver={MoverTx} onMouseOut={MoutTx} style={{backgroundColor:'#750000'}} onClick={OcliTx}>
+                    .Tx
+                  </button>
+                </div>
+                  {hoverTx && 
+                      <>
+                        <div className='legenda' style={{backgroundColor: '#750000'}}>Projeto Transplantado</div>
+                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#750000'}}></div>
+                        <Mario />
+                      </>
+                  }      
+                <div className='separador'></div>
+
+            </div>
+            <div className='sombra'>
+                <img src={sombra}></img>
+            </div> 
         </div>
         <div className='centro'>
+          {logoMenor && <LogoMenor />}
           {abreLogo && <Logoabertura />}
-          {abreBio && <Bio />}
-          {abreDev && <Dev />}
-          {abreTxt && <Txt />}
-          {abreSocial && <Social />}  
-              
+          {bio && <Bio />}
+          {dev && <Dev />}
+          {txt && <Txt />}
+          {tx && <Tx />}
         </div>
       </div>
-
-      
-
-
-
-
-
-    <motion.div className='menuHome' style={{display: 'none',}}
-          animate={{y:'-80px', opacity:1}}
-          transition={{delay: 4, duration:0.5, origin: 1}}
-          initial={{y: '-300px',opacity:0}}
-          >
-          <ul className="menuHomeul">
-            <li><a onClick={abreBioClick}>
-              <span className="menuPonto">. </span>BIO</a>
-            </li>
-            <li><a onClick={abreDevClick}>
-              <span className="menuPonto">. </span>DEV</a>
-            </li>
-            <li><a onClick={abreTxtClick}>
-              <span className="menuPonto">. </span>WRITE</a>
-            </li>
-            <li><a onClick={abreSocialClick}>
-              <span className="menuPonto">. </span>TX</a>
-            </li>
-          </ul>
-        </motion.div>
-
     </>
   );
 }

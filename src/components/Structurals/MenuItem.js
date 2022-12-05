@@ -1,14 +1,16 @@
 import './Menuitem.css';
-import { useState } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import Mario from './Mario';
 import { motion } from "framer-motion";
+import Context from '../context/contextApi';
 
 
 const Menuitem = (props) => {
 
     const [hover, setHover] = useState(false);
-    const [clicou, setClicou] = useState();
-    const [zix, setZix] = useState('none');
+    const [clicou, setClicou] = useState(false);
+    const [zix, setZix] = useContext(Context);
+    //const [abreLogo, setAbreLogo] = useContext(Context);
     const [indice, setIndice] = useState();
 
     
@@ -19,22 +21,21 @@ const Menuitem = (props) => {
        setHover(false);
     }
 
-    const clicaItem = event => {
-        setClicou(true);
-        setZix('block');
-    }
-    const randomico = Math.floor(Math.random() * (123546 - 6)) + 6;
+  useEffect(() => {
+    setClicou(true);
+  },[zix]);
+
     return(
         <>
             <button onMouseOver={passaMouse} onMouseOut={tiraMouse} style={{
                 backgroundColor:props.Cor,
-                }} className='botao hover-2' onClick={clicaItem}>
+                }} className='botao hover-2' onClick={() => setZix((prevZix) => prevZix + 1)}>
                 {props.Leg}
             </button>
             {props.key}
             {hover && 
                 <>
-                <div className='legenda' style={{backgroundColor: props.Cor,}}>{props.Hover}</div>
+                <div className='legenda' style={{backgroundColor: props.Cor}}>{props.Hover}</div>
                 <div id="triangulo-para-esquerda" style={{borderRightColor: props.Cor}}></div>
                 {props.Mario === 'true' &&
                     <Mario />
@@ -42,11 +43,14 @@ const Menuitem = (props) => {
                 </>
             }
             {clicou &&
-                <motion.div className='titulo' style={{backgroundColor: props.corcomplementar, display: zix, zIndex: -3,}}
+            <>
+            
+                <motion.div className='titulo' style={{backgroundColor: props.corcomplementar, zIndex: zix,}}
                 animate={{opacity: 1, height: '100vh',}}
                 transition={{delay: 0.5, duration:1}}
                 initial={{opacity: 0, height:'0'}}
-                >{props.Nome}</motion.div>
+                >{props.Nome}{zix}</motion.div>
+            </>
             }
         </>
      )

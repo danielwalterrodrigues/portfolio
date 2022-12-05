@@ -19,3 +19,6 @@ line {
     z-index: 999;
     position: absolute;
 }
+.logoMobile {
+    display:none;
+}

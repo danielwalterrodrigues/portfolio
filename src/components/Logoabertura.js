@@ -1,4 +1,5 @@
 import '../App.css';
+import '../Mobile.css';
 import './Logoabertura.css';
 import { motion } from "framer-motion";
 //import logoGrande from '../assets/logo_branco.png';
@@ -8,12 +9,17 @@ import logoDrosto from '../assets/logoDrosto.png';
 import virgula from '../assets/virgula.png';
 import portfolio from '../assets/portfolio.png';
 import danielrodrigues from '../assets/danielrodrigues.png';
+import logopequeno from '../assets/logopequeno.png';
 
 const Logoabertura = () => {
 
     return (
         <>
+        <div className='logoMobile'>
+            <img src={logopequeno}></img>
+        </div>
             <div className='divprincipal'>
+                <div className='logoGrande'>
                 <motion.div className='laranjaZindex'
                     animate={{opacity: 1, rotate: 1440}}
                     transition={{delay: 0, duration: 2}}
@@ -29,7 +35,8 @@ const Logoabertura = () => {
                 <motion.div 
                     animate={{y: '-104px', opacity: 1}}
                     transition={{delay: 2}}
-                    initial={{opacity: 0}}>
+                    initial={{opacity: 0}}
+                    leave={{opacity: 0}}>
                     <img src={logoDrosto} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
                 <motion.div className='laranjaZindex'
@@ -50,6 +57,7 @@ const Logoabertura = () => {
                     initial={{opacity: 0, y: '-130px', x:'122px'}}>
                     <img src={danielrodrigues} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
+                </div>
             </div>
         </>
         

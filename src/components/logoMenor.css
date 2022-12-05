@@ -5,14 +5,6 @@
     z-index: 9;
     top:25px;
     right: 25px;
-} 
-.titulo {
-    position: absolute;
-    z-index: 9;
-    top:20px;
-    left: 264px;
-    font-size: 28px;
-    letter-spacing: 2px;
 }
 .ponto {
     color: #ffffff;

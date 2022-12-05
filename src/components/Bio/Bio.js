@@ -6,27 +6,15 @@ import Texto from './texto.js';
 import github from '../../assets/github.png';
 import linkedin from '../../assets/linkedin.png';
 import googleplay from '../../assets/googleplay.png';
+import Titulo from '../Structurals/Titulo';
 
 
 const Bio = () => {
 
-    useEffect(() => {
-        const script = document.createElement('script');
-    
-        script.src = 'https://platform.linkedin.com/badges/js/profile.js';
-        script.async = true;
-        script.defer = true;
-    
-        document.body.appendChild(script);
-    
-        return () => {
-          document.body.removeChild(script);
-        };
-      }, []);
       var textobio = Texto;
       return (
         <>
-        
+        <Titulo corcomplementar="#ff6c00" Nome="Biografia"/>
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
