@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     
-.logoGrande {
+.divprincipal {
     display:none;
 }    
 .logoMobile {
@@ -10,6 +10,17 @@
 }
 .logoMenor1 {
     width: auto !important;
+}
+.textocolunas {
+    column-count: 1 !important;
+    column-gap: 0px;
+}
+.aspasimg {
+    width: 25px !important;
+    height: auto;
+}
+.legenda {
+    display:none;
 }
 
   }

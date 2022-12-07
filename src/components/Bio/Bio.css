@@ -119,3 +119,13 @@
     background-image: linear-gradient(#fff,#e8e8e8);
     cursor: pointer;
 }
+.aspasimg {
+    width: auto;
+    margin-left: 10px;
+}
+.textocolunas {
+    column-count: 2;
+    column-gap: 40px;
+    align-items: flex-start;
+    font-size: 13px;
+}

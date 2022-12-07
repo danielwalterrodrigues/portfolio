@@ -1,5 +1,6 @@
 import './Txt.css';
 import '../internas.css';
+import '../../Mobile.css';
 import { motion } from 'framer-motion';
 import Titulo from '../Structurals/Titulo';
 

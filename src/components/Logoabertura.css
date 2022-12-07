@@ -22,3 +22,15 @@ line {
 .logoMobile {
     display:none;
 }
+.Opaco {
+    backdrop-filter: blur(4px) saturate(152%);
+    -webkit-backdrop-filter: blur(4px) saturate(152%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+}

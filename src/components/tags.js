@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Mobile.css';
 import './tags.css';
 import { motion } from "framer-motion";
 import ColcheteAbre from '../assets/colchete_abre.png';

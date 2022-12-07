@@ -1,8 +1,9 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import './Mobile.css';
 import './App.css';
 import Logoabertura from './components/Logoabertura';
-import {useState} from 'react';
+import {useState, useEffect, useRef} from 'react';
 import './components/Structurals/Menulateral.css';
 import './components/Structurals/Menuitem.css';
 import curvaevirgula from './assets/curvaevirgula.png';
@@ -13,6 +14,11 @@ import Dev from './components/Dev/Dev';
 import Txt from './components/Txt/Txt';
 import Tx from './components/Social/Social';
 import LogoMenor from './components/logoMenor';
+import ReactWhatsapp from 'react-whatsapp';
+import whatsapp from './assets/whatsapp.png';
+import connect from './assets/connect.png';
+import impressora from './assets/impressora.png';
+import disponivel from './assets/disponibilidade.png';
 
 function App() {
 
@@ -26,13 +32,10 @@ function App() {
   const [dev, setDev] = useState(false);
   const [txt, setTxt] = useState(false);
   const [tx, setTx] = useState(false);
+  const [printer, setPrinter] = useState(false);
+  const [conexoes, setConexoes] = useState(false);
+  const [whats, setWhats] = useState(false);
 
-  const MoverBio = event => {
-    setHoverBio(true)
-  }
-  const MoutBio = event => {
-    setHoverBio(false)
-  }
   const OcliBio = event => {
     setAbreLogo(false);
     setLogoMenor(true);
@@ -42,13 +45,6 @@ function App() {
     setTx(false);
   }
 
-
-  const MoverDev = event => {
-    setHoverDev(true)
-  }
-  const MoutDev = event => {
-    setHoverDev(false)
-  }
   const OcliDev = event => {
     setAbreLogo(false);
     setLogoMenor(true);
@@ -58,13 +54,6 @@ function App() {
     setTx(false);
   }
 
-
-  const MoverTxt = event => {
-    setHoverTxt(true)
-  }
-  const MoutTxt = event => {
-    setHoverTxt(false)
-  }
   const OcliTxt = event => {
     setAbreLogo(false);
     setLogoMenor(true);
@@ -74,13 +63,6 @@ function App() {
     setTx(false);
   }
 
-
-  const MoverTx = event => {
-    setHoverTx(true)
-  }
-  const MoutTx = event => {
-    setHoverTx(false)
-  }
   const OcliTx = event => {
     setAbreLogo(false);
     setLogoMenor(true);
@@ -90,16 +72,32 @@ function App() {
     setTx(true);
   }
 
+
+  const abreConexoes = event => {
+    setConexoes(true);
+  }
+  const refreshPage = ()=>{
+    window.location.reload();  }
   return (
     <>
       <div className='flex-container'>
         <div className='esquerda'>
-            <div className='Barra'>
+        <motion.div className='Opaco' style={{width: 100,}}
+                 animate={{opacity: 0, transitionEnd: {display: 'none',}}}
+                 transition={{delay: 7, duration:3, type: 'spring', bounce: 0.6}}
+                 initial={{opacity: 1}}>
+        </motion.div>
+            <motion.div className='Barra'
+              animate={{opacity: 1, x: 0}}
+              transition={{delay: 6, duration:2, type: 'spring', bounce: 0.6}}
+              initial={{opacity: 0, x: '-100'}}>
                 <div className='headerBarra'>
-                    <img src={curvaevirgula}></img>
+                    <button onClick={refreshPage} style={{cursor: 'pointer', border: 'none',}}>
+                      <img src={curvaevirgula}></img>
+                    </button>
                 </div>
                 <div>
-                    <button className='botao hover-2' onMouseOver={MoverBio} onMouseOut={MoutBio} style={{backgroundColor:'#ff8a00'}} onClick={OcliBio}>
+                    <button className='botao hover-2' onMouseEnter={() => setHoverBio(true)} onMouseLeave={() => setHoverBio(false)}style={{backgroundColor:'#ff8a00'}} onClick={OcliBio}>
                     .Bio
                   </button>
                 </div>
@@ -111,7 +109,7 @@ function App() {
                         
                     }   
                 <div>
-                    <button className='botao hover-2' onMouseOver={MoverDev} onMouseOut={MoutDev} style={{backgroundColor:'#9e00e0'}} onClick={OcliDev}>
+                    <button className='botao hover-2' onMouseEnter={() => setHoverDev(true)} onMouseLeave={() => setHoverDev(false)} style={{backgroundColor:'#9e00e0'}} onClick={OcliDev}>
                     .Dev
                   </button>
                 </div>
@@ -122,7 +120,7 @@ function App() {
                       </>
                   }   
                 <div>
-                    <button className='botao hover-2' onMouseOver={MoverTxt} onMouseOut={MoutTxt} style={{backgroundColor:'#84c900'}} onClick={OcliTxt}>
+                    <button className='botao hover-2' onMouseEnter={() => setHoverTxt(true)} onMouseLeave={() => setHoverTxt(false)} style={{backgroundColor:'#84c900'}} onClick={OcliTxt}>
                     .Txt
                   </button>
                 </div>
@@ -134,7 +132,7 @@ function App() {
                   }   
                 <div className='separador'></div>
                 <div>
-                    <button className='botao hover-2' onMouseOver={MoverTx} onMouseOut={MoutTx} style={{backgroundColor:'#750000'}} onClick={OcliTx}>
+                    <button className='botao hover-2'  onMouseEnter={() => setHoverTx(true)} onMouseLeave={() => setHoverTx(false)} style={{backgroundColor:'#750000'}} onClick={OcliTx}>
                     .Tx
                   </button>
                 </div>
@@ -146,16 +144,52 @@ function App() {
                       </>
                   }      
                 <div className='separador'></div>
-
-            </div>
-            <div className='sombra'>
+                <div>
+                <ReactWhatsapp number="5511953670683" message="Olá, Daniel! Que tal agendarmos uma entrevista? :-)" style={{backgroundColor: '#ffffff', border: 'none', width: '100%', cursor: 'pointer',}} onMouseEnter={() => setWhats(true)} onMouseLeave={() => setWhats(false)}>
+                    <img src={whatsapp}></img>
+                </ReactWhatsapp>
+                </div>
+                {whats && 
+                      <div style={{marginTop: 13}}>
+                        <div className='legenda' style={{backgroundColor: '#999999'}}>Enviar Whatsapp</div>
+                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#999999'}}></div>
+                      </div>
+                  } 
+                <div>
+                  <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center !important', justifyContent: 'center', marginLeft: 15,}} onClick={abreConexoes}><img src={connect}></img></button>
+                </div>
+                {conexoes && 
+                      <>
+                        <div className='legenda' style={{backgroundColor: '#999999'}}>Links Externos</div>
+                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#999999'}}></div>
+                      </>
+                  } 
+                <div>
+                  <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center', marginLeft: 15,}} onMouseEnter={() => setPrinter(true)} onMouseLeave={() => setPrinter(false)}>
+                      <img src={impressora}></img>
+                   </button>
+                </div>
+                {printer && 
+                      <>
+                        <div className='legenda' style={{backgroundColor: '#999999'}}>Imprimir Currículo</div>
+                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#999999'}}></div>
+                      </>
+                  } 
+                <div style={{width: '100%', textAlign: 'center'}}>
+                  <img src={disponivel}></img>
+                </div>
+            </motion.div>
+            <motion.div className='sombra'
+              animate={{opacity: 0.2}}
+              transition={{delay: 4, duration:2, type: 'spring', bounce: 0.6}}
+              initial={{opacity: 0}}>
                 <img src={sombra}></img>
-            </div> 
+            </motion.div> 
         </div>
         <div className='centro'>
           {logoMenor && <LogoMenor />}
           {abreLogo && <Logoabertura />}
-          {bio && <Bio />}
+          {bio && <Bio/>}
           {dev && <Dev />}
           {txt && <Txt />}
           {tx && <Tx />}

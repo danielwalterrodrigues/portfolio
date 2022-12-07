@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Mobile.css';
 import { useState } from 'react';
 import './imprimir.css';
 import logoCurriculum from '../../assets/logo_curriculum.png';

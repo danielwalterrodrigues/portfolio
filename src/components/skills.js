@@ -1,3 +1,4 @@
+import '../Mobile.css';
 import '../App.css';
 import './skills.css';
 import { motion } from "framer-motion";

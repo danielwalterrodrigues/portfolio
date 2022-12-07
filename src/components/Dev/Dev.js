@@ -1,4 +1,5 @@
 import './Dev.css';
+import '../../Mobile.css';
 import '../internas.css';
 import { motion } from 'framer-motion';
 import {db} from '../../firebase';

@@ -6,17 +6,19 @@
     }
 
 .Barra {
-    padding-top: 60px;
     width: 68px;
-    height: 621px;
+    height: 100vw;
     background-color:#ffffff;
-    
+    position: fixed;
+    top:0;
     justify-content: center;
     float: left;
     border-right: 1px solid #f5f5f5;
 }
 .sombra {
     opacity: 0.32;
+    position:fixed;
+    left: 68px;
 }
 .headerBarra {
     width:auto;

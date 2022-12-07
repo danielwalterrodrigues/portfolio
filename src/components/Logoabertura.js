@@ -15,17 +15,27 @@ const Logoabertura = () => {
 
     return (
         <>
+        
         <div className='logoMobile'>
+        <motion.div className='Opaco'
+                 animate={{opacity: [0, 1, 0, 1, 1, 0]}}
+                 transition={{delay: 0, duration:4, type: 'spring', bounce: 0.6}}
+                 initial={{opacity: [0, 1, 0, 1, 1, 0]}}></motion.div>
             <img src={logopequeno}></img>
         </div>
             <div className='divprincipal'>
                 <div className='logoGrande'>
+                <motion.div className='Opaco'
+                 animate={{opacity: [0, 1, 0, 1, 1, 0]}}
+                 transition={{delay: 3, duration:4, type: 'spring', bounce: 0.6}}
+                 initial={{opacity: [0, 1, 0, 1, 1, 0]}}></motion.div>
                 <motion.div className='laranjaZindex'
                     animate={{opacity: 1, rotate: 1440}}
                     transition={{delay: 0, duration: 2}}
                     initial={{opacity: 0.5}}>
                     <img src={logoDlaranja} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
+                </div>
                 <motion.div
                     animate={{opacity: 1}}
                     transition={{delay: 0, duration: 3}}
@@ -57,8 +67,9 @@ const Logoabertura = () => {
                     initial={{opacity: 0, y: '-130px', x:'122px'}}>
                     <img src={danielrodrigues} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
-                </div>
+                
             </div>
+            
         </>
         
     )

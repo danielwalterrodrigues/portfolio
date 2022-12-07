@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import './Menulateral.css';
+import '../../../obile.css';
 import curvaevirgula from '../../assets/curvaevirgula.png';
 import sombra from '../../assets/sombra_menu.png';
-import Context from '../context/contextApi';
+import ReactWhatsapp from 'react-whatsapp';
 
 const Menulateral = () => {
     const [abreLogo, setAbreLogo] = useState(true);
