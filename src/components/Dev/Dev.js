@@ -10,7 +10,7 @@ import setaesq from '../../assets/seta_esq.png';
 import setadir from '../../assets/seta_dir.png';
 import './carrossel.css';
 import { Carousel } from 'react-responsive-carousel';
-import Titulo from '../Structurals/Titulo';
+import Titulo from '../Structurals/titulo';
 
 
 const Dev = () => {

@@ -2,7 +2,7 @@ import './Social.css';
 import '../../Mobile.css';
 import '../internas.css';
 import { motion } from 'framer-motion';
-import Titulo from '../Structurals/Titulo';
+import Titulo from '../Structurals/titulo';
 
 const Tx = () => {
 

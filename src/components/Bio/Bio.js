@@ -3,7 +3,7 @@ import '../internas.css';
 import '../../Mobile.css';
 import { motion } from 'framer-motion';
 import Texto from './texto.js';
-import Titulo from '../Structurals/Titulo';
+import Titulo from '../Structurals/titulo';
 import aspas1 from '../../assets/aspas1.png';
 import aspas2 from '../../assets/aspas2.png';
 
