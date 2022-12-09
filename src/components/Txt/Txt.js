@@ -8,11 +8,11 @@ const Txt = () => {
 
     return (
         <>
-        <Titulo corcomplementar="#6aa100" Nome="ESCRITOR (ou quase)"/>
+        <Titulo corcomplementar="#bde20f" Nome="textos, contos e afins"/>
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
-            initial={{ x:'305px', opacity: 0}}>
+            initial={{ x:'0', opacity: 0}}>
             WRITTER
         </motion.div>
         </>

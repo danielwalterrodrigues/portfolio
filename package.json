@@ -13,6 +13,8 @@
     "firebaseui": "^6.0.1",
     "framer-motion": "^7.5.2",
     "intersection-observer": "^0.12.2",
+    "muuri": "^0.9.5",
+    "muuri-react": "^3.1.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",

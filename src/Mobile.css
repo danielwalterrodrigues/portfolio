@@ -22,5 +22,16 @@
 .legenda {
     display:none;
 }
+.brancoGeral {
+    width: 300px !important;
+    padding: 0 !important;
+    height: 1000px !important;
+}
+#flex {
+    flex-wrap:nowrap !important;
+}
+.loguinhos {
+    display: none;
+}
 
   }

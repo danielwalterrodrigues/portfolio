@@ -7116,6 +7116,19 @@ multicast-dns@^7.2.5:
     dns-packet "^5.2.2"
     thunky "^1.0.2"
 
+muuri-react@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/muuri-react/-/muuri-react-3.1.6.tgz#e42222a48cb60b87489fa272ad532994e9111aac"
+  integrity sha512-r3EoHD2LL0m6tB6ymgDXIvbiou9r7cJSCFKLW8WcprzKWuWQxtKLRYfW+YOvkqzW73MfHHVf9/jNei3txFaIRw==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+    prop-types "^15.7.2"
+
+muuri@^0.9.5:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/muuri/-/muuri-0.9.5.tgz#ce5ccf28a596f67a4d9370cac6d3e661db43a380"
+  integrity sha512-nJL9/Pd5IaIXGAVunBs/LLQ+v6tPkvlqCYrlauWESgkVFr+F+CRf8HnayRh4AqiQ1S/PIEN39fhJSe4L5rLlxg==
+
 nanoid@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"

@@ -24,17 +24,11 @@ function App() {
 
   const [abreLogo, setAbreLogo] = useState(true);
   const [logoMenor, setLogoMenor] = useState(false);
-  const [hoverTx, setHoverTx] = useState(false);
-  const [hoverBio, setHoverBio] = useState(false);
-  const [hoverDev, setHoverDev] = useState(false);
-  const [hoverTxt, setHoverTxt] = useState(false);
   const [bio, setBio] = useState(false);
   const [dev, setDev] = useState(false);
   const [txt, setTxt] = useState(false);
   const [tx, setTx] = useState(false);
-  const [printer, setPrinter] = useState(false);
   const [conexoes, setConexoes] = useState(false);
-  const [whats, setWhats] = useState(false);
 
   const OcliBio = event => {
     setAbreLogo(false);
@@ -97,64 +91,32 @@ function App() {
                     </button>
                 </div>
                 <div>
-                    <button className='botao hover-2' onMouseEnter={() => setHoverBio(true)} onMouseLeave={() => setHoverBio(false)}style={{backgroundColor:'#ff8a00'}} onClick={OcliBio}>
+                    <button className='botao hover-2'style={{backgroundColor:'#ff8a00'}} onClick={OcliBio}>
                     .Bio
                   </button>
-                </div>
-                    {hoverBio && 
-                        <>
-                          <div className='legenda' style={{backgroundColor: '#ff6c00'}}>BIOGRAFIA</div>
-                          <div id="triangulo-para-esquerda" style={{borderRightColor: '#ff6c00'}}></div>
-                        </>
-                        
-                    }   
+                </div>  
                 <div>
-                    <button className='botao hover-2' onMouseEnter={() => setHoverDev(true)} onMouseLeave={() => setHoverDev(false)} style={{backgroundColor:'#9e00e0'}} onClick={OcliDev}>
+                    <button className='botao hover-2' style={{backgroundColor:'#9e00e0'}} onClick={OcliDev}>
                     .Dev
                   </button>
                 </div>
-                  {hoverDev && 
-                      <>
-                        <div className='legenda' style={{backgroundColor: '#440062'}}>DESENVOLVIMENTO</div>
-                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#440062'}}></div>
-                      </>
-                  }   
                 <div>
-                    <button className='botao hover-2' onMouseEnter={() => setHoverTxt(true)} onMouseLeave={() => setHoverTxt(false)} style={{backgroundColor:'#84c900'}} onClick={OcliTxt}>
+                    <button className='botao hover-2' style={{backgroundColor:'#b2f400'}} onClick={OcliTxt}>
                     .Txt
                   </button>
                 </div>
-                  {hoverTxt && 
-                      <>
-                        <div className='legenda' style={{backgroundColor: '#6aa100'}}>Textos, crônicas e contos</div>
-                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#6aa100'}}></div>
-                      </>
-                  }   
                 <div className='separador'></div>
                 <div>
-                    <button className='botao hover-2'  onMouseEnter={() => setHoverTx(true)} onMouseLeave={() => setHoverTx(false)} style={{backgroundColor:'#750000'}} onClick={OcliTx}>
+                    <button className='botao hover-2' style={{backgroundColor:'#750000'}} onClick={OcliTx}>
                     .Tx
                   </button>
-                </div>
-                  {hoverTx && 
-                      <>
-                        <div className='legenda' style={{backgroundColor: '#750000'}}>Projeto Transplantado</div>
-                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#750000'}}></div>
-                        <Mario />
-                      </>
-                  }      
+                </div> 
                 <div className='separador'></div>
                 <div>
-                <ReactWhatsapp number="5511953670683" message="Olá, Daniel! Que tal agendarmos uma entrevista? :-)" style={{backgroundColor: '#ffffff', border: 'none', width: '100%', cursor: 'pointer',}} onMouseEnter={() => setWhats(true)} onMouseLeave={() => setWhats(false)}>
+                <ReactWhatsapp number="5511953670683" message="Olá, Daniel! Que tal agendarmos uma entrevista? :-)" style={{backgroundColor: '#ffffff', border: 'none', width: '100%', cursor: 'pointer',}}>
                     <img src={whatsapp}></img>
                 </ReactWhatsapp>
                 </div>
-                {whats && 
-                      <div style={{marginTop: 13}}>
-                        <div className='legenda' style={{backgroundColor: '#999999'}}>Enviar Whatsapp</div>
-                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#999999'}}></div>
-                      </div>
-                  } 
                 <div>
                   <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center !important', justifyContent: 'center', marginLeft: 15,}} onClick={abreConexoes}><img src={connect}></img></button>
                 </div>
@@ -165,16 +127,10 @@ function App() {
                       </>
                   } 
                 <div>
-                  <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center', marginLeft: 15,}} onMouseEnter={() => setPrinter(true)} onMouseLeave={() => setPrinter(false)}>
+                  <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center', marginLeft: 15,}}>
                       <img src={impressora}></img>
                    </button>
                 </div>
-                {printer && 
-                      <>
-                        <div className='legenda' style={{backgroundColor: '#999999'}}>Imprimir Currículo</div>
-                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#999999'}}></div>
-                      </>
-                  } 
                 <div style={{width: '100%', textAlign: 'center'}}>
                   <img src={disponivel}></img>
                 </div>

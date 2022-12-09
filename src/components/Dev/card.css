@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("../../fonts/GillSans.woff") format("woff"),
+    url("../../fonts/GillSans.otf") format("opentype"),
+}
+
+.card {
+    width: 270px;
+    cursor: pointer;
+    border-radius: 15px;
+
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    padding: 5em;
+    transform-style: preserve-3d;
+    height:fit-content;
+    border-radius: 15px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ebebeb;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .title {
+    transform: translateZ(5rem);
+    font-size: 16px;
+    color: #000;
+    z-index: 9;
+    position: absolute;
+    bottom: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+  }
+  .cardBranco {
+    width: 100%;
+    height:60px;
+    position:absolute;
+    z-index:5 ;
+    bottom: 0;
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .subtitle {
+    transform: translateZ(2rem);
+    position:absolute;
+    z-index:5 ;
+    padding-left: 20px;
+    bottom: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:13px;
+    color: #a6a6a6;
+  }
+  
+  .tipo {
+    transform: translateZ(2rem);
+    position:absolute;
+    z-index:6 ;
+    right: 20px;
+    bottom: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:18px;
+    color: #a6a6a6;
+  }
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color: #fff;
+    
+  }
+  .front {
+    background-position: center -40px;
+  }
+  .description {
+    transform: translateZ(3rem);
+    padding: 30px;
+  }
+  .cardlogo {
+    transform: translateZ(3rem);
+  }
+  .Mais {
+    position:relative !important;
+  }
+  .imgBg {
+    width:270px;
+    height: auto;
+    border-radius: 20px;
+
+  }
+  
