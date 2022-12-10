@@ -4,26 +4,16 @@ import '../../Mobile.css';
 import '../internas.css';
 import { motion } from 'framer-motion';
 import Titulo from '../Structurals/titulo';
-import devloguinhos from '../../assets/devloguinhos.png';
-import imagemteste from '../../assets/4real/4real3.png';
 import {db} from '../../firebase';
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore"; 
+import './detalhe.css';
 import Detalhe from './detalhe';
 
 const Dev = () => {
-    const [detalhe, AbreDetalhe] = useState(false);
-    // esses states que vão receber os resultados do fecth
-        
+    
     const [todosDocs, setTodosDocs] = useState([]); // usa-se o [] pra array
     //const [umdoc, setUmdoc] = useState({}); // usae {} pq é um objeto
-    
-    const funcDetalhe = event => {
-        AbreDetalhe(true);
-    }
-    const fechaDetalhe = event => {
-        AbreDetalhe(false);
-    }
 
     useEffect(() => {
 
@@ -41,6 +31,7 @@ const Dev = () => {
     },[]); 
     return (
     <>
+    <section id='topo'></section>
     <Titulo corcomplementar="#440062" Nome="DESENVOLVEDOR" />
     {/* <div className='loguinhos'><img src={devloguinhos} style={{marginLeft: 10, marginTop: 80,}}></img></div> */}
     <motion.div className="brancoGeral" id="flex"
@@ -51,38 +42,8 @@ const Dev = () => {
 {todosDocs.map((doc)=>{
 return(
     <>
-    {detalhe && 
-        <>
-            <Detalhe />
-            <button onClick={fechaDetalhe} className='detalheFechar'>
-                fechar
-            </button>
-        </>
-    }
-    
-        <div className='card'>
-        <div className='BoxProjeto' style={{order:(Math.floor(Math. random()*(1-170)+170))}}>
-                <div class="content" style={{height:((Math. random()*(37-5)+5)*10),}}>
-                    <div class="front" style={{backgroundImage: 'url('+doc.Imagens[0]+')', backgroundSize: 'cover',}}>
-                        <div className='cardBranco'>
-                        </div>
-                        <div className='title'>{doc.Nome}</div>
-                        <div className='subtitle'>{doc.TecDefault}</div>
-                        <div className='tipo'>{doc.Tipo}</div>
-                        
-                    </div>
-                    <div class="back">
-                        <p class="description">
-                            {doc.DescricaoCurta}
-                        </p>
-                        <div className='cardlogo'>
-                            <button className='Mais' onClick={funcDetalhe}>+</button>
-                            
-                        </div>
-                    </div>
-                </div>
-        </div>
-        </div>
+        <Detalhe Nome={doc.Nome} Imgbg={doc.Imagens[0]} TecDefault={doc.TecDefault} Tipo={doc.Tipo} DescricaoCurta={doc.DescricaoCurta}/>
+
     </>
 )}
 )}
