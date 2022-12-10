@@ -1,0 +1,21 @@
+.detalhe {
+
+    width: calc(100% + 90px);
+    height: 400px;
+    z-index:20000;
+    left: 20px;
+    top: 100px;
+    background-color:#fff;
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px, rgba(0, 0, 0, 0.1) 0px 18px 36px -12px;
+    border-left: 9px solid #64008e;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 30px;
+}
+.detalheFechar {
+    position:absolute;
+    z-index: 300000;
+    left: 100px;
+    top: 100px;
+}
