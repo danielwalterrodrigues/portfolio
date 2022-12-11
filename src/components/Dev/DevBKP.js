@@ -71,7 +71,7 @@ const DevBKP = () => {
                     </div>
                     <div className='BlocoBcoDir'>
                         <img src={doc.Logo} className='devLogo'></img><br />
-                        <a href={doc.Link}  className='devLink' target='_blank' rel="noreferrer"><img src={doc.LinkImagem} style={{display:'inherit !important',}} /></a>
+                        <a href={doc.Link} Tags={doc.Tags} Imagens= {doc.Imagens}className='devLink' target='_blank' rel="noreferrer"><img src={doc.LinkImagem} style={{display:'inherit !important',}} /></a>
                     </div>
                 </div>     
             )}

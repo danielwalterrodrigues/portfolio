@@ -15,10 +15,11 @@
   display: flex; 
   flex-direction: column; 
   align-items: flex-start;
-  width: calc(88vw);
-  height:600px;
+  align-content: flex-start;
+  max-width: calc(88vw);
+  height:650px;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  flex-grow: 5;
 }
 #a { order: 2; }
 #b { order: 1; }

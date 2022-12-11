@@ -42,7 +42,7 @@ const Dev = () => {
 {todosDocs.map((doc)=>{
 return(
     <>
-        <Detalhe Nome={doc.Nome} Imgbg={doc.Imagens[0]} TecDefault={doc.TecDefault} Tipo={doc.Tipo} DescricaoCurta={doc.DescricaoCurta}/>
+        <Detalhe Nome={doc.Nome} Tags={doc.Tags} Imagens={doc.Imagens} Logo={doc.Logo} Descricao={doc.Descricao} Imgbg={doc.Imagens[0]} TecDefault={doc.TecDefault} Tipo={doc.Tipo} DescricaoCurta={doc.DescricaoCurta}/>
 
     </>
 )}

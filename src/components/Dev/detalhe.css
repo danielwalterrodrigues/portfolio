@@ -1,10 +1,16 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("../../fonts/GillSans.woff") format("woff"),
+    url("../../fonts/GillSans.otf") format("opentype"),
+}
+
 .detalhe {
 
-    width: calc(100% + 90px);
+    width: 1200px;
     height: 400px;
     position:absolute;
     z-index:999999999999;
-    left: 0;
+    left: 20px;
     top:0;
     background-color:#fff;
     box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px, rgba(0, 0, 0, 0.1) 0px 18px 36px -12px;
@@ -17,9 +23,55 @@
 .detalheFechar {
     position:absolute;
     z-index: 9991;
-    left: 100px;
-    top: 100px;
+    left: -21px;
+    top: calc(50% - 30px);
     cursor:pointer;
-    background-color: #fff;
     border: 0;
+}
+.detalheContent {
+    display:flex;
+    flex: 1;
+    width:1130px;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    align-content:center;
+}
+.detalheEsq {
+    flex: 1;
+    flex-grow: 0;
+}
+.detalheCentro {
+    flex: 1;
+    flex-grow: 2;
+    flex-basis: 420px;
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    margin: 30px;
+    padding: 20px;
+    max-width: 660px;
+}
+.detalheDir {
+    flex-grow: 1;
+    flex: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+}
+.detalheCentroImg {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+.detalheImagem {
+    float:left;
+    width: 210px;
+    height: auto;
+}
+.boxImagem {
+    width: 210px;
+    height:373px;
+    float: left;
+    background-color: #ebebeb;
+    margin: 5px;
 }

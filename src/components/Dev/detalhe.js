@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import './detalhe.css';
 import voltar from '../../assets/voltar.png';
 import { useState } from 'react';
+import aguardando from '../../assets/aguardando.png';
+import turn from '../../assets/turn.png';
 
 const Detalhe = (props) => {
 
@@ -25,16 +27,69 @@ const Detalhe = (props) => {
 
         {detalhe && 
             <>
-                <div className='detalhe'>
-                    <button onClick={fechaDetalhe} className='detalheFechar'>
-                        <img src={voltar} style={{cursor:'pointer'}}></img>{props.Nome}
-                    </button>
-                </div>
+            
+                <motion.div className='detalhe' 
+                    animate={{ x:'0px', opacity: 1}}
+                    transition={{ type: 'spring', restSpeed: 1.5 }}
+                    initial={{ x:'305px', opacity: 0}}>
+                    <a onClick={fechaDetalhe} className='detalheFechar'>
+                        <img src={voltar} style={{cursor:'pointer'}}></img>
+                    </a>
+                    <motion.div className='detalheContent'>
+                        <div className='detalheEsq'>
+                            <div style={{width: 120, height: 150,}}>
+                                <img src={props.Logo}></img>
+                            </div>
+                        </div>
+                        <div className='detalheCentro'>
+                            
+                                {props.Imagens.map((imagens)=>{
+                                return(
+                                    <div class='boxImagem'>
+                                        <img thumb={aguardando} key={Math.random()} src={imagens} className='detalheImagem'></img>
+                                    </div>
+                                )})}
+                            
+                        </div>
+                        <div className='detalheDir'>
+                            <div className='card2'>
+                                <div className='content2'>
+                                    <div className='front2'>
+                                        <p className='description2'>
+                                            {props.Descricao}
+                                        </p>
+                                        <div className='turn'>
+                                            <img src={turn} style={{width:30, height:'auto',}}></img>
+                                        </div>
+                                    </div>
+                                    <div className='back2'>
+                                        <div className='tags2'>
+                                        {props.Tags.map((tag) => {
+                                            return(
+                                                <div className='tag'>{tag}</div>
+                                            )
+                                        })}
+                                        </div>
+                                        <div className='turn'>
+                                            <img src={turn} style={{width:30, height:'auto',}}></img>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </motion.div>
+                </motion.div>
             </>
         }
-        <div className='card'>
-        <div className='BoxProjeto' style={{order:(Math.floor(Math. random()*(1-170)+170))}}>
-                <div class="content" style={{height:((Math. random()*(25-5)+5)*10),}}>
+        <motion.div className='card' style={{order:(Math.floor(Math. random()*(0-170)+170))}}
+                        animate={{ y:'0px', opacity: 1}}
+                        transition={{ type: 'spring', restSpeed: 1.5, delay:(Math. random()*(0-3)+3) }}
+                        initial={{ y:'305px', opacity: 0}}>
+            <div className='BoxProjeto'>
+                <div class="content" style={{height:((Math. random()*(20-5)+5)*10),}}>
                     <div class="front" style={{backgroundImage: 'url('+props.Imgbg+')', backgroundSize: 'cover',}}>
                         <div className='cardBranco'>
                         </div>
@@ -52,8 +107,8 @@ const Detalhe = (props) => {
                         </div>
                     </div>
                 </div>
-        </div>
-        </div>
+            </div>
+        </motion.div>
         </>
     )
 }

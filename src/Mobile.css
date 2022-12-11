@@ -33,5 +33,21 @@
 .loguinhos {
     display: none;
 }
+.detalheContent {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    width: 350px !important;
+    margin-top: 60px;
+}
+.detalhe {
+    left: -100px !important;
+    top:-110px !important;
+    width:400px !important;
+    height: auto !important;
+}
+.detalheFechar {
+    top:38px !important;
+    left:10px !important;
+}
 
   }
