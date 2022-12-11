@@ -13,7 +13,12 @@ const Tx = () => {
             animate={{ x:'0', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
             initial={{ x:'305px', opacity: 0}}>
-            Transplantado
+            Nesta área, será inserida uma grande quantidade de conteúdo relacionado ao meu transplante de fígado realizado em 21/05/21
+           .<br />
+           Ainda no hospital, dei início a um trabalho voluntário que levarei até os últimos dias com todo o amor e gratidão.
+           <br />
+           <br />
+           Esta área está em construção. 
         </motion.div>
         </>
     )
