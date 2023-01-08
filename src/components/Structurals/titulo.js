@@ -9,7 +9,7 @@ const Titulo = (props) => {
 
     return(
         
-        <motion.div className='titulo' style={{backgroundColor: props.corcomplementar}}
+        <motion.div className='titulo' style={{backgroundColor: props.corcomplementar, color: props.cortitulo,}}
         animate={{opacity: 1, height: altura,}}
         transition={{delay: 0.5, duration:1}}
         initial={{opacity: 0, height:'0'}}

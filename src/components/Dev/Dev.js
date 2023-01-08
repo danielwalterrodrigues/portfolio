@@ -35,7 +35,7 @@ const Dev = () => {
     <Titulo corcomplementar="#440062" Nome="DESENVOLVEDOR" />
     {/* <div className='loguinhos'><img src={devloguinhos} style={{marginLeft: 10, marginTop: 80,}}></img></div> */}
     <motion.div className="brancoGeral" id="flex"
-            animate={{ x:'20px', opacity: 1}}
+            animate={{ x:'0px', opacity: 1}}
             transition={{ type: 'spring', restSpeed: 1.5 }}
             initial={{ x:'305px', opacity: 0}}>
                 

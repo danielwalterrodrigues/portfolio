@@ -8,7 +8,7 @@ import './components/Structurals/Menulateral.css';
 import './components/Structurals/Menuitem.css';
 import curvaevirgula from './assets/curvaevirgula.png';
 import sombra from './assets/sombra_menu.png';
-import Mario from './components/Structurals/Mario';
+import Mario from './components/Social/Mario';
 import Bio from './components/Bio/Bio';
 import Dev from './components/Dev/Dev';
 import Txt from './components/Txt/Txt';
@@ -76,7 +76,7 @@ function App() {
     <>
       <div className='flex-container'>
         <div className='esquerda'>
-        <motion.div className='Opaco' style={{width: 100,}}
+        <motion.div className='Opaco' style={{width: 50, }}
                  animate={{opacity: 0, transitionEnd: {display: 'none',}}}
                  transition={{delay: 7, duration:3, type: 'spring', bounce: 0.6}}
                  initial={{opacity: 1}}>
@@ -101,8 +101,8 @@ function App() {
                   </button>
                 </div>
                 <div>
-                    <button className='botao hover-2' style={{backgroundColor:'#b2f400'}} onClick={OcliTxt}>
-                    .Txt
+                    <button className='botao hover-2' style={{backgroundColor:'#d3ff00'}} onClick={OcliTxt}>
+                    <div style={{color: '#849f00',}}>.Txt</div>
                   </button>
                 </div>
                 <div className='separador'></div>

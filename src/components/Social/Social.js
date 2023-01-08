@@ -3,11 +3,13 @@ import '../../Mobile.css';
 import '../internas.css';
 import { motion } from 'framer-motion';
 import Titulo from '../Structurals/titulo';
+import Mario from './Mario';
 
 const Tx = () => {
 
     return (
         <>
+        <Mario />
         <Titulo corcomplementar="#750000" Nome="Transplantado"/>
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}

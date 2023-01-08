@@ -6,11 +6,35 @@
 .logoMobile {
     display:block !important;
     margin-top: 200px;
-    margin-left: 20px;
+    margin-left: -10px;
 }
 .logoMenor1 {
-    width: auto !important;
+    right: calc(50% - 160px);
 }
+
+.logomenorImg {
+    width: 370px !important;
+    height: auto;
+}
+.headerBarra {
+    display: none !important;
+}
+.Barra {
+    top: 15px !important;
+    width: 58px !important;
+}
+.botao {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+}
+.titulo, .sombra {
+    left: 60px !important;
+}
+.titulo {
+    padding: 45px 3px 0px 0px !important;
+    font-size: 13px !important;
+}
+
 .textocolunas {
     column-count: 1 !important;
     column-gap: 0px;
@@ -23,9 +47,10 @@
     display:none;
 }
 .brancoGeral {
-    width: 300px !important;
+    width: 230px !important;
     padding: 0 !important;
-    height: 1000px !important;
+    height: auto !important;
+    left: 90px;
 }
 #flex {
     flex-wrap:nowrap !important;
@@ -48,6 +73,10 @@
 .detalheFechar {
     top:38px !important;
     left:10px !important;
+}
+.BoxProjeto {
+    width: 200px !important;
+    min-width: 200px !;
 }
 
   }

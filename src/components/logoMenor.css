@@ -1,10 +1,13 @@
 .logoMenor1 {
-    width: 287px;
     height: auto;
     position: absolute;
-    z-index: 9;
-    top:25px;
-    right: 25px;
+    z-index: -1;
+    top:12px;
+    right: 0;
+}
+.logomenorImg {
+    width: 493px;
+    height: auto;
 }
 .ponto {
     color: #ffffff;
