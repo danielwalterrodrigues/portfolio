@@ -9,7 +9,7 @@ const Tx = () => {
 
     return (
         <>
-        <Mario />
+        
         <Titulo corcomplementar="#750000" Nome="Transplantado"/>
         <motion.div className="brancoGeral"
             animate={{ x:'0', opacity: 1}}

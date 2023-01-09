@@ -16,9 +16,7 @@ import txtIcoHeart from '../../assets/txtIcoHeart.png';
 import txtIcoHeartBco from '../../assets/txtIcoHeartBco.png';
 import txtIcoInfo from '../../assets/txtIcoInfo.png';
 import txtIcoInfoBco from '../../assets/txtIcoInfoBco.png';
-import txtIcoCheckBco from '../../assets/txtIcoCheckBco.png';
-
-
+import txtIcoHeartBco2 from '../../assets/txtIcoHeartBco2.png';
 
 const TxtItem = (props) => {
     const [zindexGlobal, setZindexGlobal] = useContext(Context);
@@ -31,7 +29,9 @@ const TxtItem = (props) => {
     const [copyUrl, setCopyUrl] = useState(false);
     const [link, abreLink] = useState(false);
     const [info, abreInfo] = useState(false);
+    const [deilike, setDeilike] = useState(false);
     const [like, setLike] = useState(props.likes);
+    const [livro, setLivro] = useState(false);
     const [boxStyle, setBoxStyle] = useState([
         {
             cor: '#d6d6d6',
@@ -48,8 +48,8 @@ const TxtItem = (props) => {
             Likes: increment(1)
         });
         setLike(like + 1);
+        setDeilike(true);
     }
-
 
     function BoxChange() {
 
@@ -61,7 +61,10 @@ const TxtItem = (props) => {
                 zindex: zindexGlobal,
                 opacity: 1
 
-            }])
+            }]);
+        if(!!props.origemurl){
+            setLivro(true);
+        }
     }
     function copyOrigem() {
         navigator.clipboard.writeText(props.origemurl);
@@ -107,7 +110,7 @@ const TxtItem = (props) => {
                                                         ( {like} )
                                                     </div></div>
                                                 <div className='ItemIcoAbertoIco' onClick={()=>abreHeart(false)}>
-                                                    <img src={txtIcoHeartBco}></img>
+                                                    <img src={deilike ? txtIcoHeartBco : txtIcoHeartBco2}></img>
                                                 </div>
                                             </div>
                                             </>
@@ -116,8 +119,8 @@ const TxtItem = (props) => {
                                             <img src={txtIcoHeart} alt=''></img>
                                         </div> 
                                         }
-
-                                        {copy ?
+                                    {livro ?     
+                                        copy ?
                                             <>
                                             <div className='ItemIcoAberto'>
                                                 <div className='ItemIcoAbertoTxt' onClick={copyOrigem}>
@@ -131,10 +134,11 @@ const TxtItem = (props) => {
                                         : 
                                         <div className='ItemIco' onClick={()=>abreCopy(true)}>
                                             <img src={txtIcoCopy} alt=''></img>
-                                        </div> 
-                                        }
+                                        </div>
+                                    : null }
 
-                                        {link ?
+                                    {livro ? 
+                                        link ?
                                             <>
                                             <div className='ItemIcoAberto'>
                                                 <div className='ItemIcoAbertoTxt'><a href={props.origemurl} target='_blank'>Abrir link original</a></div>
@@ -147,7 +151,7 @@ const TxtItem = (props) => {
                                         <div className='ItemIco' onClick={()=>abreLink(true)}>
                                             <img src={txtIcoLink} alt=''></img>
                                         </div> 
-                                        }
+                                        : null }
 
                                         {info ?
                                             <>
