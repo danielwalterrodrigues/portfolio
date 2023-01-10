@@ -81,7 +81,7 @@ const MarioPickABox = () => {
                 top: '0', }}>
                     Na vida, além do jogo, às vezes a gente consegue ganhar uma vida extra também. <br />
                     Foi exatamente assim que aconteceu. No dia 21 de maio de 2021, fui submetido a um transplante de fígado. <br />
-                    Considero o momento mais difícil da minha vida.
+                    Considero o momento mais difícil da minha vida. (esta área do site encontra-se em construção)
        </motion.div>
         </>
     )
