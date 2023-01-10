@@ -4,6 +4,7 @@ import '../internas.css';
 import { motion } from 'framer-motion';
 import Titulo from '../Structurals/titulo';
 import Mario from './Mario';
+import MarioPickABox from './MarioPickABox';
 
 const Tx = () => {
 
@@ -11,17 +12,22 @@ const Tx = () => {
         <>
         
         <Titulo corcomplementar="#750000" Nome="Transplantado"/>
-        <motion.div className="brancoGeral"
-            animate={{ x:'0', opacity: 1}}
-            transition={{ type: 'spring', restSpeed: 1.5 }}
-            initial={{ x:'305px', opacity: 0}}>
-            Nesta área, será inserida uma grande quantidade de conteúdo relacionado ao meu transplante de fígado realizado em 21/05/21
-           .<br />
-           Ainda no hospital, dei início a um trabalho voluntário que levarei até os últimos dias com todo o amor e gratidão.
-           <br />
-           <br />
-           Esta área está em construção. 
-        </motion.div>
+        <div className="brancoGeral">
+                <motion.div
+                    animate={{}}
+                    transition={{delay: 10}} 
+                    initial={{}}>
+                        <MarioPickABox />
+                </motion.div>
+                <motion.div 
+                    animate={{opacity: 0}}
+                    transition={{duration:10, from: 8}}
+                    initial={{opacity: 1,}}
+                    style={{left: 0, top: 200, position:'absolute',}}>
+                    <Mario />
+                    </motion.div> 
+                
+        </div>
         </>
     )
 }

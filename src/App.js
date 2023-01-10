@@ -76,11 +76,7 @@ function App() {
     <>
       <div className='flex-container'>
         <div className='esquerda'>
-        <motion.div className='Opaco' style={{width: 50, }}
-                 animate={{opacity: 0, transitionEnd: {display: 'none',}}}
-                 transition={{delay: 7, duration:3, type: 'spring', bounce: 0.6}}
-                 initial={{opacity: 1}}>
-        </motion.div>
+        
             <motion.div className='Barra'
               animate={{opacity: 1, x: 0}}
               transition={{delay: 6, duration:2, type: 'spring', bounce: 0.6}}

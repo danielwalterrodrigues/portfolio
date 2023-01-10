@@ -44,11 +44,12 @@ const TxtItem = (props) => {
 
     async function sumHeart() {
 
+        setLike(like + 1);
+        setDeilike(true);
+
         await updateDoc(addHeart, {
             Likes: increment(1)
         });
-        setLike(like + 1);
-        setDeilike(true);
     }
 
     function BoxChange() {
