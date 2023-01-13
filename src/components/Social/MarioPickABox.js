@@ -8,6 +8,7 @@ import baubase from '../../assets/mario_baubase.png';
 import baufechado from '../../assets/mario_baufechado.png';
 import bauaberto from '../../assets/mario_bauaberto.png';
 import vida from '../../assets/mario.png';
+import Transplantado from "./Transplantado";
 
 const MarioPickABox = () => {
 
@@ -66,23 +67,7 @@ const MarioPickABox = () => {
         initial={{opacity:0, y: '12px'}}
        style={{left: '50vw', zIndex: 3, position: 'absolute', marginLeft: '-155px', marginTop: '27px'}}></motion.img>
        
-       <motion.div
-             animate={{opacity: 1}}
-             transition={{delay: 20, duration: 2}}
-             initial={{opacity:0}}
-            style={{
-                left: '50vw', 
-                width: '600px',
-                marginLeft: '-428px', 
-                padding: '20px',
-                position: 'absolute', 
-                backgroundColor: '#000',
-                color: '#fff',
-                top: '0', }}>
-                    Na vida, além do jogo, às vezes a gente consegue ganhar uma vida extra também. <br />
-                    Foi exatamente assim que aconteceu. No dia 21 de maio de 2021, fui submetido a um transplante de fígado. <br />
-                    Considero o momento mais difícil da minha vida. (esta área do site encontra-se em construção)
-       </motion.div>
+       <Transplantado />
         </>
     )
 }

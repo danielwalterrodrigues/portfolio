@@ -1,14 +1,11 @@
 import React from 'react';
-import '../Mobile.css';
 import { useState } from 'react';
 import './imprimir.css';
 import logoCurriculum from '../../assets/logo_curriculum.png';
 import xlaranja from '../../assets/xlaranja.png';
-import printIcon from '../../assets/ico_printer.png';
-import editorIcon from '../../assets/ico_editor.png';
-import fecharIcon from '../../assets/ico_fechar.png';
+import printIcon from '../../assets/cv_imprimir.png';
+import fecharIcon from '../../assets/cv_fechar.png';
 import { motion } from 'framer-motion';
-import Voltar from '../../assets/voltar2.png';
 
   
 const Imprimir = () => {
@@ -31,11 +28,10 @@ const Imprimir = () => {
         {printJanela && (
             <>
         <div className="Utils">
-            <a onClick={Print} className='naoeditar'><img src={editorIcon} className='impressora'></img></a>
-            <a onClick={Print} className='naoimprimir'><img src={printIcon} className='impressora'></img></a>
-            <button onClick={refreshPage} className="naoimpprimirvolta">
-                <img src={fecharIcon}></img>    
+            <button onClick={refreshPage} style={{marginRight:'20px', backgroundColor: '#333', border: 'none', cursor:'pointer'}}>
+                <img src={fecharIcon} className='imagens'></img>    
             </button>
+            <a onClick={Print}><img src={printIcon} className='imagens'></img></a>
         </div>
         
         <motion.div id="imprimediv" className='curriculumVitae' 
@@ -67,7 +63,8 @@ const Imprimir = () => {
                         218.290.308-92<br />
                         04406-210<br />
                         <span className='textoLaranja'>danielwalterrodrigues@gmail.com</span><br />
-                        <span className='textoLaranja'>play.google.com/store/apps/details?id=com.apptarotmagia.app</span>
+                        <span className='textoLaranja'>play.google.com/store/apps/details?id=com.apptarotmagia.app</span><br />
+                        <span className='textoLaranja'>www.portfoliodanielrodrigues.com.br</span>
                     </div>
                 </div>
                 <div class='sessao'>
@@ -85,9 +82,13 @@ const Imprimir = () => {
                 </div>
                 <div class='sessao'>
                     <h3>Formação</h3>
+                    <span className='textoLaranja'>Universidade Anhannguera</span><br />
+                    Superior de Tecnologia em Desenvolvimento Mobile<br />
+                    2023 - atual.
+                    <br /><br />
                     <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
                     Design Digital<br />
-                    1997 - 2000 (incompleto)
+                    1997 - 2000.
                 </div>
                 <div class='sessao'>
                     <h3>Experiências</h3>
@@ -211,6 +212,7 @@ const Imprimir = () => {
                         Projeto sem fins lucrativos que presta suporte a famílias e doentes em fila de transplantes, e dissemina informações sobre o universo dos transplantes e a importância da doação de órgãos.
                     </div>
                 </div>
+                <br /><br /><br /><br />
             </div>
         </motion.div>
        </> ) }      

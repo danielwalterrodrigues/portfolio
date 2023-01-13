@@ -1,6 +1,6 @@
 .curriculumVitae {
 
-    position: absolute;
+    position: fixed;
     z-index: 999999;
     left:20px;
     right: 20px;
@@ -9,7 +9,7 @@
     border: 1px solid #ebebeb;
     background-color: #ffffff;
     width:calc(100% - 80px);
-    height: 100vw;
+    height: 100vh;
     overflow:auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -113,11 +113,19 @@
     position:fixed;
     z-index: 9999999;
     height: 50px;
-    width: 175px;
-    background:#fff;
+    width: 245px;
+    background:#333;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    right:60px;
+    right:0px;
     top:0px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom: 10px solid #ff8c00;
+    padding-top: 20px;
+    padding-left: 20px;
+
+
+}
+.imagens {
+    width: 30px;
+    height: auto;
+    cursor:pointer;
 }

@@ -19,6 +19,7 @@
     opacity: 0.32;
     position:fixed;
     left: 68px;
+    z-index: -2;
 }
 .headerBarra {
     width:auto;
@@ -28,7 +29,7 @@
 }
 .separador {
     width:auto;
-    margin:23px 13px;
+    margin:13px 13px 20px 13px;
     background-color:#d5d5d5;
     height: 2px;
 }

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("../../fonts/GillSans.woff") format("woff"),
+    url("../../fonts/GillSans.otf") format("opentype"),
+}
+
 .life {
     position:absolute;
     margin-left: 3px;

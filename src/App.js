@@ -1,24 +1,24 @@
+// https://www.iconfinder.com/search/icons?family=eon => icones do menu
 import React from 'react';
 import { motion } from "framer-motion";
 import './Mobile.css';
 import './App.css';
 import Logoabertura from './components/Logoabertura';
-import {useState, useEffect, useRef} from 'react';
+import {useState} from 'react';
 import './components/Structurals/Menulateral.css';
 import './components/Structurals/Menuitem.css';
 import curvaevirgula from './assets/curvaevirgula.png';
 import sombra from './assets/sombra_menu.png';
-import Mario from './components/Social/Mario';
 import Bio from './components/Bio/Bio';
 import Dev from './components/Dev/Dev';
 import Txt from './components/Txt/Txt';
 import Tx from './components/Social/Social';
 import LogoMenor from './components/logoMenor';
-import ReactWhatsapp from 'react-whatsapp';
-import whatsapp from './assets/whatsapp.png';
-import connect from './assets/connect.png';
-import impressora from './assets/impressora.png';
-import disponivel from './assets/disponibilidade.png';
+import Whatsapp from './components/Structurals/whatsapp';
+import RedesSociais from './components/Structurals/redessociais';
+import Imprimir from './components/Bio/Imprimir';
+import curriculo1 from './assets/ico_curriculo1.png';
+
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
   const [dev, setDev] = useState(false);
   const [txt, setTxt] = useState(false);
   const [tx, setTx] = useState(false);
-  const [conexoes, setConexoes] = useState(false);
+  const [cvAberto, setCvAberto] = useState(false);
 
   const OcliBio = event => {
     setAbreLogo(false);
@@ -66,10 +66,6 @@ function App() {
     setTx(true);
   }
 
-
-  const abreConexoes = event => {
-    setConexoes(true);
-  }
   const refreshPage = ()=>{
     window.location.reload();  }
   return (
@@ -108,27 +104,13 @@ function App() {
                   </button>
                 </div> 
                 <div className='separador'></div>
-                <div>
-                <ReactWhatsapp number="5511953670683" message="Olá, Daniel! Que tal agendarmos uma entrevista? :-)" style={{backgroundColor: '#ffffff', border: 'none', width: '100%', cursor: 'pointer',}}>
-                    <img src={whatsapp}></img>
-                </ReactWhatsapp>
-                </div>
-                <div>
-                  <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center !important', justifyContent: 'center', marginLeft: 15,}} onClick={abreConexoes}><img src={connect}></img></button>
-                </div>
-                {conexoes && 
-                      <>
-                        <div className='legenda' style={{backgroundColor: '#999999'}}>Links Externos</div>
-                        <div id="triangulo-para-esquerda" style={{borderRightColor: '#999999'}}></div>
-                      </>
-                  } 
-                <div>
-                  <button className='botao' style={{backgroundColor: '#ffffff', marginTop: 15, textAlign: 'center', marginLeft: 15,}}>
-                      <img src={impressora}></img>
-                   </button>
-                </div>
-                <div style={{width: '100%', textAlign: 'center'}}>
-                  <img src={disponivel}></img>
+                <div style={{width:'55px', height: '55px', marginTop: '12px'}}><Whatsapp /></div>
+                <div style={{width:'55px', height: '55px', marginTop: '12px'}}><RedesSociais /></div>
+                <div style={{width:'55px', height: '55px', marginTop: '12px'}}>
+                <button onClick={()=>setCvAberto(true)} className='botoesMenores'>
+                    <img src={curriculo1}></img>
+                </button>
+                {cvAberto && <Imprimir />}
                 </div>
             </motion.div>
             <motion.div className='sombra'
