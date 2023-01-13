@@ -11,10 +11,10 @@ const [aberto, setAberto] = useState(false);
         {aberto ? 
         
             <>
-                <button onClick={()=>setAberto(false)} className='botoesMenores' style={{backgroundColor: '#333333'}}>
-                    <img src={curriculo2}></img>
+                <button onClick={()=>setAberto(false)} className='botoesMenores'>
+                    <img src={curriculo1}></img>
                 </button>
-                <div className='barracinza'></div>
+                
                 
             </>
             : 

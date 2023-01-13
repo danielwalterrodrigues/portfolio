@@ -16,8 +16,8 @@ import Tx from './components/Social/Social';
 import LogoMenor from './components/logoMenor';
 import Whatsapp from './components/Structurals/whatsapp';
 import RedesSociais from './components/Structurals/redessociais';
-import Imprimir from './components/Bio/Imprimir';
-import curriculo1 from './assets/ico_curriculo1.png';
+import Curriculo from './components/Structurals/curriculo';
+import Imprimir from './components/Bio/Cv';
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
   const [dev, setDev] = useState(false);
   const [txt, setTxt] = useState(false);
   const [tx, setTx] = useState(false);
+  const [cv, setCv] = useState(false);
   const [cvAberto, setCvAberto] = useState(false);
 
   const OcliBio = event => {
@@ -37,6 +38,7 @@ function App() {
     setDev(false);
     setTxt(false);
     setTx(false);
+    setCv(false);
   }
 
   const OcliDev = event => {
@@ -46,6 +48,7 @@ function App() {
     setDev(true);
     setTxt(false);
     setTx(false);
+    setCv(false);
   }
 
   const OcliTxt = event => {
@@ -55,6 +58,7 @@ function App() {
     setDev(false);
     setTxt(true);
     setTx(false);
+    setCv(false);
   }
 
   const OcliTx = event => {
@@ -64,6 +68,16 @@ function App() {
     setDev(false);
     setTxt(false);
     setTx(true);
+    setCv(false);
+  }
+  const OcliCv = event => {
+    setAbreLogo(false);
+    setLogoMenor(true);
+    setBio(false);
+    setDev(false);
+    setTxt(false);
+    setTx(false);
+    setCv(true)
   }
 
   const refreshPage = ()=>{
@@ -106,11 +120,9 @@ function App() {
                 <div className='separador'></div>
                 <div style={{width:'55px', height: '55px', marginTop: '12px'}}><Whatsapp /></div>
                 <div style={{width:'55px', height: '55px', marginTop: '12px'}}><RedesSociais /></div>
-                <div style={{width:'55px', height: '55px', marginTop: '12px'}}>
-                <button onClick={()=>setCvAberto(true)} className='botoesMenores'>
-                    <img src={curriculo1}></img>
-                </button>
+                <div style={{width:'55px', height: '55px', marginTop: '12px'}}   onClick={OcliCv} ><Curriculo />
                 {cvAberto && <Imprimir />}
+                
                 </div>
             </motion.div>
             <motion.div className='sombra'
@@ -127,6 +139,7 @@ function App() {
           {dev && <Dev />}
           {txt && <Txt />}
           {tx && <Tx />}
+          {cv && <Imprimir />}
         </div>
       </div>
     </>

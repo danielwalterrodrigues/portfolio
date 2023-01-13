@@ -1,10 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import './imprimir.css';
+import logoCurriculum from '../../assets/logo_curriculum.png';
 import xlaranja from '../../assets/xlaranja.png';
 import printIcon from '../../assets/cv_imprimir.png';
+import fecharIcon from '../../assets/cv_fechar.png';
 import { motion } from 'framer-motion';
-import Tags from './tags';
 
   
 const Imprimir = () => {
@@ -17,13 +18,19 @@ const Imprimir = () => {
        document.body.innerHTML = originalContents; 
       }
 
+    const refreshPage = ()=>{
+        abrePrintJanela(false);
+    }
     
     return(
         
         <>
         {printJanela && (
             <>
-        <div className="Utils" style={{display: 'none'}}>
+        <div className="Utils">
+            <button onClick={refreshPage} style={{marginRight:'20px', backgroundColor: '#333', border: 'none', cursor:'pointer'}}>
+                <img src={fecharIcon} className='imagens'></img>    
+            </button>
             <a onClick={Print}><img src={printIcon} className='imagens'></img></a>
         </div>
         
@@ -31,16 +38,15 @@ const Imprimir = () => {
                     animate={{opacity: 1}}
                     transition={{delay:0, duration: 1.5}}
                     initial={{opacity: 0}}>
-            {/* <div className='Header'>
+            <div className='Header'>
                 <div className='HeaderEsq'>
                     <img src={logoCurriculum} alt="logo do curriculum"></img>
                 </div>
                 <div className='HeaderDir'>
                 </div>
             </div>
-        */}
             <div className='Corpo'>
-            <h2>Profissional de TI - Programador React</h2>
+            <h2>Profissional de TI - React Native</h2>
                 <div class='sessao'>
                     <h3>Dados Pessoais</h3>
                     <div className='sessaoInt'>
@@ -76,7 +82,7 @@ const Imprimir = () => {
                 </div>
                 <div class='sessao'>
                     <h3>Formação</h3>
-                    <span className='textoLaranja'>Universidade Anhanguera</span><br />
+                    <span className='textoLaranja'>Universidade Anhannguera</span><br />
                     Superior de Tecnologia em Desenvolvimento Mobile<br />
                     2023 - atual.
                     <br /><br />
@@ -87,7 +93,7 @@ const Imprimir = () => {
                 <div class='sessao'>
                     <h3>Experiências</h3>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2015 - atual</span>
+                        <span className='textoLaranja'>2015 - 2020</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Consultor Magento<br />
@@ -124,7 +130,43 @@ const Imprimir = () => {
                 </div>
 
                 <div class='sessao'>
-                    <Tags />
+                    <h3>Competências</h3>
+                    <div className='sessaoInt'>
+                        Design UX/UI<br />
+                        <div className='barraFundo'>
+                            <div style={{height: 10,width: '90%', float: 'left', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                        React Native / JS<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                        Magento<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '100%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                        PHP 7<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                    </div>
+                    <div className='sessaoInt'>
+                        HTML5<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                        Gestão Ágil<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                        CSS3<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '70%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                        Idioma Inglês<br />
+                        <div className='barraFundo'>
+                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
+                        </div>
+                    </div>
                 </div>
                 <div class='sessao'>
                     <h3>Cursos Extra Curriculares</h3>
