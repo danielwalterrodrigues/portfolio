@@ -14,7 +14,7 @@ import Dev from './components/Dev/Dev';
 import Txt from './components/Txt/Txt';
 import Tx from './components/Social/Social';
 import LogoMenor from './components/logoMenor';
-import Whatsapp from './components/Structurals/whatsapp';
+import Whatsapp from './components/Whatsapp/whatsapp';
 import RedesSociais from './components/Structurals/redessociais';
 import Curriculo from './components/Structurals/curriculo';
 import Imprimir from './components/Bio/Cv';

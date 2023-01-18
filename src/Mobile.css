@@ -78,5 +78,9 @@
     width: 200px !important;
     min-width: 200px !;
 }
-
+.whatsapp {
+    
+    left: 55px !important;
+    top: 30px !important;
+}
   }
