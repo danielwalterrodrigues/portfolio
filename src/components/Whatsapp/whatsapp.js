@@ -224,14 +224,18 @@ const Whatsapp = () => {
                                 </motion.div>
                                 }
                                 {intFive && 
+                                <>
                                     <div style={{width:'100%',}}>
+                                    <BlocoMsg person='0' 
+                                        texto='Assim que você mandar esta mensagem, meu celular vai me avisar na hora. Assim mesmo, 
+                                        em tempo real, através de um app que criei só pra facilitar o nosso contato. 
+                                        Assim que receber a notificação, eu te chamo no Whats pra continuarmos essa conversa. 
+                                        Costumo ser bem rapidinho nisso :-)' />
+                                </div>
                                         <BlocoMsg person='0' 
-                                            texto='Assim que você mandar esta mensagem, meu celular vai abrir um aviso. Assim mesmo, 
-                                            em tempo real, através de um app que criei só pra facilitar o nosso contato. 
-                                            Assim que receber a notificação, eu te chamo no Whats pra continuarmos essa conversa. 
-                                            Costumo ser bem rapidinho nisso :-)' />
+                                            texto='Então deixa sua mensagem aqui, que eu te chamo.' />
                                     </div>
-                                }
+                                </>}
                                 {intSix && 
                                     <div style={{width:'100%',}}>
                                         <BlocoMsg person='1' texto={inputMensagemValue} />
@@ -256,7 +260,7 @@ const Whatsapp = () => {
                                 {madruga && 
                                     <div style={{width:'100%',}}>
                                         <img src={seuMadruga} style={{marginLeft: 'calc(50% - 100px)', width: '200px', height: 'auto' }}></img>
-                                        <BlocoMsg person='0' texto='Ops! Celular acabou de vibrar kkkk. Eu entro em contato assim que puder, ok? Obrigado e até daqui a pouco!' />
+                                        <BlocoMsg person='0' texto='Ops! Celular já avisou aqui kkkk. Eu entro em contato assim que puder, ok? Obrigado e até daqui a pouco!' />
                                     </div>
                                 }
                             
