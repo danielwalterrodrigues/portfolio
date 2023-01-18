@@ -231,11 +231,11 @@ const Whatsapp = () => {
                                         em tempo real, através de um app que criei só pra facilitar o nosso contato. 
                                         Assim que receber a notificação, eu te chamo no Whats pra continuarmos essa conversa. 
                                         Costumo ser bem rapidinho nisso :-)' />
-                                </div>
-                                        <BlocoMsg person='0' 
-                                            texto='Então deixa sua mensagem aqui, que eu te chamo.' />
+                                    <BlocoMsg person='0' 
+                                    texto='Então deixa sua mensagem aqui, que eu te chamo.' />
                                     </div>
-                                </>}
+                                </>
+                                }
                                 {intSix && 
                                     <div style={{width:'100%',}}>
                                         <BlocoMsg person='1' texto={inputMensagemValue} />
