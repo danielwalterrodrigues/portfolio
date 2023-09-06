@@ -87,6 +87,13 @@ const Imprimir = () => {
                 <div class='sessao'>
                     <h3>Experiências</h3>
                     <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2023 - atual</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        React-Native Software Engineer<br />
+                        Vyttra Diagnósticos
+                    </div>
+                    <div className='sessaoPeqEsq'>
                         <span className='textoLaranja'>2015 - atual</span>
                     </div>
                     <div className='sessaoPeqDir'>
