@@ -119,7 +119,6 @@ function App() {
                 </div> 
                 <div className='separador'></div>
                 <div style={{width:'55px', height: '55px', marginTop: '12px'}}><Whatsapp /></div>
-                <div style={{width:'55px', height: '55px', marginTop: '12px'}}><RedesSociais /></div>
                 <div style={{width:'55px', height: '55px', marginTop: '12px'}}   onClick={OcliCv} ><Curriculo />
                 {cvAberto && <Imprimir />}
                 

@@ -40,7 +40,7 @@ const Imprimir = () => {
             </div>
         */}
             <div className='Corpo'>
-            <h2>Profissional de TI - Programador React</h2>
+            <h2>Profissional de TI - Programador React Pleno</h2>
                 <div class='sessao'>
                     <h3>Dados Pessoais</h3>
                     <div className='sessaoInt'>
