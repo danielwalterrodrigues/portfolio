@@ -33,6 +33,6 @@ line {
     height: 100%;
     position: absolute;
     top: 0px;
-    width: 100%;
+    width: 100vh;
     z-index: 9999;
 }

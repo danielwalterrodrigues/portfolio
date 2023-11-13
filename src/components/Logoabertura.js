@@ -31,7 +31,9 @@ const Logoabertura = () => {
                 <motion.div className='Opaco'
                  animate={{opacity: [0, 1, 0, 1, 1, 0]}}
                  transition={{delay: 3, duration:4, type: 'spring', bounce: 0.6}}
-                 initial={{opacity: [0, 1, 0, 1, 1, 0]}}></motion.div>
+                 initial={{opacity: [0, 1, 0, 1, 1, 0]}}>
+                    
+                 </motion.div>
                 <motion.div className='laranjaZindex'
                     animate={{opacity: 1, rotate: 1440}}
                     transition={{delay: 0, duration: 2}}
