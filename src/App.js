@@ -106,18 +106,24 @@ function App() {
                     .Dev
                   </button>
                 </div>
+                {/*
                 <div>
                     <button className='botao hover-2' style={{backgroundColor:'#d3ff00'}} onClick={OcliTxt}>
-                    <div style={{color: '#849f00',}}>.Txt</div>
+                    <div style={{color: '#849f00',}}>
+                    .Txt
+                  </div>
                   </button>
                 </div>
                 <div className='separador'></div>
-                <div>
+                 <div>
                     <button className='botao hover-2' style={{backgroundColor:'#750000'}} onClick={OcliTx}>
                     .Tx
                   </button>
                 </div> 
+              
                 <div className='separador'></div>
+
+                */}
                 <div style={{width:'55px', height: '55px', marginTop: '12px'}}><Whatsapp /></div>
                 <div style={{width:'55px', height: '55px', marginTop: '12px'}}   onClick={OcliCv} ><Curriculo />
                 {cvAberto && <Imprimir />}
@@ -133,7 +139,7 @@ function App() {
         </div>
         <div className='centro'>
           {logoMenor && <LogoMenor />}
-          {abreLogo && <Logoabertura />}
+            {abreLogo && <Logoabertura />}
           {bio && <Bio/>}
           {dev && <Dev />}
           {txt && <Txt />}

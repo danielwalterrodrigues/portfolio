@@ -11,6 +11,9 @@ import portfolio from '../assets/portfolio.png';
 import danielrodrigues from '../assets/danielrodrigues.png';
 import logopequeno from '../assets/logopequeno.png';
 
+import DestaqueHome from './destaqueHome';
+
+
 const Logoabertura = () => {
 
     return (
@@ -37,13 +40,14 @@ const Logoabertura = () => {
                 </motion.div>
                 </div>
                 <motion.div
-                    animate={{opacity: 1}}
+                    animate={{opacity: 0}}
                     transition={{delay: 0, duration: 3}}
                     initial={{opacity: 0}}>
                     <img src={logoDcinza} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
+                
                 <motion.div 
-                    animate={{y: '-104px', opacity: 1}}
+                    animate={{y: '-104px', opacity: 0}}
                     transition={{delay: 2}}
                     initial={{opacity: 0}}
                     leave={{opacity: 0}}>
@@ -68,6 +72,10 @@ const Logoabertura = () => {
                     <img src={danielrodrigues} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
                 
+
+                <motion.div>
+                    <DestaqueHome />
+                </motion.div>
             </div>
             
         </>

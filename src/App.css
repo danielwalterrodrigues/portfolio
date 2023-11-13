@@ -24,8 +24,8 @@
       height: 100vh;
     }
     .centro {
-      flex-grow: 2;
       flex-basis: 100%;
+      align-items: flex-start;
     }
     .direita {
       flex-grow: 1;
