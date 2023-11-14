@@ -14,7 +14,12 @@ const DestaqueHome  = () => {
     
     const changeImage = () => {
         const imagemDestaque = Math.floor(Math.random() * 4) + 1;
-        setDestaque(imagemDestaque);
+
+            if (imagemDestaque === destaque) {
+                setDestaque(Math.floor(Math.random() * 4) + 1) 
+            } else {
+                setDestaque(imagemDestaque);
+            }
     }
 
     return(
