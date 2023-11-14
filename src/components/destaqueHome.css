@@ -1,5 +1,10 @@
 .destaqueBox {
-    
+    display: flex;
+    flex-direction: column;
     width: 414px;
     height: 366px;
+    align-items: center;
+}
+.botaoReload {
+    border: 0;
 }
