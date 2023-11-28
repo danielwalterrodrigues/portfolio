@@ -85,9 +85,18 @@ const Imprimir = () => {
                     1997 - 2000.
                 </div>
                 <div class='sessao'>
+                    <h3>Idiomas</h3>
+                    <span className='textoLaranja'>Inglês</span><br />
+                    Fluente
+                    <br /><br />
+                    <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
+                    Design Digital<br />
+                    1997 - 2000.
+                </div>
+                <div class='sessao'>
                     <h3>Experiências</h3>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>mar 2023 - atual</span>
+                        <span className='textoLaranja'>mar 2023 - out 2023</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         React-Native Software Engineer<br />
