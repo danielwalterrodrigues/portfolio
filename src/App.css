@@ -71,3 +71,32 @@
       width: 276px;
       margin-left: 10px;
     }
+    .cvBoto {
+      margin-top: 430px; 
+      border: 0; 
+      cursor: pointer; 
+      background-color: #ffffff;
+    }
+    .cvOthers {
+      z-index: 20;
+      display: flex;
+      width: fit-content;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .cvOthersInterna {
+      width: 141px !important;
+      height: 97px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d6d6d6;
+      margin-right: 10px;
+      margin-top: 10px;
+      border: 0;
+      cursor: pointer;
+    }
+    .cvOthersInterna:hover {
+      background-color: #fc8e00;
+    }

@@ -4,6 +4,7 @@ import './Mobile.css';
 import './App.css';
 import {useState, useEffect, useRef} from 'react';
 import './components/Logoabertura'
+import Imprimir from './components/Bio/Imprimir'
 import tarotmagia from './assets/bgTarotMagia.png'
 import fourReal from './assets/bg4real.png'
 import qtr from './assets/bgQtr.png'
@@ -12,8 +13,16 @@ import Logoabertura from './components/Logoabertura';
 import BoxHome from './components/boxHome'
 import Whatsapp from './components/Whatsapp/whatsapp';
 import cvBox from './assets/cvBox.png'
+import cvS2g from './assets/cvS2g.png'
+import cvAsus from './assets/cvAsus.png'
+import cvNetshoes from './assets/cvNetshoes.png'
 
 function App() {
+  const [curriculo, setCurriculo] = useState(true)
+
+  function OpenCv() {
+    console.log('Abre CV')
+  }
 
   const refreshPage = ()=>{
     window.location.reload();  }
@@ -21,13 +30,26 @@ function App() {
     <>
       <div className='flex-container'>
         <div className='centro'>
+          {curriculo && <Imprimir />}
           <Logoabertura />
 
           <div className='coluna1'>
             <BoxHome bgcolor="#7c02c7" posRabicho="4" title="react native" subtitle="desenvolvedor pleno" fontColor="#FFFFFF" />
-            <div style={{marginTop: 480}} onClick={()=>{}}>
+            <button className='cvBoto' onClick={()=>{OpenCv()}}>
               <img src={cvBox} />
-            </div>
+            </button>
+              <div className='cvOthers'>
+                <button className='cvOthersInterna' style={{borderTopRightRadius: 0}} onClick={()=>{OpenCv()}}>
+                  <img src={cvS2g} />
+                </button>
+                <button className='cvOthersInterna' style={{borderTopLeftRadius: 0}} onClick={()=>{OpenCv()}}>
+                  <img src={cvAsus} />
+                </button>
+              </div>
+
+              <button className='cvOthersInterna' style={{borderBottomLeftRadius: 0}} onClick={()=>{OpenCv()}}>
+                  <img src={cvNetshoes} />
+                </button>
           </div>
 
           <div className='coluna2'>
@@ -57,6 +79,9 @@ function App() {
               </div>
               <div style={{marginTop: 30}}>
                 <Whatsapp />
+              </div>
+              <div style={{marginTop: 90}}>
+                  + 55 11 95367 0683
               </div>
           </div>
 
