@@ -1,13 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import './imprimir.css';
-import logoCurriculum from '../../assets/logo_curriculum.png';
 import xlaranja from '../../assets/xlaranja.png';
-import printIcon from '../../assets/ico_printer.png';
-import editorIcon from '../../assets/ico_editor.png';
-import fecharIcon from '../../assets/ico_fechar.png';
+import printIcon from '../../assets/cv_imprimir.png';
 import { motion } from 'framer-motion';
-import Voltar from '../../assets/voltar2.png';
+import Tags from './tags';
 
   
 const Imprimir = () => {
@@ -20,36 +17,30 @@ const Imprimir = () => {
        document.body.innerHTML = originalContents; 
       }
 
-    const refreshPage = ()=>{
-        abrePrintJanela(false);
-    }
     
     return(
         
         <>
         {printJanela && (
             <>
-        <div className="Utils">
-            <a onClick={Print} className='naoeditar'><img src={editorIcon} className='impressora'></img></a>
-            <a onClick={Print} className='naoimprimir'><img src={printIcon} className='impressora'></img></a>
-            <button onClick={refreshPage} className="naoimpprimirvolta">
-                <img src={fecharIcon}></img>    
-            </button>
+        <div className="Utils" style={{display: 'none'}}>
+            <a onClick={Print}><img src={printIcon} className='imagens'></img></a>
         </div>
         
         <motion.div id="imprimediv" className='curriculumVitae' 
                     animate={{opacity: 1}}
                     transition={{delay:0, duration: 1.5}}
                     initial={{opacity: 0}}>
-            <div className='Header'>
+            {/* <div className='Header'>
                 <div className='HeaderEsq'>
                     <img src={logoCurriculum} alt="logo do curriculum"></img>
                 </div>
                 <div className='HeaderDir'>
                 </div>
             </div>
+        */}
             <div className='Corpo'>
-            <h2>Profissional de TI - React Native</h2>
+            <h2>Profissional de TI - Programador React Pleno</h2>
                 <div class='sessao'>
                     <h3>Dados Pessoais</h3>
                     <div className='sessaoInt'>
@@ -66,7 +57,8 @@ const Imprimir = () => {
                         218.290.308-92<br />
                         04406-210<br />
                         <span className='textoLaranja'>danielwalterrodrigues@gmail.com</span><br />
-                        <span className='textoLaranja'>play.google.com/store/apps/details?id=com.apptarotmagia.app</span>
+                        <span className='textoLaranja'>play.google.com/store/apps/details?id=com.apptarotmagia.app</span><br />
+                        <span className='textoLaranja'>www.portfoliodanielrodrigues.com.br</span>
                     </div>
                 </div>
                 <div class='sessao'>
@@ -84,19 +76,34 @@ const Imprimir = () => {
                 </div>
                 <div class='sessao'>
                     <h3>Formação</h3>
+                    <span className='textoLaranja'>Universidade Anhanguera</span><br />
+                    Superior de Tecnologia em Desenvolvimento Mobile<br />
+                    2023 - atual.
+                    <br /><br />
                     <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
                     Design Digital<br />
-                    1997 - 2000 (incompleto)
+                    1997 - 2000.
                 </div>
                 <div class='sessao'>
                     <h3>Idiomas</h3>
                     <span className='textoLaranja'>Inglês</span><br />
                     Fluente
+                    <br /><br />
+                    <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
+                    Design Digital<br />
+                    1997 - 2000.
                 </div>
                 <div class='sessao'>
                     <h3>Experiências</h3>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2015 - 2020</span>
+                        <span className='textoLaranja'>mar 2023 - out 2023</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        React-Native Software Engineer<br />
+                        Vyttra Diagnósticos
+                    </div>
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2015 - 2022</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Consultor Magento<br />
@@ -133,43 +140,7 @@ const Imprimir = () => {
                 </div>
 
                 <div class='sessao'>
-                    <h3>Competências</h3>
-                    <div className='sessaoInt'>
-                        Design UX/UI<br />
-                        <div className='barraFundo'>
-                            <div style={{height: 10,width: '90%', float: 'left', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                        React Native / JS<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                        Magento<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '100%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                        PHP 7<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                    </div>
-                    <div className='sessaoInt'>
-                        HTML5<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                        Gestão Ágil<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '50%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                        CSS3<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '70%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                        Idioma Inglês<br />
-                        <div className='barraFundo'>
-                            <div style={{ backgroundColor:'#747474', height: 10,width: '75%', }}><img src={xlaranja} className='xlaranja' height={'10'} width={'100%'}></img></div>
-                        </div>
-                    </div>
+                    <Tags />
                 </div>
                 <div class='sessao'>
                     <h3>Cursos Extra Curriculares</h3>
@@ -215,6 +186,7 @@ const Imprimir = () => {
                         Projeto sem fins lucrativos que presta suporte a famílias e doentes em fila de transplantes, e dissemina informações sobre o universo dos transplantes e a importância da doação de órgãos.
                     </div>
                 </div>
+                <br /><br /><br /><br />
             </div>
         </motion.div>
        </> ) }      
