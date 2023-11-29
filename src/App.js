@@ -10,6 +10,7 @@ import qtr from './assets/bgQtr.png'
 import tria from './assets/bgTria.png'
 import Logoabertura from './components/Logoabertura';
 import BoxHome from './components/boxHome'
+import Whatsapp from './components/Whatsapp/whatsapp';
 
 function App() {
 
