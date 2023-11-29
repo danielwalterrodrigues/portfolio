@@ -3,8 +3,8 @@ import './boxHome.css'
 
 
 const BoxHome = (props) => {
-    const [bgcolor, setBgcolor] = useState(props.bgcolor)
-
+    
+    let bgcolor = props.bgcolor
     let rabicho = 'rabicho'+props.posRabicho
 
     return(
