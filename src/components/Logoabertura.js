@@ -37,13 +37,13 @@ const Logoabertura = () => {
                 </motion.div>
                 </div>
                 <motion.div
-                    animate={{opacity: 1}}
+                    animate={{opacity: 0}}
                     transition={{delay: 0, duration: 3}}
                     initial={{opacity: 0}}>
                     <img src={logoDcinza} alt=' ' className="logoDlaranja"></img>
                 </motion.div>
                 <motion.div 
-                    animate={{y: '-104px', opacity: 1}}
+                    animate={{y: '-104px', opacity: 0}}
                     transition={{delay: 2}}
                     initial={{opacity: 0}}
                     leave={{opacity: 0}}>

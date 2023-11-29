@@ -90,6 +90,11 @@ const Imprimir = () => {
                     1997 - 2000 (incompleto)
                 </div>
                 <div class='sessao'>
+                    <h3>Idiomas</h3>
+                    <span className='textoLaranja'>Inglês</span><br />
+                    Fluente
+                </div>
+                <div class='sessao'>
                     <h3>Experiências</h3>
                     <div className='sessaoPeqEsq'>
                         <span className='textoLaranja'>2015 - 2020</span>

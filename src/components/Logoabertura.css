@@ -1,7 +1,8 @@
 .divprincipal {
-    margin-top: 35vmin;
-    float: left;
-    margin-left: calc(50% - 220px);
+    margin-top: 350px;
+    margin-left: -30px;
+    position: absolute;
+    z-index: 10;
 }
 
 circle,

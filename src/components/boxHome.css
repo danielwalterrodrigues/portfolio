@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: 'Typo Formal Shadowed Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Shadowed Demo'), url('../fonts/Typo Formal Shadowed Demo.woff') format('woff');
+}
+@font-face {
+    font-family: 'Typo Formal Regular Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Regular Demo'), url('../fonts/Typo Formal Regular Demo.woff') format('woff');
+}
+@font-face {
+    font-family: 'Typo Formal Light Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Light Italic Demo'), url('../fonts/Typo Formal Light Italic Demo.woff') format('woff');
+}
+@font-face {
+    font-family: 'Typo Formal Light Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Light Demo'), url('../fonts/Typo Formal Light Demo.woff') format('woff');
+}
+@font-face {
+    font-family: 'Typo Formal Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Italic Demo'), url('../fonts/Typo Formal Italic Demo.woff') format('woff');
+}
+@font-face {
+    font-family: 'Typo Formal Bold Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Bold Italic Demo'), url('../fonts/Typo Formal Bold Italic Demo.woff') format('woff');
+}
+@font-face {
+    font-family: 'Typo Formal Bold Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Bold Demo'), url('../fonts/Typo Formal Bold Demo.woff') format('woff');
+}
+
+.rabicho {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+}
+.rabicho1 {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 0px;
+}
+.rabicho2 {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+}
+.rabicho3 {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 45px;
+}
+.rabicho4 {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+}
+.boxInternoTitle {
+    font-family: 'Typo Formal Regular Demo';
+    font-size: 35px;
+    margin-left: 45px;
+}
+
+.boxInternoSubTitle {
+    font-family: 'Typo Formal Regular Demo';
+    font-size: 21px;
+    margin-left: 45px;
+}
