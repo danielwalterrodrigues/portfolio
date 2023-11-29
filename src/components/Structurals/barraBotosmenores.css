@@ -1,0 +1,28 @@
+.botoesMenores {
+    border: 0;
+    padding-left: 15px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+}
+.barracinza {
+    background-color: #333333;
+    position:absolute;
+    left:0;
+    width:400px;
+    height:57px;
+    z-index: 998;
+    margin-top: -15px;
+    border-top: 10px solid #ff8a00;
+}
+.barracinzaWhats {
+    background-color: #333333;
+    position:absolute;
+    left:0;
+    width:400px;
+    height:57px;
+    z-index: 998;
+    margin-top: -7px;
+    border-bottom: 10px solid #ff8a00;
+}
