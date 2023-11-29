@@ -16,6 +16,7 @@ import cvBox from './assets/cvBox.png'
 import cvS2g from './assets/cvS2g.png'
 import cvAsus from './assets/cvAsus.png'
 import cvNetshoes from './assets/cvNetshoes.png'
+import cvClose from './assets/cvClose.png'
 
 function App() {
   const [curriculo, setCurriculo] = useState(false)
@@ -35,10 +36,15 @@ function App() {
     <>
       <div className='flex-container'>
         {curriculo && 
+          <>
+            <button className='curriculoClose' onClick={()=>{CloseCv()}}>
+              <img src={cvClose} style={{width: 25, height: 25}}/>
+            </button>
           <div className='curriculo'>
 
             <Curriculo />
           </div>
+          </>
         }
         <div className='centro'>
           <Logoabertura />

@@ -1,19 +1,18 @@
 import React from "react";
 import './imprimir.css'
+import cvLogo from '../../assets/cvLogo.png'
+
 
 const Curriculo = () => {
-
-    const Print = () =>{
-        let printContents = document.getElementById('Corpo').innerHTML;
-        let originalContents = document.body.innerHTML;
-        document.body.innerHTML = printContents;
-        window.print();
-       document.body.innerHTML = originalContents; 
-      }
 
     return(
         <>
         <div className='Corpo'>
+            <div style={{display: "flex", flexDirection: 'row', justifyContent: 'space-between'}}>
+                <div>
+                    <img src={cvLogo} />
+                </div>
+            </div>
             <h2>Profissional de TI - Programador React Pleno</h2>
                 <div class='sessao'>
                     <h3>Dados Pessoais</h3>

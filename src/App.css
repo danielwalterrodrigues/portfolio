@@ -114,3 +114,11 @@
       top: 0;
       left: 0;
     }
+    .curriculoClose {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      z-index: 200;
+      border: 0;
+      background-color: #ffffff;
+    }
