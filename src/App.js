@@ -4,7 +4,7 @@ import './Mobile.css';
 import './App.css';
 import {useState, useEffect, useRef} from 'react';
 import './components/Logoabertura'
-import Imprimir from './components/Bio/Imprimir'
+import Curriculo from './components/Curriculo/cv';
 import tarotmagia from './assets/bgTarotMagia.png'
 import fourReal from './assets/bg4real.png'
 import qtr from './assets/bgQtr.png'
@@ -18,19 +18,29 @@ import cvAsus from './assets/cvAsus.png'
 import cvNetshoes from './assets/cvNetshoes.png'
 
 function App() {
-  const [curriculo, setCurriculo] = useState(true)
+  const [curriculo, setCurriculo] = useState(false)
 
   function OpenCv() {
-    console.log('Abre CV')
+    setCurriculo(true)
   }
+
+  function CloseCv() {
+    setCurriculo(false)
+  }
+
 
   const refreshPage = ()=>{
     window.location.reload();  }
   return (
     <>
       <div className='flex-container'>
+        {curriculo && 
+          <div className='curriculo'>
+
+            <Curriculo />
+          </div>
+        }
         <div className='centro'>
-          {curriculo && <Imprimir />}
           <Logoabertura />
 
           <div className='coluna1'>

@@ -100,3 +100,15 @@
     .cvOthersInterna:hover {
       background-color: #fc8e00;
     }
+    .curriculo {
+      position: absolute;
+      background-color: #ffffff;
+      border: 3px;
+      border-color: #fc8e00;
+      margin: 20px;
+      width: 100%;
+      min-height: 300px;
+      padding: 20px;
+      top: 0;
+      left: 0;
+    }
