@@ -1,33 +1,13 @@
 @font-face {
-    font-family: "Gill Sans";
-    src: url("../../fonts/GillSans.woff") format("woff"),
-    url("../../fonts/GillSans.otf") format("opentype"),
+    font-family: 'Typo Formal Shadowed Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Formal Shadowed Demo'), url('../../fonts/Typo Formal Shadowed Demo.woff') format('woff');
 }
 
 .whatsapp {
-    display: block;
-    position: absolute;
-    z-index: 99999999;
-    left: calc(30vw - 165px);
-    top: 100px;
-    background-image: url('../../assets/whatsBg.png');
-    background-color: #333333;
-    width: 330px;
+    width: 100%;
     height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.tooltip {
-    position: absolute;
-    z-index:2;
-    background-color:#ff8a00;
-    color: #ffffff;
-    border-radius: 20px;
-    padding:5px 6px;
-    font-size: 11px;
-    width:6px;
-    height: 6px;
-    line-height: 7px;
-    margin-left: 24px;
 }
 .barraTop {
     width: 100%;
@@ -46,11 +26,11 @@
     justify-content: center;
     display: flex;
     font-size: 12px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Typo Formal Shadowed Demo';
 }
 .barraTopDir {
     float:left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Typo Formal Shadowed Demo';
     font-size: 14px;
     padding:6px 8px;
     width:20px;
@@ -68,16 +48,17 @@
 }
 .barraBaixo {
     display: flex;
-    background-color: #292929;
-    width: calc(100% - 20px);
-    border-top: 1px solid #333333;
+    background-color: #fc8e00;
+    width: 245px;
+    border-top: 1px solid #fc8e00;
     padding:10px;
+    border-radius: 20px;
 }
 .barraBaixoEsq {
-    width:calc(100% - 55px);
-    height:35px;
+    width:100%;
+    height:45px;
     margin-right: 10px;
-    background-color:#0000003d;
+    background-color:#fc8e00;
     float: left;
 }
 .barraBaixoDir {
@@ -89,26 +70,30 @@
 .whatsInput {
     background-color: transparent;
     border: none;
+    margin-left: 10px;
     padding: 10px 10px;
-    width: 230px;
+    width: 150px;
     color: #ffffff;
+    border-bottom: #ffffff 1px solid;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.whatsInput::placeholder {
+    color: #ffffff;
 }
 .Bloco {
     display: flex;
-    width: calc(100% - 20px);
-    border-top: 1px solid #333333;
+    width: calc(100% - 30px);
     padding:10px;
     flex-direction: column;
 }
 .eu {
-    width: calc(100% - 60px);
-    background-color:#0000009c;
+    width: calc(100% - 10px);
+    border-radius: 15px;
     border: 3px solid #ff8a00;
     padding:10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-    font-size: 12px;
+    color: #fc8e00;
+    font-size: 13px;
     font-weight: 600;
 }
 .euSeta {
@@ -118,18 +103,18 @@
 }
 .tu {
     width: calc(100% - 60px);
-    background-color:#0000009c;
-    border: 3px solid #d3ff00;
+    border: 3px solid #dc00cf;
     padding:10px;
+    border-radius: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-    font-size: 12px;
+    color: #dc00cf;
+    font-size: 13px;
     font-weight: 600;
     display:flex;
     align-self: end;
 }
 .tuSeta {
     width: 100%;
-    margin-left: 270px;
+    margin-left: 200px;
     margin-top: -7px;
 }

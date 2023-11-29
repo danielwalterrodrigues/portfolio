@@ -1,6 +1,5 @@
 import React, { button, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Draggable } from 'drag-react';
 import InputMask from 'react-input-mask';
 import { db } from '../../firebase';
 import { doc, addDoc, collection } from "firebase/firestore";
@@ -11,9 +10,10 @@ import '.././../Mobile.css';
 import whatsapp1 from '../../assets/ico_whatsapp1.png';
 import whatsapp2 from '../../assets/ico_whatsapp2.png';
 import BlocoMsg from "./BlocoMsg";
-import whatsappLoguinho from '../../assets/whatsLoguinho.png';
 import whatsappEnvia from '../../assets/whatsEnvia.png';
 import seuMadruga from '../../assets/madruga.gif';
+import whatstop from '../../assets/whatstopo.png';
+
 
 function PhoneInput(props) {
     return (
@@ -26,7 +26,7 @@ function PhoneInput(props) {
   }
 
 const Whatsapp = () => {
-    const [aberto, setAberto] = useState(false);
+    const [aberto, setAberto] = useState(true);
     const [inputNameValue, setInputNameValue] = useState('');
     const [inputFoneValue, setInputFoneValue] = useState('');
     const [inputMensagemValue, setInputMensagemValue] = useState('');
@@ -107,16 +107,9 @@ const Whatsapp = () => {
         {aberto ? 
         
             <>
-                <button onClick={()=>setAberto(false)} className='botoesMenores'>
-                    <img src={whatsapp2}></img>
-                </button>
-                    <Draggable>
+                    
                         <div className="whatsapp">
-                            <div className="barraTop">
-                                <div className="barraTopEsq"><img src={whatsappLoguinho}></img></div>
-                                <div className="barraTopCentro">+ 55 11 95367 0683</div>
-                                <div className="barraTopDir" onClick={()=>setAberto(false)}>X</div>
-                            </div>
+                            <img src={whatstop} />
                             <div className="WhatsContent">
                                 
                                 <motion.div style={{width:'100%'}}
@@ -318,7 +311,7 @@ const Whatsapp = () => {
                                 
                             </div>
                         </div>
-                    </Draggable>                
+               
             </>
             : 
                 <button onClick={()=>setAberto(true)} className='botoesMenores'>
