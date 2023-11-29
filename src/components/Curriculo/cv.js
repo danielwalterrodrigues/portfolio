@@ -1,9 +1,18 @@
 import React from "react";
-
+import './imprimir.css'
 
 const Curriculo = () => {
 
+    const Print = () =>{
+        let printContents = document.getElementById('Corpo').innerHTML;
+        let originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+       document.body.innerHTML = originalContents; 
+      }
+
     return(
+        <>
         <div className='Corpo'>
             <h2>Profissional de TI - Programador React Pleno</h2>
                 <div class='sessao'>
@@ -104,9 +113,10 @@ const Curriculo = () => {
                     </div>
                 </div>
 
-                <div class='sessao'>
-                    <Tags />
-                </div>
+               {/* <div class='sessao'>
+                        <Tags />
+                    </div>
+                */}
                 <div class='sessao'>
                     <h3>Cursos Extra Curriculares</h3>
                     <div className='sessaoPeqEsq'>
@@ -153,6 +163,7 @@ const Curriculo = () => {
                 </div>
                 <br /><br /><br /><br />
             </div>
+            </>
     )
 }
 export default Curriculo

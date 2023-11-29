@@ -103,11 +103,13 @@
     .curriculo {
       position: absolute;
       background-color: #ffffff;
+      z-index: 100;
       border: 3px;
       border-color: #fc8e00;
       margin: 20px;
-      width: 100%;
-      min-height: 300px;
+      width: 90%;
+      display: flex;
+      height: auto;
       padding: 20px;
       top: 0;
       left: 0;
