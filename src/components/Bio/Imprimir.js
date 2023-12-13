@@ -87,11 +87,7 @@ const Imprimir = () => {
                 <div class='sessao'>
                     <h3>Idiomas</h3>
                     <span className='textoLaranja'>Inglês</span><br />
-                    Fluente
-                    <br /><br />
-                    <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
-                    Design Digital<br />
-                    1997 - 2000.
+                    Fluente.
                 </div>
                 <div class='sessao'>
                     <h3>Experiências</h3>
@@ -106,7 +102,7 @@ const Imprimir = () => {
                         <span className='textoLaranja'>2015 - 2022</span>
                     </div>
                     <div className='sessaoPeqDir'>
-                        Consultor Magento<br />
+                        Consultor Magento / React Native<br />
                         Consultor independente
                     </div>
                     <div className='sessaoPeqEsq'>
@@ -140,7 +136,7 @@ const Imprimir = () => {
                 </div>
 
                 <div class='sessao'>
-                    <Tags />
+                    {/* <Tags /> */}
                 </div>
                 <div class='sessao'>
                     <h3>Cursos Extra Curriculares</h3>
@@ -152,10 +148,14 @@ const Imprimir = () => {
                         UFSC - Universidade Federal de São Carlos
                     </div>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>Atual</span>
+                        <span className='textoLaranja'>2022 - Incompleto</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Programação Orientada a Objetos<br />
+                        USP - Universidade de São Paulo
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Criação de Startups: Como desenvolver negócios inovadores<br />
                         USP - Universidade de São Paulo
                     </div>
                 </div>
@@ -172,7 +172,7 @@ const Imprimir = () => {
                 <div class='sessao'>
                     <h3>Atividades Filantrópicas</h3>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2005</span>
+                        <span className='textoLaranja'>2005 - 2010</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Casa Limiar<br />
