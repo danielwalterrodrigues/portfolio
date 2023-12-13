@@ -133,6 +133,37 @@ const Imprimir = () => {
                         Sócio diretor<br />
                         Energy Interactive
                     </div>
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2002 - 2004</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Webdesigner<br />
+                        Radium Systems
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2000 - 2002</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Webdesigner<br />
+                        Fulano / F.Biz
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>1998 - 2000</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Webdesigner<br />
+                        CDN - Companhia de Notícias
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>1997 - 1998</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Estagiário de webdesign<br />
+                        Universidade Anhembi Morumbi
+                    </div>
                 </div>
 
                 <div class='sessao'>
@@ -153,6 +184,10 @@ const Imprimir = () => {
                     <div className='sessaoPeqDir'>
                         Programação Orientada a Objetos<br />
                         USP - Universidade de São Paulo
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2023 - Atual</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Criação de Startups: Como desenvolver negócios inovadores<br />
