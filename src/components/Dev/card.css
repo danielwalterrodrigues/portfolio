@@ -1,103 +1,22 @@
-
 @font-face {
-    font-family: 'Typo Formal Shadowed Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Shadowed Demo'), url('../fonts/Typo Formal Shadowed Demo.woff') format('woff');
+    font-family: "Gill Sans";
+    src: url("../../fonts/GillSans.woff") format("woff"),
+    url("../../fonts/GillSans.otf") format("opentype"),
 }
-@font-face {
-    font-family: 'Typo Formal Regular Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Regular Demo'), url('../fonts/Typo Formal Regular Demo.woff') format('woff');
-}
-@font-face {
-    font-family: 'Typo Formal Light Italic Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Light Italic Demo'), url('../fonts/Typo Formal Light Italic Demo.woff') format('woff');
-}
-@font-face {
-    font-family: 'Typo Formal Light Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Light Demo'), url('../fonts/Typo Formal Light Demo.woff') format('woff');
-}
-@font-face {
-    font-family: 'Typo Formal Italic Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Italic Demo'), url('../fonts/Typo Formal Italic Demo.woff') format('woff');
-}
-@font-face {
-    font-family: 'Typo Formal Bold Italic Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Bold Italic Demo'), url('../fonts/Typo Formal Bold Italic Demo.woff') format('woff');
-}
-@font-face {
-    font-family: 'Typo Formal Bold Demo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Typo Formal Bold Demo'), url('../fonts/Typo Formal Bold Demo.woff') format('woff');
-}
-
-.rabicho {
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-top-left-radius: 45px;
-}
-.rabicho1 {
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-top-left-radius: 0px;
-}
-.rabicho2 {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-top-left-radius: 45px;
-}
-.rabicho3 {
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 45px;
-}
-.rabicho4 {
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 45px;
-    border-top-left-radius: 45px;
-}
-.boxInternoTitle {
-    font-family: 'Typo Formal Regular Demo';
-    font-size: 35px;
-    margin-left: 45px;
-}
-
-.boxInternoSubTitle {
-    font-family: 'Typo Formal Regular Demo';
-    font-size: 21px;
-    margin-left: 45px;
-    margin-top: -10px;
-}
-
-/* 
-    INICIA AS FUNCIONALIDADES CSS DO CARD
-*/
-
 
 .card {
+    width: 270px;
     cursor: pointer;
+    border-radius: 15px;
+    margin-right: 20px;
+
   }
   
   .content {
+    text-align: center;
     position: relative;
     transition: all 2.25s;
-    padding: 6em;
+    padding: 5em;
     transform-style: preserve-3d;
     height:fit-content;
     border-radius: 15px;
@@ -107,35 +26,42 @@
     transform: rotateY(0.5turn);
   }
   
-  .front {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
+  .front,
   .back {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    height: 190; 
-    width: 265;
+    background-color: #ebebeb;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 40px;
   }
   
   .title {
     transform: translateZ(5rem);
+    font-size: 16px;
+    color: #000;
     z-index: 9;
     position: absolute;
     bottom: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-left: 20px;
+  }
+  .cardBranco {
+    width: 100%;
+    height:60px;
+    position:absolute;
+    z-index:5 ;
+    bottom: 0;
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(0, 0, 0, 0) 0px -12px 30px, rgba(0, 0, 0, 0) 0px 4px 6px, rgba(0, 0, 0, 0) 0px 12px 13px, rgba(0, 0, 0, 0.3) 0px -13px 50px;
+    
   }
   .subtitle {
     transform: translateZ(2rem);
@@ -241,6 +167,7 @@
   z-index: 9;
   position: absolute;
   bottom: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-left: 20px;
 }
 .cardBranco2 {
@@ -256,6 +183,7 @@
   z-index:5 ;
   padding-left: 20px;
   bottom: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size:13px;
   color: #a6a6a6;
 }
@@ -266,6 +194,7 @@
   z-index:6 ;
   right: 20px;
   bottom: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size:18px;
   color: #a6a6a6;
 }

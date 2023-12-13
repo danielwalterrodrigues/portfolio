@@ -1,104 +1,30 @@
 
-.Bloco {
-    margin: 10px;
-    padding:0px 10px 10px 10px ;
-    border: 1px solid #ff9c00;
-    background-color: bisque;
-    width: 300px;
-    float:left;
-    font-size: 12px;
-    position: absolute;
-    z-index: 88;
-    display: none;
-  }
-  .Titulo {
-    color: #ff9c00;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  .BlocoBco {
-    width: calc(60% - 20px) !important;
-    height: 280px;
-    float:left;
-    background-color: #fff;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-radius: 30px;
-    margin:10px;
-    padding: 30px;
-  }
-  .BlocoBco1 {
-    width:35%;
-    height: 100%;
-    float: left;
-  }
-  .BlocoBco2 {
-    width: 65%;
-    height: 100%;
-    float: left;
-  }
-  .BlocoBcoDir {
-    width: calc(40% - 60px);
-    height: 280px;
-    float: left;
-  }
-  .BlocoTit {
-    font-size: 24px;
-    color:black;
-    margin-bottom: 30px;
-  }
-  .BlocoTitTipo {
-    color: #b0b0b0;
-  }
-  .BlocoTitTxt {
-    color: #828282;
-    font-size: 16px;
-    line-height: 25px;
-  }
-  .devImagem {
-    width:130px;
-    float:left;
-    margin: 0 0 0 35px;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
-  }
-  .devLogo {
-    margin:80px 0 0 30px;
-  }
-  .devLink {
-    margin:3px 0 0 10px;
-  }
-  .tags {
-    min-width: 380px;
-    float: inherit;
-    padding: 20px 0 0 30px;
-
-  }
-  .tag {
-    float:left;
-    margin:0 6px 6px 0;
-    background-color: #e7e7e7;
-    color: #828282;
-    font-size:12px;
-    height: 15px;
-    line-height: 15px;
-    padding: 0 15px;
-    border-radius:10px;
-  }
-
-  .carousel-inner {
-    overflow: inherit !important;
-  }
-  .active .carousel-item {
-    width:100% !important;
-  }
-  .carousel-control-next {
-    background:url('../../assets/seta_dir.png') no-repeat !important;
-    text-align: right !important;
-  }
-  .carousel-control-prev {
-    background:url('../../assets/seta_esq.png') no-repeat !important;
-    
-  }
-  .imgLinks {
-    width:150px;
-    height:auto;
-  }
+.BoxProjeto {
+  width: 270px;
+  min-width: 270px;
+  border-radius: 15px;
+  margin: 13px;
+  float: left;
+}
+.loguinhos {
+  width: 55px;
+  height:100vh;
+  float: left;
+}
+#flex { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+  align-content: flex-start;
+  max-width: calc(88vw);
+  height:650px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#a { order: 2; }
+#b { order: 1; }
+#c { order: 3; }
+#d { order: 4; }
+#e { order: 5; }
+#f { order: 6; }
+#g { order: 7; }

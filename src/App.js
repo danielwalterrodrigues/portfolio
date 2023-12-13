@@ -70,7 +70,7 @@ function App() {
 
           <div className='coluna2'>
             <div style={{marginTop: 188}}>
-              <BoxHome bgImage={tarotmagia} posRabicho="1" title="tarot magia" subtitle="android app" fontColor="#FFFFFF" />
+              <BoxHome bgImage={tarotmagia} posRabicho="1" posRabichoBack="2" bgColorBack="#8b0000" colorTxt="#ffffff" title="tarot magia" subtitle="android app" fontColor="#FFFFFF" />
             </div>
             <div style={{marginTop: 158}}>
               <BoxHome bgcolor='#dc00cf' posRabicho="4" title="n4 natural" subtitle="ecommerce magento" fontColor="#FFFFFF" />
