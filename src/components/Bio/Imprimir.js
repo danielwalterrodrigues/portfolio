@@ -113,11 +113,18 @@ const Imprimir = () => {
                         Asus Brasil
                     </div>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2011 - 2013</span>
+                        <span className='textoLaranja'>2012 - 2013</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Gerente de projetos<br />
                         E-Smart
+                    </div>
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2010 - 2011</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Gerente de TI<br />
+                        Moda Hoje - Shop2gether
                     </div>
                     <div className='sessaoPeqEsq'>
                         <span className='textoLaranja'>2010 - 2010</span>
