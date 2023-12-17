@@ -120,7 +120,7 @@ const Imprimir = () => {
                         E-Smart
                     </div>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2011 - 2012</span>
+                        <span className='textoLaranja'>2010 - 2011</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Gerente de TI<br />
