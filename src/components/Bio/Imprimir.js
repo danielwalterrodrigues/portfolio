@@ -87,7 +87,7 @@ const Imprimir = () => {
                 <div class='sessao'>
                     <h3>Idiomas</h3>
                     <span className='textoLaranja'>Inglês</span><br />
-                    Fluente.
+                    Avançado.
                 </div>
                 <div class='sessao'>
                     <h3>Experiências</h3>
