@@ -39,7 +39,7 @@ const BoxHome = (props) => {
                     </div>
                     <div class="back">
                         <div className={rabichoBack} style={{backgroundColor: bgColorBack, color: colorTxt , height: 190, width: 265, display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
-                            CONTEUDO COSTAS - {projeto.Descricao} -
+                            CONTEUDO COSTAS -  -
                         </div>
                     </div>
                 </div>
