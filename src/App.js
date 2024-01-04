@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from "framer-motion";
 import './Mobile.css';
 import './App.css';
 import {useState, useEffect, useContext} from 'react';

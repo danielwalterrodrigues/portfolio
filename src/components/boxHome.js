@@ -4,7 +4,6 @@ import mais from '../assets/mais.png'
 import { motion } from "framer-motion";
 import dirBco from '../assets/dirBco.png'
 import esqBco from '../assets/esqBco.png'
-import e from "express";
 
 
 const BoxHome = (props) => {
