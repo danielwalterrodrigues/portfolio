@@ -11,6 +11,7 @@ import qtrbg from './assets/bgQtr.png'
 import triabg from './assets/bgTria.png'
 import Logoabertura from './components/Logoabertura';
 import BoxHome from './components/boxHome'
+import BoxHome1 from './components/boxHome1';
 import Whatsapp from './components/Whatsapp/whatsapp';
 import cvBox from './assets/cvBox.png'
 import cvS2g from './assets/cvS2g.png'
@@ -20,8 +21,8 @@ import cvClose from './assets/cvClose.png'
 import icoCoffee from './assets/icoCoffee.png'
 
 
-const baseURL = 'http://localhost:3000/api/pt'
-//const baseURL = 'https://portfolio-nextjs-chi-coral.vercel.app/api/pt'
+//const baseURL = 'http://localhost:3000/api/pt'
+const baseURL = 'https://portfolio-nextjs-chi-coral.vercel.app/api/pt'
 
 function App() {
   const [curriculo, setCurriculo] = useState(false)
@@ -77,7 +78,7 @@ function App() {
           <Logoabertura />
 
           <div className='coluna1'>
-            <BoxHome 
+            <BoxHome1 
               bgcolor="#7c02c7" 
               bgBackcolor="#43006c" 
               posRabicho="4" 
