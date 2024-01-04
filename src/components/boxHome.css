@@ -100,7 +100,7 @@
   
   .content {
     position: relative;
-    transition: all 2.25s;
+    transition: all 1.75s;
     padding: 6em;
     transform-style: preserve-3d;
     height:fit-content;
@@ -130,7 +130,6 @@
     width: 265;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   
   .title {

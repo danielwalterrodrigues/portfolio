@@ -4,12 +4,11 @@ import './App.css';
 import {useState, useEffect, useContext} from 'react';
 import axios from 'axios';
 import './components/Logoabertura'
-import DataProfileContext from './components/context/contextApi';
 import Curriculo from './components/Curriculo/cv';
 import tarotmagia from './assets/bgTarotMagia.png'
-import fourReal from './assets/bg4real.png'
-import qtr from './assets/bgQtr.png'
-import tria from './assets/bgTria.png'
+import fourRealbg from './assets/bg4real.png'
+import qtrbg from './assets/bgQtr.png'
+import triabg from './assets/bgTria.png'
 import Logoabertura from './components/Logoabertura';
 import BoxHome from './components/boxHome'
 import Whatsapp from './components/Whatsapp/whatsapp';
@@ -18,6 +17,7 @@ import cvS2g from './assets/cvS2g.png'
 import cvAsus from './assets/cvAsus.png'
 import cvNetshoes from './assets/cvNetshoes.png'
 import cvClose from './assets/cvClose.png'
+import icoCoffee from './assets/icoCoffee.png'
 
 
 const baseURL = 'http://localhost:3000/api/pt'
@@ -27,6 +27,11 @@ function App() {
   const [curriculo, setCurriculo] = useState(false)
   const [box1, setBox1] = useState([])
   const [tarotMagia, setTatotMagia] = useState([])
+  const [vyttra, setVyttra] = useState([])
+  const [fourReal, setFourReal] = useState([])
+  const [tria, setTria] = useState([])
+  const [n4Natural, setN4Natural] = useState([])
+  const [qtr, setQtr] = useState([])
 
 
   useEffect(() => {
@@ -34,6 +39,12 @@ function App() {
     axios.get(baseURL).then((result)=>{
       setBox1(result.data.box1)
       setTatotMagia(result.data.tarotmagia)
+      setVyttra(result.data.vyttra)
+      setFourReal(result.data.fourReal)
+      setTria(result.data.tria)
+      setN4Natural(result.data.n4natural)
+      setQtr(result.data.qtr)
+
 
     })
   
@@ -112,36 +123,127 @@ function App() {
                 backContent2={tarotMagia.backContent2}
                 description={tarotMagia.description}
                 logo={tarotMagia.logo}
+                numImages={tarotMagia.numImages}
                 gallery={tarotMagia.gallery}
                 tags={tarotMagia.tags}
                  />
             </div>
             <div style={{marginTop: 158}}>
-              <BoxHome bgcolor='#dc00cf' posRabicho="4" title="n4 natural" subtitle="ecommerce magento" fontColor="#FFFFFF" />
+
+            <BoxHome 
+                bgcolor="#dc00cf" 
+                posRabicho="4" 
+                posRabichoBack="3" 
+                bgColorBack="#ab00a1" 
+                colorTxt="#FFFFFF" 
+                fontColor="#FFFFFF"
+                fontColorBack="#FFFFFF" 
+                title={n4Natural.title} 
+                subtitle={n4Natural.subTitle}
+                backContent={n4Natural.backContent}
+                backContent2={n4Natural.backContent2}
+                description={n4Natural.description}
+                logo={n4Natural.logo}
+                numImages={n4Natural.numImages}
+                gallery={n4Natural.gallery}
+                tags={n4Natural.tags}
+                 />
             </div>
           </div>
           
           <div className='coluna3'>
             <div style={{marginTop: 18}}>
-              <BoxHome bgImage={fourReal} posRabicho="4" title="4real" subtitle="android / ios app" fontColor="#FFFFFF" />
+            <BoxHome 
+                bgcolor="#1a403e" 
+                bgImage={fourRealbg}
+                posRabicho="4" 
+                posRabichoBack="3" 
+                bgColorBack="#1a403e" 
+                colorTxt="#FFFFFF" 
+                fontColor="#FFFFFF"
+                fontColorBack="#FFFFFF" 
+                title={fourReal.title} 
+                subtitle={fourReal.subTitle}
+                backContent={fourReal.backContent}
+                backContent2={fourReal.backContent2}
+                description={fourReal.description}
+                logo={fourReal.logo}
+                numImages={fourReal.numImages}
+                gallery={fourReal.gallery}
+                tags={fourReal.tags}
+                 />
             </div>
             <div style={{marginTop: 207}}>
-              <BoxHome bgImage={tria} posRabicho="2" title="embraer okto" subtitle="android / zebra app" fontColor="#FFFFFF" />
+
+            <BoxHome 
+                bgcolor="#00bfff" 
+                bgImage={triabg}
+                posRabicho="1" 
+                posRabichoBack="2" 
+                bgColorBack="#00bfff" 
+                colorTxt="#FFFFFF" 
+                fontColor="#FFFFFF"
+                fontColorBack="#FFFFFF" 
+                title={tria.title} 
+                subtitle={tria.subTitle}
+                backContent={tria.backContent}
+                backContent2={tria.backContent2}
+                description={tria.description}
+                logo={tria.logo}
+                numImages={tria.numImages}
+                gallery={tria.gallery}
+                tags={tria.tags}
+                 />
             </div>
             <div style={{marginTop: 107}}>
-              <BoxHome bgImage={qtr} posRabicho="1" title="qtr?" subtitle="android / ios app" fontColor="#FFFFFF" />
+            <BoxHome 
+                bgcolor="#51007f" 
+                bgImage={qtrbg}
+                posRabicho="1" 
+                posRabichoBack="2" 
+                bgColorBack="#51007f" 
+                colorTxt="#FFFFFF" 
+                fontColor="#FFFFFF"
+                fontColorBack="#FFFFFF" 
+                title={qtr.title} 
+                subtitle={qtr.subTitle}
+                backContent={qtr.backContent}
+                backContent2={qtr.backContent2}
+                description={qtr.description}
+                logo={qtr.logo}
+                numImages={qtr.numImages}
+                gallery={qtr.gallery}
+                tags={qtr.tags}
+                 />
             </div>
           </div>
           
           <div className='coluna4'>
               <div style={{marginTop: 100}}>
-                <BoxHome bgcolor="#dcfe52" posRabicho="4" title="vyttra" subtitle="android / ios app" fontColor="#000000" />
+              <BoxHome 
+                bgcolor="#dcfe52" 
+                posRabicho="4" 
+                posRabichoBack="3" 
+                bgColorBack="#000000" 
+                colorTxt="#000000" 
+                fontColor="#000000"
+                fontColorBack="#dcfe52" 
+                title={vyttra.title} 
+                subtitle={vyttra.subTitle}
+                backContent={vyttra.backContent}
+                backContent2={vyttra.backContent2}
+                description={vyttra.description}
+                logo={vyttra.logo}
+                numImages={vyttra.numImages}
+                gallery={vyttra.gallery}
+                tags={vyttra.tags}
+                 />
               </div>
               <div style={{marginTop: 30}}>
                 <Whatsapp />
               </div>
-              <div style={{marginTop: 90}}>
-                  + 55 11 95367 0683
+              <div style={{marginTop: 90, fontFamily: 'Gill Sans', display:'flex', justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: '#a90063', borderRadius: 40, padding: 30, color: '#ffffff', fontWeight: 'bold', marginTop: 210, borderBottomRightRadius: 0, marginLeft: 5}}>
+                  <img src={icoCoffee} />+ 55 11 95367 0683
               </div>
           </div>
 
