@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from "framer-motion";
 import './Mobile.css';
 import './App.css';
-import {useState, useEffect, useRef} from 'react';
+import {useState, useEffect, useContext} from 'react';
+import axios from 'axios';
 import './components/Logoabertura'
+import DataProfileContext from './components/context/contextApi';
 import Curriculo from './components/Curriculo/cv';
 import tarotmagia from './assets/bgTarotMagia.png'
 import fourReal from './assets/bg4real.png'
@@ -18,8 +20,25 @@ import cvAsus from './assets/cvAsus.png'
 import cvNetshoes from './assets/cvNetshoes.png'
 import cvClose from './assets/cvClose.png'
 
+
+const baseURL = 'http://localhost:3000/api/pt'
+//const baseURL = 'https://portfolio-nextjs-chi-coral.vercel.app/api/pt'
+
 function App() {
   const [curriculo, setCurriculo] = useState(false)
+  const [box1, setBox1] = useState([])
+  const [tarotMagia, setTatotMagia] = useState([])
+
+
+  useEffect(() => {
+    
+    axios.get(baseURL).then((result)=>{
+      setBox1(result.data.box1)
+      setTatotMagia(result.data.tarotmagia)
+
+    })
+  
+  }, []);
 
   function OpenCv() {
     setCurriculo(true)
@@ -29,12 +48,10 @@ function App() {
     setCurriculo(false)
   }
 
-
-  const refreshPage = ()=>{
-    window.location.reload();  }
   return (
     <>
       <div className='flex-container'>
+        
         {curriculo && 
           <>
             <button className='curriculoClose' onClick={()=>{CloseCv()}}>
@@ -50,7 +67,18 @@ function App() {
           <Logoabertura />
 
           <div className='coluna1'>
-            <BoxHome bgcolor="#7c02c7" posRabicho="4" title="react native" subtitle="desenvolvedor pleno" fontColor="#FFFFFF" />
+            <BoxHome 
+              bgcolor="#7c02c7" 
+              bgBackcolor="#43006c" 
+              posRabicho="4" 
+              posRabichoBack="3" 
+              title={box1.title} 
+              subtitle={box1.subTitle} 
+              backContent={box1.backContent}
+              backContent2={box1.backContent2} 
+              fontColor="#FFFFFF" 
+              fontColorBack="#FFFFFF" 
+            />
             <button className='cvBoto' onClick={()=>{OpenCv()}}>
               <img src={cvBox} />
             </button>
@@ -70,7 +98,24 @@ function App() {
 
           <div className='coluna2'>
             <div style={{marginTop: 188}}>
-              <BoxHome bgImage={tarotmagia} posRabicho="1" posRabichoBack="2" bgColorBack="#8b0000" colorTxt="#ffffff" title="tarot magia" subtitle="android app" fontColor="#FFFFFF" />
+              <BoxHome 
+                bgcolor="#86201b"
+                bgImage={tarotmagia} 
+                posRabicho="1" 
+                posRabichoBack="2" 
+                bgColorBack="#8b0000" 
+                colorTxt="#ffffff" 
+                fontColor="#FFFFFF"
+                fontColorBack="#FFFFFF" 
+                title={tarotMagia.title} 
+                subtitle={tarotMagia.subTitle}
+                backContent={tarotMagia.backContent}
+                backContent2={tarotMagia.backContent2}
+                description={tarotMagia.description}
+                logo={tarotMagia.logo}
+                gallery={tarotMagia.gallery}
+                tags={tarotMagia.tags}
+                 />
             </div>
             <div style={{marginTop: 158}}>
               <BoxHome bgcolor='#dc00cf' posRabicho="4" title="n4 natural" subtitle="ecommerce magento" fontColor="#FFFFFF" />

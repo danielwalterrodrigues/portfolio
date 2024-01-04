@@ -1,5 +1,6 @@
+import React from "react";
 import { createContext } from 'react';
 
-const Context = createContext(0);
+const DataProfileContext = createContext(0);
 
-export default Context;
+export default DataProfileContext;

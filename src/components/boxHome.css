@@ -41,6 +41,10 @@
     font-weight: normal;
     src: local('Typo Formal Bold Demo'), url('../fonts/Typo Formal Bold Demo.woff') format('woff');
 }
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../fonts/GillSans.woff") format("woff"), url("../fonts/GillSans.otf") format("opentype"),
+  }
 
 .rabicho {
     border-top-right-radius: 45px;
@@ -127,7 +131,6 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 40px;
   }
   
   .title {
@@ -299,4 +302,32 @@
   height: auto;
   border-radius: 20px;
 
+}
+.boxDetalhe {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.detailColumn {
+  width: 50%;
+}
+
+.OpacoDetail {
+  backdrop-filter: blur(4px) saturate(152%);
+  -webkit-backdrop-filter: blur(4px) saturate(152%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 130px;
 }
