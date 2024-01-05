@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../App.css';
 import '../Mobile.css';
 import './Logoabertura.css';
 import { motion } from "framer-motion";
+import { isMobile } from 'react-device-detect';
 //import logoGrande from '../assets/logo_branco.png';
 import logoDlaranja from '../assets/logoDlaranja.png';
 import logoDcinza from '../assets/logoDcinza.png';
@@ -13,17 +14,21 @@ import danielrodrigues from '../assets/danielrodrigues.png';
 import logopequeno from '../assets/logopequeno.png';
 
 const Logoabertura = () => {
+    const [mobile, setMobile] = useState(false)
+
+    useEffect(()=>{
+        if (isMobile) {
+            setMobile(true)
+        }
+    }, [])
 
     return (
         <>
         
         <div className='logoMobile'>
-        <motion.div className='Opaco'
-                 animate={{opacity: [0, 1, 0, 1, 1, 0]}}
-                 transition={{delay: 0, duration:4, type: 'spring', bounce: 0.6}}
-                 initial={{opacity: [0, 1, 0, 1, 1, 0]}}></motion.div>
             <img src={logopequeno}></img>
         </div>
+        {mobile ? '' : 
             <div className='divprincipal'>
                 <div className='logoGrande'>
                 <motion.div className='Opaco'
@@ -70,6 +75,7 @@ const Logoabertura = () => {
                 </motion.div>
                 
             </div>
+            }
             
         </>
         

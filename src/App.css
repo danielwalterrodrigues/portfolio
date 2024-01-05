@@ -56,6 +56,13 @@
       display: flex;
       flex-direction: row;
     } 
+    .centroMobile {
+      font-family: 'Typo Formal Regular Demo';
+      width: 300px;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+    } 
     .coluna1 {
       width: 265px;
     }
@@ -73,6 +80,12 @@
     }
     .cvBoto {
       margin-top: 430px; 
+      border: 0; 
+      cursor: pointer; 
+      background-color: #ffffff;
+    }
+    .cvBotoMobile {
+      margin-top: 30px; 
       border: 0; 
       cursor: pointer; 
       background-color: #ffffff;

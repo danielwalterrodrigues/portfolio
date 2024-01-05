@@ -4,6 +4,12 @@
     position: absolute;
     z-index: 10;
 }
+.divprincipalMobile {
+    margin-top: 20px;
+    margin-left: -30px;
+    position: absolute;
+    z-index: 10;
+}
 
 circle,
 rect,
@@ -22,6 +28,8 @@ line {
 }
 .logoMobile {
     display:none;
+    margin-top: 0px !important;
+    margin-bottom: 30px;
 }
 .Opaco {
     backdrop-filter: blur(4px) saturate(152%);
@@ -32,6 +40,19 @@ line {
     height: 100%;
     position: absolute;
     top: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+.OpacoMobile {
+    backdrop-filter: blur(4px) saturate(152%);
+    -webkit-backdrop-filter: blur(4px) saturate(152%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
     z-index: 9999;
 }

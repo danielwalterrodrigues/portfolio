@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './imprimir.css'
 import cvLogo from '../../assets/cvLogo.png'
+import { isMobile } from "react-device-detect";
 
 
 const Curriculo = () => {
+    const [mobile, setMobile] = useState(false)
+
+    useEffect(()=>{
+        if (isMobile) {
+            setMobile(true)
+        }
+    }, [])
 
     return(
         <>
@@ -16,7 +24,7 @@ const Curriculo = () => {
             <h2>Profissional de TI - Programador React Pleno</h2>
                 <div class='sessao'>
                     <h3>Dados Pessoais</h3>
-                    <div className='sessaoInt'>
+                    <div className={mobile ? 'sessaoIntMobile' : 'sessaoInt'}>
                         Daniel Walter Rodrigues<br />
                         Brasileiro<br />
                         Casado<br />

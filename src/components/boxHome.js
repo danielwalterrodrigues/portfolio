@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './boxHome.css'
+import { isMobile } from "react-device-detect";
 import mais from '../assets/mais.png'
 import { motion } from "framer-motion";
 import dirBco from '../assets/dirBco.png'
@@ -10,6 +11,13 @@ const BoxHome = (props) => {
     const [detail, setDetail] = useState(false)
     const [counter, setCounter] = useState(0)
     const [load, setLoad] = useState(false)
+    const [mobile, setMobile] = useState(false)
+
+    useEffect(()=>{
+        if (isMobile) {
+            setMobile(true)
+        }
+    }, [])
     
     let bgcolor = props.bgcolor
     let bgColorBack = props.bgColorBack
@@ -56,7 +64,7 @@ function galleryMoveMenos() {
         {detail &&
         <div className="boxDetalhe">
             
-            <motion.div className='OpacoDetail'
+            <motion.div className={mobile ? 'OpacoDetailMobile' : 'OpacoDetail'}
                  animate={{opacity: [0, 1]}}
                  transition={{delay: 0, duration:2, type: 'spring', bounce: 0.6}}
                  initial={{opacity: [0, 1]}}
@@ -64,13 +72,13 @@ function galleryMoveMenos() {
                  >
         </motion.div>
             
-        <motion.div style={{position: 'absolute', left: 0, top: 45, width: '100%', height: '100%', zIndex: 99999}}
+        <motion.div style={{position: 'absolute', left: mobile ? 40 : 0, top: 45, width: '100%', height: '100%', zIndex: 99999}}
                  animate={{opacity: [0, 1]}}
                  transition={{delay: 1, duration:4, type: 'spring', bounce: 0.6}}
                  initial={{opacity: [0, 1]}}
                  exit={{opacity: 0}}
                  >
-            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', width: '100%', height: '100%'}}>
+            <div style={{display: 'flex', flexDirection: mobile ? 'column' : 'row', justifyContent: 'space-around', width: '100%', height: '100%'}}>
                 <div style={{textAlign: 'right'}} className="detailColumn">
                     <div style={{maxWidth: 300, height: 400, float: 'right', marginRight: 10, marginTop: 200}}>
                         {tags.map((tag, index)=>(
@@ -106,7 +114,7 @@ function galleryMoveMenos() {
                     </div>
                 </div>
                 <div style={{textAlign: 'left'}} className="detailColumn">
-                    <div style={{width: 300, fontFamily: 'Gill Sans', marginTop: 200, lineHeight: 2.1, marginLeft: 20}}>
+                    <div style={{width: 300, fontFamily: 'Gill Sans', marginTop: mobile ? 30 : 200, lineHeight: 2.1, marginLeft: 20}}>
                         {description}
                     </div>
                     <div style={{backgroundColor: bgColorBack, width: 300, height: 180, paddingTop: 20, marginLeft: 20, display: 'flex', alignItems: 'center', justifyContent: 'center', paddingBottom: 20, marginTop: 40, borderRadius: 60, borderTopLeftRadius: 0}} className="rabicho1">

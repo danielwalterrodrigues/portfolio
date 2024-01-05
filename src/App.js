@@ -2,6 +2,7 @@ import React from 'react';
 import './Mobile.css';
 import './App.css';
 import {useState, useEffect, useContext} from 'react';
+import {isMobile} from 'react-device-detect';
 import axios from 'axios';
 import './components/Logoabertura'
 import Curriculo from './components/Curriculo/cv';
@@ -25,6 +26,7 @@ import icoCoffee from './assets/icoCoffee.png'
 const baseURL = 'https://portfolio-nextjs-chi-coral.vercel.app/api/pt'
 
 function App() {
+  const [mobile, setMobile] = useState(false)
   const [curriculo, setCurriculo] = useState(false)
   const [box1, setBox1] = useState([])
   const [tarotMagia, setTatotMagia] = useState([])
@@ -34,6 +36,11 @@ function App() {
   const [n4Natural, setN4Natural] = useState([])
   const [qtr, setQtr] = useState([])
 
+  useEffect(() => {
+    if (isMobile) {
+      setMobile(true)
+    }
+  },[])
 
   useEffect(() => {
     
@@ -74,10 +81,11 @@ function App() {
           </div>
           </>
         }
-        <div className='centro'>
+        <div className={mobile ? 'centroMobile' : 'centro'}>
           <Logoabertura />
 
           <div className='coluna1'>
+        
             <BoxHome1 
               bgcolor="#7c02c7" 
               bgBackcolor="#43006c" 
@@ -90,7 +98,7 @@ function App() {
               fontColor="#FFFFFF" 
               fontColorBack="#FFFFFF" 
             />
-            <button className='cvBoto' onClick={()=>{OpenCv()}}>
+            <button className={mobile ? 'cvBotoMobile' : 'cvBoto'} onClick={()=>{OpenCv()}}>
               <img src={cvBox} />
             </button>
               <div className='cvOthers'>
@@ -108,7 +116,7 @@ function App() {
           </div>
 
           <div className='coluna2'>
-            <div style={{marginTop: 188}}>
+            <div style={{marginTop: mobile ? 30 : 188}}>
               <BoxHome 
                 bgcolor="#86201b"
                 bgImage={tarotmagia} 
@@ -129,7 +137,7 @@ function App() {
                 tags={tarotMagia.tags}
                  />
             </div>
-            <div style={{marginTop: 158}}>
+            <div style={{marginTop:  mobile ? 30 : 158}}>
 
             <BoxHome 
                 bgcolor="#dc00cf" 
@@ -174,7 +182,7 @@ function App() {
                 tags={fourReal.tags}
                  />
             </div>
-            <div style={{marginTop: 207}}>
+            <div style={{marginTop:  mobile ? 30 : 207}}>
 
             <BoxHome 
                 bgcolor="#00bfff" 
@@ -196,7 +204,7 @@ function App() {
                 tags={tria.tags}
                  />
             </div>
-            <div style={{marginTop: 107}}>
+            <div style={{marginTop:  mobile ? 30 : 107}}>
             <BoxHome 
                 bgcolor="#51007f" 
                 bgImage={qtrbg}
@@ -220,7 +228,7 @@ function App() {
           </div>
           
           <div className='coluna4'>
-              <div style={{marginTop: 100}}>
+              <div style={{marginTop:  mobile ? 30 : 100}}>
               <BoxHome 
                 bgcolor="#dcfe52" 
                 posRabicho="4" 
@@ -243,7 +251,7 @@ function App() {
               <div style={{marginTop: 30}}>
                 <Whatsapp />
               </div>
-              <div style={{marginTop: 90, fontFamily: 'Gill Sans', display:'flex', justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: '#a90063', borderRadius: 40, padding: 30, color: '#ffffff', fontWeight: 'bold', marginTop: 210, borderBottomRightRadius: 0, marginLeft: 5}}>
+              <div style={{marginTop:  mobile ? 30 : 90, marginBottom: 100, fontFamily: 'Gill Sans', display:'flex', justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: '#a90063', borderRadius: 40, padding: 30, color: '#ffffff', fontWeight: 'bold', marginTop: 210, borderBottomRightRadius: 0, marginLeft: 5}}>
                   <img src={icoCoffee} />+ 55 11 95367 0683
               </div>
           </div>
