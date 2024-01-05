@@ -87,7 +87,7 @@ const Curriculo = () => {
                         <span className='textoLaranja'>2015 - 2022</span>
                     </div>
                     <div className='sessaoPeqDir'>
-                        Consultor Magento<br />
+                        Consultor Magento / React Native<br />
                         Consultor independente
                     </div>
                     <div className='sessaoPeqEsq'>
@@ -98,11 +98,18 @@ const Curriculo = () => {
                         Asus Brasil
                     </div>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2011 - 2013</span>
+                        <span className='textoLaranja'>2012 - 2013</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Gerente de projetos<br />
                         E-Smart
+                    </div>
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2010 - 2011</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Gerente de TI<br />
+                        Moda Hoje - Shop2gether
                     </div>
                     <div className='sessaoPeqEsq'>
                         <span className='textoLaranja'>2010 - 2010</span>
@@ -117,6 +124,37 @@ const Curriculo = () => {
                     <div className='sessaoPeqDir'>
                         Sócio diretor<br />
                         Energy Interactive
+                    </div>
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2002 - 2004</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Webdesigner<br />
+                        Radium Systems
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>2000 - 2002</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Webdesigner<br />
+                        Fulano / F.Biz
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>1998 - 2000</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Webdesigner<br />
+                        CDN - Companhia de Notícias
+                    </div>
+
+                    <div className='sessaoPeqEsq'>
+                        <span className='textoLaranja'>1997 - 1998</span>
+                    </div>
+                    <div className='sessaoPeqDir'>
+                        Estagiário de webdesign<br />
+                        Universidade Anhembi Morumbi
                     </div>
                 </div>
 
