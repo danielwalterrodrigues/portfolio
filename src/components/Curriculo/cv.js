@@ -68,7 +68,7 @@ const Curriculo = () => {
                 <div class='sessao'>
                     <h3>Idiomas</h3>
                     <span className='textoLaranja'>Inglês</span><br />
-                    Fluente
+                    Avançado
                     <br /><br />
                     <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
                     Design Digital<br />
