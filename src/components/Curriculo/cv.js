@@ -15,7 +15,7 @@ const Curriculo = () => {
 
     return(
         <>
-        <div className='Corpo'>
+        <div className={mobile ? 'CorpoMobile' : 'Corpo'}>
             <div style={{display: "flex", flexDirection: 'row', justifyContent: 'space-between'}}>
                 <div>
                     <img src={cvLogo} />
@@ -77,7 +77,7 @@ const Curriculo = () => {
                 <div class='sessao'>
                     <h3>Experiências</h3>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>mar 2023 - out 2023</span>
+                        <span className='textoLaranja'>2023</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         React-Native Software Engineer<br />
@@ -165,7 +165,7 @@ const Curriculo = () => {
                 <div class='sessao'>
                     <h3>Cursos Extra Curriculares</h3>
                     <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>Junho 2006</span>
+                        <span className='textoLaranja'>2006</span>
                     </div>
                     <div className='sessaoPeqDir'>
                         Gestão de Projetos<br />
@@ -196,12 +196,12 @@ const Curriculo = () => {
                     </div>
                     <div className='sessaoPeqDir'>
                         Casa Limiar<br />
-                        Responsável TI (website, infraestrutura e treinamento básico)
+                        Responsável TI.
                     </div>
                     <div className='sessaoPeqEsq'>
                         <span className='textoLaranja'>2021 / Atual</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className='sessaoPeqDir' style={{height:200}}>
                         Transplantado<br />
                         Projeto sem fins lucrativos que presta suporte a famílias e doentes em fila de transplantes, e dissemina informações sobre o universo dos transplantes e a importância da doação de órgãos.
                     </div>

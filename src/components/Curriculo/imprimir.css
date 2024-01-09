@@ -30,6 +30,12 @@
     display:block;
     color: #747474;
 }
+.CorpoMobile {
+    display:block;
+    color: #747474;
+    margin-top: 30px;
+    margin-bottom: 400px;
+}
 .impressora {
     width:32px;
     height: auto;
@@ -47,6 +53,10 @@
     font-weight:300;
     text-align: center;
 }
+.CorpoMobile h2 {
+    font-weight:300;
+    text-align: center;
+}
 .sessao h2, h3 {
     font-weight: 300;
 }
@@ -58,14 +68,14 @@
     width:50%;
 }
 .sessaoPeqEsq {
-    width:15%;
+    width:20%;
     float:left;
-    height: 50px;
+    height: 65px;
 }
 .sessaoPeqDir {
-    width:85%;
+    width:80%;
     float:left;
-    height: 50px;
+    height: 65px;
 }
 .textoLaranja {
     color: #ff9c00;
