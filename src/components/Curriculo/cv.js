@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './imprimir.css'
-import cvLogo from '../../assets/cvLogo.png'
+import cvLogo from '../../assets/cvLogoNew.png'
 import { isMobile } from "react-device-detect";
 
 
