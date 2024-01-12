@@ -68,11 +68,21 @@
     width:50%;
 }
 .sessaoPeqEsq {
-    width:20%;
+    width:10%;
     float:left;
     height: 65px;
 }
 .sessaoPeqDir {
+    width:90%;
+    float:left;
+    height: 65px;
+}
+.sessaoPeqEsqMobile {
+    width:20%;
+    float:left;
+    height: 65px;
+}
+.sessaoPeqDirMobile {
     width:80%;
     float:left;
     height: 65px;

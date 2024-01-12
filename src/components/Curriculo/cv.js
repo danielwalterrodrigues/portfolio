@@ -28,32 +28,23 @@ const Curriculo = () => {
                         Daniel Walter Rodrigues<br />
                         Brasileiro<br />
                         Casado<br />
-                        Travessa Dom João VI, 5 - Vila Império - São Paulo SP<br />
-                        <span className='textoLaranja'>linkedin.com/in/danielrodrigues</span><br />
-                        <span className='textoLaranja'>github.com/danielwalterrodrigues</span>
+                        <span className='textoLaranja'>linkedin.com/in/danielrodrigues</span>
                     </div>
                     <div className='sessaoInt'>
                         11 95367 0683<br />
                         06/05/1977<br />
-                        218.290.308-92<br />
-                        04406-210<br />
                         <span className='textoLaranja'>danielwalterrodrigues@gmail.com</span><br />
-                        <span className='textoLaranja'>play.google.com/store/apps/details?id=com.apptarotmagia.app</span><br />
                         <span className='textoLaranja'>www.portfoliodanielrodrigues.com.br</span>
                     </div>
                 </div>
                 <div class='sessao'>
                     <h3>Apresentação</h3>
-                    <p>Desde 1997, venho me dedicando exclusivamente a projetos de desenvolvimento web, e com isso, participando ativamente de projetos para empresas como Nethoes, Intel, InCor, Vale, entre outros. O largo período de experiência e consequentemente, os cargos que ocupei me permitiram enxergar o projeto como um todo, sob a ótica do webdesigner, do programador, gestor das equipes, bem como gestor geral e até o idealizador em si. </p>
-
-                    <p>Dentre as características que me levaram a fazer parte de empresas como Netshoes, Asus, Shop2gether e E-Smart, entre outras, posso destacar:</p>
+                    <p>Profissional com larga experiência, conhecedor de todos os processos de um projeto de tecnologia, desde o processo comercial, modelo de negócio, desenvolvimento de software e pós-lançamento. Desbravador do mercado de desenvolvimento web brasileiro, ocupou diferentes cargos em renomadas empresas nacionais e multinacionais ao longo de uma trajetória de mais de 25 anos no mercado de TI.</p>
 
                     - Líder por natureza, motivando e inspirando;<br />
-                    - Habilidade em recrutar e manter times de ponta em TI;<br />
                     - Facilidade para aprender e lidar com as demais ferramentas e linguagens de programação;<br />
                     - Criatividade e pró-atividade;<br />
-                    - Habilidade de comunicação com qualquer escala hierárquica;<br />
-                    - Experiência e vivência em diferentes áreas de um projeto para a web, seja no planejamento, design, programação ou recrutamento e gestão de times de TI;
+                    - Notável habilidade na comunicação escrita e falada.<br />
                 </div>
                 <div class='sessao'>
                     <h3>Formação</h3>
@@ -69,90 +60,86 @@ const Curriculo = () => {
                     <h3>Idiomas</h3>
                     <span className='textoLaranja'>Inglês</span><br />
                     Avançado
-                    <br /><br />
-                    <span className='textoLaranja'>Universidade Anhembi Morumbi</span><br />
-                    Design Digital<br />
-                    1997 - 2000.
                 </div>
                 <div class='sessao'>
                     <h3>Experiências</h3>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2023</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         React-Native Software Engineer<br />
                         Vyttra Diagnósticos
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2015 - 2022</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Consultor Magento / React Native<br />
                         Consultor independente
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2013 - 2014</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Gerente de e-commerce<br />
                         Asus Brasil
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2012 - 2013</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Gerente de projetos<br />
                         E-Smart
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2010 - 2011</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Gerente de TI<br />
                         Moda Hoje - Shop2gether
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2010 - 2010</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Gerente de e-commerce<br />
                         Netshoes
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2004 - 2010</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Sócio diretor<br />
                         Energy Interactive
                     </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2002 - 2004</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Webdesigner<br />
                         Radium Systems
                     </div>
 
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2000 - 2002</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Webdesigner<br />
                         Fulano / F.Biz
                     </div>
 
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>1998 - 2000</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Webdesigner<br />
                         CDN - Companhia de Notícias
                     </div>
 
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>1997 - 1998</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Estagiário de webdesign<br />
                         Universidade Anhembi Morumbi
                     </div>
@@ -164,44 +151,51 @@ const Curriculo = () => {
                 */}
                 <div class='sessao'>
                     <h3>Cursos Extra Curriculares</h3>
-                    <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2006</span>
-                    </div>
-                    <div className='sessaoPeqDir'>
-                        Gestão de Projetos<br />
-                        UFSC - Universidade Federal de São Carlos
-                    </div>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>Atual</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
+                    Fazendo aplicativos com NodeMCU(esp8266) e React Native<br />
+                        Udemy
+                    </div>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
+                        <span className='textoLaranja'>2023</span>
+                    </div>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Programação Orientada a Objetos<br />
-                        USP - Universidade de São Paulo
+                        Coursera / USP - Universidade de São Paulo
+                    </div>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
+                        <span className='textoLaranja'>2006</span>
+                    </div>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
+                        Gestão de Projetos<br />
+                        UFSC - Universidade Federal de São Carlos
                     </div>
                 </div>
                 <div class='sessao'>
                     <h3>Conquistas</h3>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2000</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Prêmio iBest - Categoria Melhor Site Governamental<br />
                         Governo Federal - Programa Alfabetização Solidária
                     </div>
                 </div>
                 <div class='sessao'>
                     <h3>Atividades Filantrópicas</h3>
-                    <div className='sessaoPeqEsq'>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
                         <span className='textoLaranja'>2005</span>
                     </div>
-                    <div className='sessaoPeqDir'>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'}>
                         Casa Limiar<br />
                         Responsável TI.
                     </div>
-                    <div className='sessaoPeqEsq'>
-                        <span className='textoLaranja'>2021 / Atual</span>
+                    <div className={mobile ? 'sessaoPeqEsqMobile' : 'sessaoPeqEsq'}>
+                        <span className='textoLaranja'>Atual</span>
                     </div>
-                    <div className='sessaoPeqDir' style={{height:200}}>
+                    <div className={mobile ? 'sessaoPeqDirMobile' : 'sessaoPeqDir'} style={{height:200}}>
                         Transplantado<br />
                         Projeto sem fins lucrativos que presta suporte a famílias e doentes em fila de transplantes, e dissemina informações sobre o universo dos transplantes e a importância da doação de órgãos.
                     </div>
